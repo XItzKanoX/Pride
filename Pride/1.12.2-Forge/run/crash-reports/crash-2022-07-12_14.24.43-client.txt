@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 7/12/22 2:24 PM
+Description: Unexpected error
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/utils/CPSCounter
+	at net.minecraft.client.Minecraft.handler$zze000$rightClickMouse(Minecraft.java:3503)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1542)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2253)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1807)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.utils.CPSCounter
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 20 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.Minecraft.handler$zze000$rightClickMouse(Minecraft.java:3503)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1542)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2253)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 11 total; [EntityPlayerSP['Player19'/81603, l='MpServer', x=-8.61, y=70.00, z=17.37], EntityOtherPlayerMP['CIT-89091e51388b'/59, l='MpServer', x=5.50, y=70.00, z=9.47], EntityOtherPlayerMP['§b关于我们'/53, l='MpServer', x=-0.53, y=70.00, z=19.47], EntityOtherPlayerMP['§b职位招募需求'/56, l='MpServer', x=-6.50, y=70.00, z=9.50], EntityOtherPlayerMP['§b玩家协议签署'/62, l='MpServer', x=-0.53, y=70.00, z=10.44], EntityOtherPlayerMP['5der5'/74321, l='MpServer', x=-5.69, y=70.00, z=15.78], EntityOtherPlayerMP['F4D8P8_YO9'/81605, l='MpServer', x=-7.38, y=70.59, z=18.75], EntityOtherPlayerMP['XianYinShiNiDie'/81611, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['ItsFoxey'/81618, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['WZQXB'/81619, l='MpServer', x=-0.85, y=70.00, z=13.80], EntityOtherPlayerMP['SFoneis'/81620, l='MpServer', x=-0.56, y=70.00, z=15.25]]
+	Chunk stats: MultiplayerChunkCache: 111, 111
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (0,65,0), Chunk: (at 0,4,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 15776059 game time, 1892665109 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: adventure (ID 2). Hardcore: false. Cheats: false
+	Forced entities: 42 total; [EntityPlayerSP['Player19'/81603, l='MpServer', x=-8.61, y=70.00, z=17.37], EntityArmorStand['§b在职工作人员列表 §c(未更新)'/65, l='MpServer', x=5.50, y=71.78, z=9.47], EntityOtherPlayerMP['CIT-89091e51388b'/59, l='MpServer', x=5.50, y=70.00, z=9.47], EntityOtherPlayerMP['F4D8P8_YO9'/81605, l='MpServer', x=-7.38, y=70.59, z=18.75], EntityOtherPlayerMP['§b关于我们'/53, l='MpServer', x=-0.53, y=70.00, z=19.47], EntityOtherPlayerMP['§b职位招募需求'/56, l='MpServer', x=-6.50, y=70.00, z=9.50], EntityOtherPlayerMP['amh'/81592, l='MpServer', x=-0.28, y=70.00, z=12.19], EntityOtherPlayerMP['Conleee'/81594, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['XianYinShiNiDie'/81611, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['§b玩家协议签署'/62, l='MpServer', x=-0.53, y=70.00, z=10.44], EntityOtherPlayerMP['XIAOMUshiSB'/81600, l='MpServer', x=-1.25, y=70.00, z=11.66], EntityOtherPlayerMP['巨山超力霸'/81602, l='MpServer', x=-0.69, y=70.00, z=11.63], EntityOtherPlayerMP['5der5'/74321, l='MpServer', x=-5.69, y=70.00, z=15.78], EntityOtherPlayerMP['NoMeroy'/81604, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['5der5'/74321, l='MpServer', x=-5.69, y=70.00, z=15.78], EntityOtherPlayerMP['F4D8P8_YO9'/81605, l='MpServer', x=-7.38, y=70.59, z=18.75], EntityOtherPlayerMP['JxYYG'/81606, l='MpServer', x=0.41, y=70.00, z=11.69], EntityOtherPlayerMP['ChinaBai'/81607, l='MpServer', x=-0.56, y=70.00, z=15.09], EntityOtherPlayerMP['WZQXB'/81619, l='MpServer', x=-0.85, y=70.00, z=13.80], EntityOtherPlayerMP['knml'/81608, l='MpServer', x=-0.50, y=70.00, z=12.00], EntityOtherPlayerMP['ItsFoxey'/81618, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['Sa_wan'/81609, l='MpServer', x=-0.34, y=70.00, z=10.22], EntityOtherPlayerMP['hyt20090212'/81610, l='MpServer', x=-0.56, y=70.00, z=12.94], EntityOtherPlayerMP['SFoneis'/81620, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['XianYinShiNiDie'/81611, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['Tirch'/81612, l='MpServer', x=0.28, y=69.47, z=8.19], EntityOtherPlayerMP['xanderlane'/81613, l='MpServer', x=0.75, y=70.00, z=11.94], EntityOtherPlayerMP['ChinaBai'/81614, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['hegqhakjh'/81615, l='MpServer', x=-0.38, y=70.00, z=11.88], EntityOtherPlayerMP['189659709'/81616, l='MpServer', x=-0.25, y=70.00, z=10.66], EntityOtherPlayerMP['SmallStars_CN'/81617, l='MpServer', x=-1.34, y=70.00, z=12.00], EntityOtherPlayerMP['ItsFoxey'/81618, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['WZQXB'/81619, l='MpServer', x=-0.85, y=70.00, z=13.80], EntityOtherPlayerMP['SFoneis'/81620, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityArmorStand['§e§l右键点击'/46, l='MpServer', x=-0.53, y=72.19, z=10.47], EntityArmorStand['§e§l右键点击'/47, l='MpServer', x=5.50, y=72.19, z=9.47], EntityArmorStand['§e§l右键点击'/48, l='MpServer', x=-6.50, y=72.19, z=9.50], EntityArmorStand['§e§l右键点击'/49, l='MpServer', x=-0.53, y=72.19, z=19.47], EntityOtherPlayerMP['§b关于我们'/53, l='MpServer', x=-0.53, y=70.00, z=19.47], EntityOtherPlayerMP['§b职位招募需求'/56, l='MpServer', x=-6.50, y=70.00, z=9.50], EntityOtherPlayerMP['CIT-89091e51388b'/59, l='MpServer', x=5.50, y=70.00, z=9.47], EntityOtherPlayerMP['§b玩家协议签署'/62, l='MpServer', x=-0.53, y=70.00, z=10.44]]
+	Retry entities: 0 total; []
+	Server brand: Waterfall <- AirSpigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:426)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_311, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 979396944 bytes (934 MB) / 1903165440 bytes (1815 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                 | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz

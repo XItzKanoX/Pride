@@ -1,0 +1,138 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 8/16/22 8:47 PM
+Description: Updating screen events
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/injection/backend/IChatComponentImpl
+	at net.ccbluex.liquidbounce.injection.backend.ExtractedFunctionsImpl.jsonToComponent(ExtractedFunctionsImpl.kt:127)
+	at net.ccbluex.liquidbounce.utils.ClientUtils.displayChatMessage(ClientUtils.java:58)
+	at net.ccbluex.liquidbounce.features.command.Command.chat(Command.kt:33)
+	at net.ccbluex.liquidbounce.features.command.commands.ToggleCommand.execute(ToggleCommand.kt:37)
+	at net.ccbluex.liquidbounce.features.command.CommandManager.executeCommands(CommandManager.kt:76)
+	at net.minecraft.client.gui.GuiScreen.handler$zbe000$messageSend(GuiScreen.java:866)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java:411)
+	at net.minecraft.client.gui.GuiChat.keyTyped(SourceFile:81)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:558)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:512)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1758)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.injection.backend.IChatComponentImpl
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 27 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.injection.backend.ExtractedFunctionsImpl.jsonToComponent(ExtractedFunctionsImpl.kt:127)
+	at net.ccbluex.liquidbounce.utils.ClientUtils.displayChatMessage(ClientUtils.java:58)
+	at net.ccbluex.liquidbounce.features.command.Command.chat(Command.kt:33)
+	at net.ccbluex.liquidbounce.features.command.commands.ToggleCommand.execute(ToggleCommand.kt:37)
+	at net.ccbluex.liquidbounce.features.command.CommandManager.executeCommands(CommandManager.kt:76)
+	at net.minecraft.client.gui.GuiScreen.handler$zbe000$messageSend(GuiScreen.java:866)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java)
+	at net.minecraft.client.gui.GuiScreen.sendChatMessage(GuiScreen.java:411)
+	at net.minecraft.client.gui.GuiChat.keyTyped(SourceFile:81)
+	at net.minecraft.client.gui.GuiScreen.handleKeyboardInput(GuiScreen.java:558)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:512)
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.GuiChat
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player906'/412, l='MpServer', x=-395.89, y=57.00, z=488.23]]
+	Chunk stats: MultiplayerChunkCache: 165, 165
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-144,64,256), Chunk: (at 0,4,0 in -9,16; contains blocks -144,0,256 to -129,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 681615 game time, 681615 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 49 total; [EntityCreeper['爬行者'/6144, l='MpServer', x=-418.59, y=37.00, z=480.79], EntityHorse['马'/6145, l='MpServer', x=-422.96, y=68.00, z=416.99], EntityBat['蝙蝠'/6149, l='MpServer', x=-414.66, y=19.00, z=540.65], EntityCreeper['爬行者'/6150, l='MpServer', x=-421.50, y=18.00, z=544.50], EntityPlayerSP['Player906'/412, l='MpServer', x=-395.89, y=57.00, z=488.23], EntityBat['蝙蝠'/5133, l='MpServer', x=-415.25, y=21.10, z=539.66], EntityBat['蝙蝠'/6164, l='MpServer', x=-434.68, y=21.61, z=543.54], EntitySquid['鱿鱼'/6165, l='MpServer', x=-440.16, y=62.23, z=441.75], EntitySquid['鱿鱼'/6166, l='MpServer', x=-437.88, y=59.25, z=444.60], EntitySheep['羊'/6167, l='MpServer', x=-434.50, y=101.00, z=556.50], EntitySheep['羊'/6168, l='MpServer', x=-437.50, y=100.00, z=557.50], EntitySheep['羊'/6169, l='MpServer', x=-433.79, y=99.00, z=555.50], EntitySheep['羊'/2330, l='MpServer', x=-387.51, y=70.00, z=458.28], EntitySheep['羊'/6170, l='MpServer', x=-439.50, y=101.00, z=563.19], EntityHorse['马'/2331, l='MpServer', x=-386.09, y=71.00, z=455.95], EntityZombie['僵尸'/6707, l='MpServer', x=-439.50, y=26.00, z=564.50], EntitySheep['羊'/2368, l='MpServer', x=-381.80, y=67.00, z=420.30], EntityHorse['马'/2370, l='MpServer', x=-382.78, y=67.00, z=416.18], EntityHorse['马'/2120, l='MpServer', x=-337.00, y=72.00, z=482.15], EntitySkeleton['骷髅'/6482, l='MpServer', x=-421.50, y=35.00, z=490.50], EntityBat['蝙蝠'/5723, l='MpServer', x=-378.75, y=22.10, z=558.68], EntitySpider['蜘蛛'/5724, l='MpServer', x=-374.50, y=63.00, z=565.50], EntityHorse['马'/5737, l='MpServer', x=-403.63, y=68.00, z=567.64], EntityHorse['马'/5739, l='MpServer', x=-403.30, y=67.00, z=567.47], EntityHorse['马'/2168, l='MpServer', x=-341.21, y=72.00, z=480.14], EntitySquid['鱿鱼'/6009, l='MpServer', x=-399.47, y=58.23, z=509.56], EntitySquid['鱿鱼'/6013, l='MpServer', x=-339.32, y=60.40, z=533.97], EntityHorse['马'/2194, l='MpServer', x=-378.09, y=75.00, z=467.03], EntityEnderman['末影人'/6295, l='MpServer', x=-456.65, y=64.00, z=483.33], EntitySquid['鱿鱼'/6296, l='MpServer', x=-456.20, y=61.54, z=437.60], EntityItem['item.item.rottenFlesh'/5293, l='MpServer', x=-386.93, y=71.00, z=546.18], EntitySquid['鱿鱼'/5806, l='MpServer', x=-342.40, y=61.65, z=503.70], EntitySquid['鱿鱼'/5810, l='MpServer', x=-338.31, y=57.05, z=517.29], EntityZombie['僵尸'/6332, l='MpServer', x=-326.50, y=31.00, z=418.50], EntityHorse['马'/2240, l='MpServer', x=-370.88, y=74.00, z=458.01], EntitySheep['羊'/2241, l='MpServer', x=-369.45, y=74.00, z=461.54], EntityHorse['马'/2242, l='MpServer', x=-366.99, y=73.00, z=446.09], EntityHorse['马'/2261, l='MpServer', x=-386.84, y=71.00, z=451.82], EntityHorse['马'/2263, l='MpServer', x=-382.88, y=71.00, z=476.88], EntityHorse['马'/2264, l='MpServer', x=-385.03, y=71.00, z=460.14], EntityItem['item.item.arrow'/5336, l='MpServer', x=-378.06, y=70.00, z=544.77], EntityItem['item.item.bone'/5337, l='MpServer', x=-378.38, y=70.00, z=545.19], EntitySkeleton['骷髅'/6371, l='MpServer', x=-350.50, y=44.00, z=435.50], EntityCreeper['爬行者'/6627, l='MpServer', x=-475.50, y=55.00, z=412.50], EntityCreeper['爬行者'/6628, l='MpServer', x=-354.50, y=24.00, z=422.50], EntitySkeleton['骷髅'/6629, l='MpServer', x=-353.50, y=24.00, z=430.50], EntityZombie['僵尸'/6374, l='MpServer', x=-353.50, y=44.00, z=433.50], EntityZombie['僵尸'/6375, l='MpServer', x=-357.23, y=44.00, z=429.62], EntityHorse['马'/2539, l='MpServer', x=-326.59, y=65.00, z=408.68]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_311, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 776855944 bytes (740 MB) / 1488977920 bytes (1420 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                                 | Signature |
+	|:--------- |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz

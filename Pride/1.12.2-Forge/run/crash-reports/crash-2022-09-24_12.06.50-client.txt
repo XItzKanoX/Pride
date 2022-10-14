@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 9/24/22 12:06 PM
+Description: Unexpected error
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/utils/CPSCounter
+	at net.minecraft.client.Minecraft.handler$zze000$rightClickMouse(Minecraft.java:3504)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1542)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2253)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1807)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.utils.CPSCounter
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 20 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.Minecraft.handler$zze000$rightClickMouse(Minecraft.java:3504)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1542)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2253)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 8 total; [EntityPlayerSP['Player0'/4601437, l='MpServer', x=-683.31, y=10.50, z=247.08], EntityOtherPlayerMP['yetan'/4556875, l='MpServer', x=-679.00, y=10.00, z=245.99], EntityOtherPlayerMP['§6§l点我打开选择区服'/330330, l='MpServer', x=-677.54, y=8.00, z=238.54], EntityOtherPlayerMP['-戒灵领域'/101, l='MpServer', x=-680.40, y=8.00, z=238.58], EntityOtherPlayerMP['Angel_QingNing'/4605367, l='MpServer', x=-680.66, y=10.00, z=245.44], EntityOtherPlayerMP['Yiur'/4606797, l='MpServer', x=-680.00, y=10.00, z=245.29], EntityOtherPlayerMP['Austim_'/4607153, l='MpServer', x=-679.55, y=10.00, z=245.60], EntityOtherPlayerMP['BaidurenXX'/4607509, l='MpServer', x=-679.55, y=10.00, z=245.60]]
+	Chunk stats: MultiplayerChunkCache: 441, 441
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-680,10,245), Chunk: (at 8,0,5 in -43,15; contains blocks -688,0,240 to -673,255,255), Region: (-2,0; contains chunks -64,0 to -33,31, blocks -1024,0,0 to -513,255,511)
+	Level time: 44389 game time, 400023599 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 44 total; [EntityOtherPlayerMP['yetan'/4556875, l='MpServer', x=-679.00, y=10.00, z=245.99], EntityPlayerSP['Player0'/4601437, l='MpServer', x=-683.31, y=10.50, z=247.08], EntityOtherPlayerMP['yetan'/4556875, l='MpServer', x=-679.00, y=10.00, z=245.99], EntityOtherPlayerMP['gan_tu'/4454961, l='MpServer', x=-678.88, y=10.00, z=247.50], EntityOtherPlayerMP['Austim_'/4600369, l='MpServer', x=-679.99, y=10.00, z=245.75], EntityOtherPlayerMP['passerby'/4601081, l='MpServer', x=-680.99, y=9.50, z=243.07], EntityOtherPlayerMP['§6§l点我打开选择区服'/330330, l='MpServer', x=-677.54, y=8.00, z=238.54], EntityOtherPlayerMP['-戒灵领域'/101, l='MpServer', x=-680.40, y=8.00, z=238.58], EntityOtherPlayerMP['BaidurenXX'/4607509, l='MpServer', x=-679.55, y=10.00, z=245.60], EntityOtherPlayerMP['§6§l点我打开选择区服'/330330, l='MpServer', x=-677.54, y=8.00, z=238.54], EntityOtherPlayerMP['-戒灵领域'/101, l='MpServer', x=-680.40, y=8.00, z=238.58], EntityArmorStand['§b§l全服在线人数:§a§l70'/329959, l='MpServer', x=-679.53, y=8.68, z=238.50], EntityArmorStand['§b§l传奇一区-雷霆在线人数:§b§l11'/329965, l='MpServer', x=-684.38, y=9.48, z=237.50], EntityArmorStand['§a§l传奇公益区在线人数:§b§l6'/329964, l='MpServer', x=-684.38, y=9.98, z=237.50], EntityArmorStand['§c§l传奇二区-烈焰在线人数:§b§l7'/329967, l='MpServer', x=-684.56, y=8.48, z=237.41], EntityArmorStand['§d§l吞噬星空在线人数:§b§l0'/329966, l='MpServer', x=-684.47, y=8.98, z=237.50], EntityArmorStand['§c§l独立股东区-麒麟在线人数:§b§l5'/329961, l='MpServer', x=-684.38, y=11.48, z=237.50], EntityArmorStand['§b§l贪玩蓝月-戒灵领域在线人数:§b§l14'/329960, l='MpServer', x=-684.38, y=11.98, z=237.50], EntityArmorStand['§6§l传奇三区-光芒在线人数:§b§l15'/329963, l='MpServer', x=-684.38, y=10.48, z=237.50], EntityArmorStand['§e§l传奇四区-飞鸿在线人数:§b§l7'/329962, l='MpServer', x=-684.38, y=10.98, z=237.50], EntityArmorStand['§c§l强制要求下载群内客户端，否则功能全无效'/329973, l='MpServer', x=-680.35, y=8.68, z=239.51], EntityArmorStand['§c§l本图建筑师：KeepFun'/329972, l='MpServer', x=-677.20, y=10.68, z=245.08], EntityArmorStand['§a§l右键指南针打开传送选择大区'/329969, l='MpServer', x=-679.36, y=11.68, z=242.36], EntityOtherPlayerMP['sad_bee'/4602163, l='MpServer', x=-679.66, y=10.00, z=245.54], EntityArmorStand['§d§l今日推荐'/329968, l='MpServer', x=-678.03, y=8.68, z=239.75], EntityOtherPlayerMP['sad_bee'/4602519, l='MpServer', x=-679.66, y=10.00, z=245.40], EntityArmorStand['§d§l玩家yyxzz辱骂腐竹检讨书'/329971, l='MpServer', x=-677.64, y=14.10, z=235.64], EntityOtherPlayerMP['oldturtle'/4602875, l='MpServer', x=-679.89, y=10.00, z=244.85], EntityArmorStand['§6§l玩家yyxzz辱骂腐竹检讨书'/329970, l='MpServer', x=-677.60, y=9.68, z=235.05], EntityOtherPlayerMP['MC_yhc'/4603231, l='MpServer', x=-676.47, y=8.00, z=242.70], EntityOtherPlayerMP['Austim_'/4607153, l='MpServer', x=-679.55, y=10.00, z=245.60], EntityOtherPlayerMP['BaidurenXX'/4603587, l='MpServer', x=-682.58, y=9.00, z=244.75], EntityOtherPlayerMP['bei_li'/4603943, l='MpServer', x=-680.37, y=9.00, z=242.52], EntityOtherPlayerMP['Yz_Qt'/4604299, l='MpServer', x=-679.42, y=8.00, z=240.19], EntityOtherPlayerMP['zaza'/4604655, l='MpServer', x=-679.69, y=10.00, z=245.03], EntityOtherPlayerMP['passerby'/4605011, l='MpServer', x=-679.71, y=10.00, z=245.04], EntityOtherPlayerMP['Angel_QingNing'/4605367, l='MpServer', x=-680.66, y=10.00, z=245.44], EntityOtherPlayerMP['Yz_Qt'/4606084, l='MpServer', x=-679.58, y=8.00, z=239.61], EntityOtherPlayerMP['MC_yhc'/4606441, l='MpServer', x=-680.27, y=9.00, z=242.29], EntityOtherPlayerMP['Yiur'/4606797, l='MpServer', x=-680.00, y=10.00, z=245.29], EntityOtherPlayerMP['Austim_'/4607153, l='MpServer', x=-679.55, y=10.00, z=245.60], EntityOtherPlayerMP['BaidurenXX'/4607509, l='MpServer', x=-679.55, y=10.00, z=245.60], EntityOtherPlayerMP['Yiur'/4606797, l='MpServer', x=-680.00, y=10.00, z=245.29], EntityOtherPlayerMP['Angel_QingNing'/4605367, l='MpServer', x=-680.66, y=10.00, z=245.44]]
+	Retry entities: 0 total; []
+	Server brand: Paper (Velocity)
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:426)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_342, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 1319350912 bytes (1258 MB) / 2357723136 bytes (2248 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                 | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
