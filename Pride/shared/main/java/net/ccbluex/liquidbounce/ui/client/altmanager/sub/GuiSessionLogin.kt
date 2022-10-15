@@ -14,7 +14,7 @@ import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.login.LoginUtils
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
-import net.mcleaks.MCLeaks
+import net.vitox.mcleaks.MCLeaks
 import org.lwjgl.input.Keyboard
 import kotlin.concurrent.thread
 

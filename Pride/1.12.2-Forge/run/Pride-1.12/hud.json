@@ -31,110 +31,13 @@
     }
   },
   {
-    "Type": "Armor",
-    "X": -8.0,
-    "Y": 57.0,
-    "Scale": 1.0,
-    "HorizontalFacing": "Middle",
-    "VerticalFacing": "Down",
-    "Alignment": "Horizontal"
-  },
-  {
-    "Type": "Effects",
-    "X": 2.0,
-    "Y": 10.0,
-    "Scale": 1.0,
-    "HorizontalFacing": "Right",
-    "VerticalFacing": "Down",
-    "Font": {
-      "fontName": "Roboto Medium",
-      "fontSize": 35
-    },
-    "Shadow": true
-  },
-  {
-    "Type": "GameInfo2",
-    "X": 5.0,
-    "Y": 87.0,
-    "Scale": 1.0,
-    "HorizontalFacing": "Left",
-    "VerticalFacing": "Up",
-    "RectA": 255,
-    "TextRed": 255,
-    "TextGreen": 244,
-    "TextBlue": 255,
-    "Shadow": true,
-    "Font": {
-      "fontName": "Bold",
-      "fontSize": 35
-    }
-  },
-  {
-    "Type": "Scoreboard",
-    "X": 4.0,
-    "Y": 69.0,
-    "Scale": 1.0,
-    "HorizontalFacing": "Right",
-    "VerticalFacing": "Middle",
-    "Text-R": 255,
-    "Text-G": 255,
-    "Text-B": 255,
-    "Background-R": 0,
-    "Background-G": 0,
-    "Background-B": 0,
-    "Background-Alpha": 95,
-    "Rect": false,
-    "NoPoints": true,
-    "Rect-Color": "Custom",
-    "Rect-R": 0,
-    "Rect-G": 111,
-    "Rect-B": 255,
-    "Rect-Alpha": 255,
-    "Shadow": false,
-    "Font": {
-      "fontName": "Minecraft Font",
-      "fontSize": -1
-    }
-  },
-  {
-    "Type": "Target",
-    "X": 156.0,
-    "Y": 176.0,
-    "Scale": 1.0,
-    "HorizontalFacing": "Left",
-    "VerticalFacing": "Up",
-    "FadeSpeed": 2.0,
-    "Red": 255,
-    "Green": 255,
-    "Blue": 255,
-    "R2": 0,
-    "G2": 111,
-    "B2": 255,
-    "GidentSpeed": 100,
-    "Distance": 0,
-    "Amount": 25
-  },
-  {
-    "Type": "Notifications",
-    "X": 19.0,
-    "Y": 25.0,
-    "Scale": 1.0,
-    "HorizontalFacing": "Right",
-    "VerticalFacing": "Down",
-    "BackGroundAlpha": 170,
-    "Font": {
-      "fontName": "Roboto Medium",
-      "fontSize": 35
-    }
-  },
-  {
     "Type": "Arraylist",
-    "X": -1.0,
+    "X": 1.0,
     "Y": 2.0,
     "Scale": 1.0,
     "HorizontalFacing": "Right",
     "VerticalFacing": "Up",
-    "Animation-Speed": 0.1280734,
+    "Animation-Speed": 0.25,
     "BRainbowSpeed": 90,
     "BRainbow-Saturation": 1.0,
     "BRainbow-Brightness": 1.0,
@@ -177,6 +80,68 @@
     "Font": {
       "fontName": "Roboto Medium",
       "fontSize": 40
+    }
+  },
+  {
+    "Type": "Scoreboard",
+    "X": 5.0,
+    "Y": 0.0,
+    "Scale": 1.0,
+    "HorizontalFacing": "Right",
+    "VerticalFacing": "Middle",
+    "Text-R": 255,
+    "Text-G": 255,
+    "Text-B": 255,
+    "Background-R": 0,
+    "Background-G": 0,
+    "Background-B": 0,
+    "Background-Alpha": 95,
+    "Rect": false,
+    "NoPoints": true,
+    "Rect-Color": "Custom",
+    "Rect-R": 0,
+    "Rect-G": 111,
+    "Rect-B": 255,
+    "Rect-Alpha": 255,
+    "Shadow": false,
+    "Font": {
+      "fontName": "Minecraft Font",
+      "fontSize": -1
+    }
+  },
+  {
+    "Type": "Armor",
+    "X": -8.0,
+    "Y": 57.0,
+    "Scale": 1.0,
+    "HorizontalFacing": "Middle",
+    "VerticalFacing": "Down",
+    "Alignment": "Horizontal"
+  },
+  {
+    "Type": "Effects",
+    "X": 2.0,
+    "Y": 10.0,
+    "Scale": 1.0,
+    "HorizontalFacing": "Right",
+    "VerticalFacing": "Down",
+    "Font": {
+      "fontName": "Roboto Medium",
+      "fontSize": 35
+    },
+    "Shadow": true
+  },
+  {
+    "Type": "Notifications",
+    "X": 0.0,
+    "Y": 0.0,
+    "Scale": 1.0,
+    "HorizontalFacing": "Right",
+    "VerticalFacing": "Down",
+    "BackGroundAlpha": 170,
+    "Font": {
+      "fontName": "Roboto Medium",
+      "fontSize": 35
     }
   }
 ]

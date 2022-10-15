@@ -1,4 +1,4 @@
-package net.mcleaks;
+package net.vitox.mcleaks;
 
 public class RedeemResponse {
 

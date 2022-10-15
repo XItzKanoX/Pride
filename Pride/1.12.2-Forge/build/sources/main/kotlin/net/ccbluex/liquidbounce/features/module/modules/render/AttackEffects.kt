@@ -20,9 +20,11 @@ import net.minecraft.util.EnumParticleTypes
 import net.minecraft.init.Blocks
 import net.ccbluex.liquidbounce.value.ListValue
 import net.minecraft.block.Block
+import net.minecraft.client.audio.PositionedSoundRecord
 import net.minecraft.entity.effect.EntityLightningBolt
 import net.minecraft.entity.projectile.EntityEgg
 import net.minecraft.network.play.server.SPacketSpawnGlobalEntity
+import net.minecraft.util.ResourceLocation
 
 @ModuleInfo(name = "AttackEffects", description = "Rise.", category = ModuleCategory.RENDER)
 class AttackEffects : Module() {
@@ -63,9 +65,9 @@ class AttackEffects : Module() {
                                 )
                                 i++
                             }
-
-
+                            if (sound.get()) mc.soundHandler.playSound("minecraft:block.anvil.break", 1f)
                         }
+
                         "criticals" -> {
                             var i = 0
                             while (i < amount.value) {

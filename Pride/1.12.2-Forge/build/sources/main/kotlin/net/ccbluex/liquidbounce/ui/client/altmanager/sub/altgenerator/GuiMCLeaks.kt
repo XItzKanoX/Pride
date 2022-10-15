@@ -14,9 +14,9 @@ import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.misc.MiscUtils
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
-import net.mcleaks.MCLeaks
-import net.mcleaks.RedeemResponse
-import net.mcleaks.Session
+import net.vitox.mcleaks.MCLeaks
+import net.vitox.mcleaks.RedeemResponse
+import net.vitox.mcleaks.Session
 import org.lwjgl.input.Keyboard
 import java.io.IOException
 

@@ -4,17 +4,17 @@
   "targets": {
     "TargetPlayer": true,
     "TargetMobs": true,
-    "TargetAnimals": true,
+    "TargetAnimals": false,
     "TargetInvisible": false,
     "TargetDead": false
   },
   "features": {
-    "AntiForge": false,
+    "AntiForge": true,
     "AntiForgeFML": true,
     "AntiForgeProxy": true,
     "AntiForgePayloads": true,
-    "BungeeSpoof": true,
-    "AutoReconnectDelay": 60000
+    "BungeeSpoof": false,
+    "AutoReconnectDelay": 5000
   },
   "thealtening": {
     "API-Key": ""
@@ -86,7 +86,7 @@
     "Retry": false
   },
   "AttackEffects": {
-    "Amount": 20,
+    "Amount": 5,
     "Sound": true,
     "LightingSound": true,
     "Mode": "Blood"
@@ -260,15 +260,15 @@
     "Range-Reset": true
   },
   "ClickGUI": {
-    "Style": "LiquidBounce",
+    "Style": "Null",
     "Scale": 1.0,
     "MaxElements": 15,
     "R": 0,
     "G": 160,
     "B": 255,
     "Rainbow": false,
-    "Background": "None",
-    "Animation": "ZoomBounce"
+    "Background": "Default",
+    "Animation": "Azura"
   },
   "Clip": {
     "Mode": "Teleport",
@@ -295,7 +295,7 @@
     "Increment": 1.0
   },
   "ESP": {
-    "Mode": "Outline",
+    "Mode": "Box",
     "Outline-Width": 3.0,
     "WireFrame-Width": 2.0,
     "ShaderOutline-Radius": 1.35,
@@ -451,21 +451,21 @@
     "Mode": "Quit"
   },
   "KillAura": {
-    "MaxCPS": 10,
-    "MinCPS": 9,
+    "MaxCPS": 8,
+    "MinCPS": 5,
     "HurtTime": 10,
-    "Cooldown": 0.0,
-    "Range": 3.04,
-    "BlockRange": 0.0,
-    "ThroughWallsRange": 0.0,
+    "Cooldown": 1.0,
+    "Range": 3.7,
+    "BlockRange": 3.0,
+    "ThroughWallsRange": 3.0,
     "RangeSprintReducement": 0.0,
     "Priority": "Distance",
-    "TargetMode": "Single",
+    "TargetMode": "Switch",
     "Swing": true,
     "KeepSprint": true,
     "DelayedBlock": true,
-    "AutoBlock-AfterAttack": true,
-    "BlockMode": "Normal",
+    "AutoBlock-AfterAttack": false,
+    "BlockMode": "Packet",
     "BlockRate": 100,
     "RayCast": true,
     "RayCastIgnored": false,
@@ -475,29 +475,29 @@
     "MinTurnSpeed": 180.0,
     "Lighting": false,
     "Lighting-Mode": "Dead",
-    "Lighting-Sound": false,
+    "Lighting-Sound": true,
     "SilentRotation": true,
-    "Strafe": "Silent",
+    "Strafe": "Off",
     "RandomCenter": true,
     "Outborder": false,
-    "FOV": 86.02,
+    "FOV": 180.0,
     "AlwaysHitable": true,
-    "Predict": false,
+    "Predict": true,
     "MaxPredictSize": 1.0,
     "MinPredictSize": 1.0,
     "FailRate": 0.0,
-    "FakeSwing": false,
+    "FakeSwing": true,
     "NoInvAttack": false,
     "NoInvDelay": 200,
     "LimitedMultiTargets": 0,
-    "Mark": "None",
-    "FakeSharp": false,
+    "Mark": "FDP",
+    "FakeSharp": true,
     "Circle": true,
     "CircleRed": 255,
     "CircleGreen": 255,
     "CircleBlue": 255,
     "CircleAlpha": 255,
-    "CircleAccuracy": 59
+    "CircleAccuracy": 15
   },
   "LiquidChat": {
     "JWT": false
@@ -538,7 +538,7 @@
     "FOV": 1.0
   },
   "NoFall": {
-    "Mode": "Vulcan",
+    "Mode": "SpoofGround",
     "MinMLGHeight": 5.0
   },
   "NoFucker": {
@@ -553,7 +553,7 @@
     "NoZero": false
   },
   "NoSlow": {
-    "PacketMode": "Vulcan",
+    "PacketMode": "AntiCheat",
     "BlockForwardMultiplier": 1.0,
     "BlockStrafeMultiplier": 1.0,
     "ConsumeForwardMultiplier": 1.0,
@@ -563,7 +563,7 @@
     "CustomOnGround": false,
     "CustomDelay": 60,
     "Renderer": true,
-    "Soulsand": false
+    "Soulsand": true
   },
   "NoSlowBreak": {
     "Air": true,
@@ -702,7 +702,7 @@
     "Custom": false
   },
   "Speed": {
-    "Mode": "VulcanHop",
+    "Mode": "NCPBHop",
     "CustomSpeed": 1.6,
     "CustomY": 0.0,
     "CustomTimer": 1.0,
@@ -830,8 +830,8 @@
     "Horizontal": 0.0,
     "Vertical": 0.0,
     "VelocityTick": 1,
-    "Mode": "Vulcan",
-    "OnlyGround": true,
+    "Mode": "Simple",
+    "OnlyGround": false,
     "OnlyCombat": false,
     "ReverseStrength": 1.0,
     "SmoothReverseStrength": 0.05,

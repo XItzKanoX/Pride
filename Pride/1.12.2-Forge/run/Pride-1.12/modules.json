@@ -55,7 +55,7 @@
     "Array": true
   },
   "AttackEffects": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -185,7 +185,7 @@
     "Array": true
   },
   "Chams": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -240,7 +240,7 @@
     "Array": true
   },
   "ESP": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -281,7 +281,7 @@
   },
   "Fly": {
     "State": false,
-    "KeyBind": 34,
+    "KeyBind": 33,
     "Array": true
   },
   "ForceUnicodeChat": {
@@ -355,7 +355,7 @@
     "Array": true
   },
   "InvMove": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -400,7 +400,7 @@
     "Array": true
   },
   "LiquidChat": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": false
   },
@@ -465,7 +465,7 @@
     "Array": true
   },
   "NoFall": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -505,7 +505,7 @@
     "Array": true
   },
   "NoSlow": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -595,7 +595,7 @@
     "Array": true
   },
   "Rotations": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -636,11 +636,11 @@
   },
   "Speed": {
     "State": false,
-    "KeyBind": 47,
+    "KeyBind": 0,
     "Array": true
   },
   "Sprint": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },

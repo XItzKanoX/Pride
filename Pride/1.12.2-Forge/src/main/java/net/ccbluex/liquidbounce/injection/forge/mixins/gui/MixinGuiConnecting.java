@@ -10,7 +10,7 @@ import net.ccbluex.liquidbounce.injection.backend.ServerDataImplKt;
 import net.ccbluex.liquidbounce.ui.font.Fonts;
 import net.ccbluex.liquidbounce.utils.ServerUtils;
 import net.ccbluex.liquidbounce.utils.render.RenderUtils;
-import net.mcleaks.MCLeaks;
+import net.vitox.mcleaks.MCLeaks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiDisconnected;
 import net.minecraft.client.gui.GuiScreen;

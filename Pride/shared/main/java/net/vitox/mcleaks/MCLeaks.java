@@ -1,4 +1,4 @@
-package net.mcleaks;
+package net.vitox.mcleaks;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;

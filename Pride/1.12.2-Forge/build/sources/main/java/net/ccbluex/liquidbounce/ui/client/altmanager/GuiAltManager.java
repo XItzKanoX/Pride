@@ -25,7 +25,7 @@ import net.ccbluex.liquidbounce.utils.login.MinecraftAccount;
 import net.ccbluex.liquidbounce.utils.login.UserUtils;
 import net.ccbluex.liquidbounce.utils.misc.HttpUtils;
 import net.ccbluex.liquidbounce.utils.misc.MiscUtils;
-import net.mcleaks.MCLeaks;
+import net.vitox.mcleaks.MCLeaks;
 import org.lwjgl.input.Keyboard;
 
 import javax.swing.*;

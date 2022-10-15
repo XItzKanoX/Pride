@@ -1,9 +1,9 @@
 {
   "Combat": {
-    "open": true,
+    "open": false,
     "visible": true,
-    "posX": 429,
-    "posY": 3,
+    "posX": 100,
+    "posY": 5,
     "Aimbot": {
       "Settings": false
     },
@@ -23,7 +23,7 @@
       "Settings": false
     },
     "AutoL": {
-      "Settings": true
+      "Settings": false
     },
     "AutoLeave": {
       "Settings": false
@@ -53,7 +53,7 @@
       "Settings": false
     },
     "KillAura": {
-      "Settings": true
+      "Settings": false
     },
     "NoFriends": {
       "Settings": false
@@ -77,8 +77,8 @@
   "Player": {
     "open": false,
     "visible": true,
-    "posX": 0,
-    "posY": 38,
+    "posX": 100,
+    "posY": 25,
     "AntiAFK": {
       "Settings": false
     },
@@ -107,7 +107,7 @@
       "Settings": false
     },
     "NoFall": {
-      "Settings": true
+      "Settings": false
     },
     "Reach": {
       "Settings": false
@@ -120,10 +120,10 @@
     }
   },
   "Movement": {
-    "open": true,
+    "open": false,
     "visible": true,
-    "posX": 756,
-    "posY": 208,
+    "posX": 100,
+    "posY": 45,
     "AirJump": {
       "Settings": false
     },
@@ -149,7 +149,7 @@
       "Settings": false
     },
     "Fly": {
-      "Settings": true
+      "Settings": false
     },
     "Freeze": {
       "Settings": false
@@ -203,7 +203,7 @@
       "Settings": false
     },
     "Speed": {
-      "Settings": true
+      "Settings": false
     },
     "Sprint": {
       "Settings": false
@@ -225,15 +225,15 @@
     }
   },
   "Render": {
-    "open": true,
+    "open": false,
     "visible": true,
-    "posX": 208,
-    "posY": 18,
+    "posX": 100,
+    "posY": 65,
     "AntiBlind": {
       "Settings": false
     },
     "AttackEffects": {
-      "Settings": true
+      "Settings": false
     },
     "BlockESP": {
       "Settings": false
@@ -245,7 +245,7 @@
       "Settings": false
     },
     "CameraClip": {
-      "Settings": true
+      "Settings": false
     },
     "Cape": {
       "Settings": false
@@ -266,7 +266,7 @@
       "Settings": false
     },
     "HUD": {
-      "Settings": true
+      "Settings": false
     },
     "ItemESP": {
       "Settings": false
@@ -296,7 +296,7 @@
       "Settings": false
     },
     "OldHitting": {
-      "Settings": true
+      "Settings": false
     },
     "Projectiles": {
       "Settings": false
@@ -327,10 +327,10 @@
     }
   },
   "World": {
-    "open": true,
+    "open": false,
     "visible": true,
-    "posX": 373,
-    "posY": 131,
+    "posX": 100,
+    "posY": 85,
     "AutoBreak": {
       "Settings": false
     },
@@ -374,8 +374,8 @@
   "Misc": {
     "open": false,
     "visible": true,
-    "posX": 578,
-    "posY": 20,
+    "posX": 100,
+    "posY": 105,
     "AntiBot": {
       "Settings": false
     },
@@ -422,8 +422,8 @@
   "Exploit": {
     "open": false,
     "visible": true,
-    "posX": 332,
-    "posY": 19,
+    "posX": 100,
+    "posY": 125,
     "AbortBreaking": {
       "Settings": false
     },
@@ -491,8 +491,8 @@
   "Fun": {
     "open": false,
     "visible": true,
-    "posX": 105,
-    "posY": 73,
+    "posX": 100,
+    "posY": 145,
     "Derp": {
       "Settings": false
     },
@@ -501,7 +501,7 @@
     }
   },
   "Targets": {
-    "open": true,
+    "open": false,
     "visible": true,
     "posX": 100,
     "posY": 185

@@ -1,20 +1,20 @@
-package net.mcleaks;
+package net.vitox.mcleaks;
 
-public class RedeemResponse {
+public class Session {
 
     private final String username;
     private final String token;
 
-    RedeemResponse(String username, String token) {
+    public Session(String username, String token) {
         this.username = username;
         this.token = token;
     }
 
     public String getUsername() {
-        return this.username;
+        return username;
     }
 
     public String getToken() {
-        return this.token;
+        return token;
     }
 }

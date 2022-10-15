@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="LiquidBounce.1.12.2-Forge" target="1.8" />
+      <module name="LiquidBounce.1.12.2-Forge.api" target="1.8" />
+      <module name="LiquidBounce.1.12.2-Forge.main" target="1.8" />
+      <module name="LiquidBounce.1.12.2-Forge.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
