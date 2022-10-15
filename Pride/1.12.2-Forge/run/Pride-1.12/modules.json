@@ -10,7 +10,7 @@
     "Array": true
   },
   "AirJump": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -125,7 +125,7 @@
     "Array": true
   },
   "AutoWalk": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -155,7 +155,7 @@
     "Array": true
   },
   "BlockWalk": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -280,7 +280,7 @@
     "Array": true
   },
   "Fly": {
-    "State": true,
+    "State": false,
     "KeyBind": 33,
     "Array": true
   },
@@ -345,7 +345,7 @@
     "Array": true
   },
   "IceSpeed": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -390,12 +390,12 @@
     "Array": true
   },
   "KillAura": {
-    "State": true,
+    "State": false,
     "KeyBind": 19,
     "Array": true
   },
   "LadderJump": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -405,7 +405,7 @@
     "Array": false
   },
   "LiquidWalk": {
-    "State": true,
+    "State": false,
     "KeyBind": 36,
     "Array": true
   },

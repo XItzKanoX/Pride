@@ -30,7 +30,7 @@ startProcessing "me/ui/IGuiButton.java" md5: 6507d5a00fce5d2d194147729a7c0764
     Compile Error! Pb(2) WrappedGuiScreen cannot be resolved to a type
 endProcessing "me/ui/IGuiButton.java"
 
-startProcessing "me/utils/Debug.java" md5: 5c48878935942ebb16e8697349bdf61b
+startProcessing "me/utils/Debug.java" md5: 0f6b18c889cee018b95b2ea6e4c196da
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.OldHitting cannot be resolved
     Compile Error! Pb(2) FloatValue cannot be resolved to a type
@@ -1658,7 +1658,7 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinTabCom
     Compile Error! Pb(50) LiquidBounce cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinTabCompleter.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/item/MixinItemRenderer.java" md5: 6412132181da24577a24152c45849013
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/item/MixinItemRenderer.java" md5: 04e990c401f95c3e3301ff2ec121f6ec
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.combat.KillAura cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.AntiBlind cannot be resolved

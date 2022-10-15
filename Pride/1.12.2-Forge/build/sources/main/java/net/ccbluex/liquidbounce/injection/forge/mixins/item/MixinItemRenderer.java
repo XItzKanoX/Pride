@@ -148,7 +148,6 @@ public abstract class MixinItemRenderer {
                             case "Pride": {
                                 Pride(enumhandside, p_187457_7_, p_187457_5_);
                                 break;
-
                             }
 
                             case "Vanilla": {

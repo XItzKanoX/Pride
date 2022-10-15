@@ -16,6 +16,7 @@ import net.ccbluex.liquidbounce.ui.client.hud.element.ElementInfo
 import net.ccbluex.liquidbounce.ui.client.hud.element.elements.InfosUtils.Recorder
 import net.ccbluex.liquidbounce.ui.client.hud.element.elements.InfosUtils.Recorder.syncEntity
 import net.ccbluex.liquidbounce.ui.font.Fonts
+import net.ccbluex.liquidbounce.utils.ClientUtils
 import net.ccbluex.liquidbounce.utils.MovementUtils
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
 import net.ccbluex.liquidbounce.value.BoolValue
@@ -42,12 +43,10 @@ class GameInfo2(x: Double = 5.0, y: Double = 87.0, scale: Float = 1F) : Element(
     var aura = LiquidBounce.moduleManager.getModule(KillAura::class.java) as KillAura?
     var target = aura!!.target
     var killCounts = 0
-    var kills = LiquidBounce.moduleManager.getModule(AutoLFix::class.java) as AutoLFix?
-    private var kill = kills!!.kill
     /**
      * Draw element
      */
-
+//    var kills = LiquidBounce.moduleManager.getModule(AutoLFix::class.java) as AutoLFix?
 
     override fun drawElement(): Border {
 
@@ -69,7 +68,7 @@ class GameInfo2(x: Double = 5.0, y: Double = 87.0, scale: Float = 1F) : Element(
             (this.GameInfoRows * 20F + 30).toInt(), Color(textredValue.get(), textgreenValue.get(), textblueValue.get(), 255).rgb)
         Fonts.bold30.drawStringWithShadow("FPS: " + Minecraft.getDebugFPS(), (5F + icon.getStringWidth("e")).toInt(),
             (this.GameInfoRows * 20F + 43).toInt(), Color(textredValue.get(), textgreenValue.get(), textblueValue.get(), 255).rgb)
-        Fonts.bold30.drawStringWithShadow("Kills:$kill"  , (5F + icon.getStringWidth("G")).toInt(),
+        Fonts.bold30.drawStringWithShadow("Kills" + killCounts , (5F + icon.getStringWidth("G")).toInt(),
             (this.GameInfoRows * 20F + 54).toInt(), Color(textredValue.get(), textgreenValue.get(), textblueValue.get(), 255).rgb)
         Fonts.bold30.drawStringWithShadow("Played Time: ${DATE_FORMAT.format(Date(System.currentTimeMillis() - Recorder.startTime - 8000L * 3600L))}" ,
             (5F + icon.getStringWidth("G")).toInt(),
@@ -85,7 +84,8 @@ class GameInfo2(x: Double = 5.0, y: Double = 87.0, scale: Float = 1F) : Element(
 
     @EventTarget
     private fun onUpdate(event: UpdateEvent) {
-        if (target!!.isDead) {
+        if (!!.isDead) {
+            ClientUtils.displayChatMessage("get kills")
             killCounts += 1
             target = null
         }

@@ -125,16 +125,16 @@
     "posX": 491,
     "posY": 62,
     "AirJump": {
-      "Settings": false
+      "Settings": true
     },
     "AirLadder": {
       "Settings": true
     },
     "AntiVoid": {
-      "Settings": true
+      "Settings": false
     },
     "AutoWalk": {
-      "Settings": false
+      "Settings": true
     },
     "BlockWalk": {
       "Settings": false
@@ -488,12 +488,6 @@
       "Settings": false
     }
   },
-  "Targets": {
-    "open": true,
-    "visible": true,
-    "posX": 100,
-    "posY": 185
-  },
   "Fun": {
     "open": true,
     "visible": true,
@@ -505,5 +499,11 @@
     "SkinDerp": {
       "Settings": false
     }
+  },
+  "Targets": {
+    "open": true,
+    "visible": true,
+    "posX": 100,
+    "posY": 185
   }
 }

@@ -112,5 +112,22 @@
       "fontName": "ComfortaaRegular60",
       "fontSize": 60
     }
+  },
+  {
+    "Type": "GameInfo2",
+    "X": 27.0,
+    "Y": 76.0,
+    "Scale": 1.0,
+    "HorizontalFacing": "Left",
+    "VerticalFacing": "Up",
+    "RectA": 255,
+    "TextRed": 255,
+    "TextGreen": 244,
+    "TextBlue": 255,
+    "Shadow": true,
+    "Font": {
+      "fontName": "Bold",
+      "fontSize": 35
+    }
   }
 ]
