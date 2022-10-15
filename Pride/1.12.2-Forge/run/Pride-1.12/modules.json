@@ -49,13 +49,18 @@
     "KeyBind": 0,
     "Array": true
   },
+  "AntiVoid": {
+    "State": false,
+    "KeyBind": 0,
+    "Array": true
+  },
   "AtAllProvider": {
     "State": false,
     "KeyBind": 0,
     "Array": true
   },
   "AttackEffects": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -169,11 +174,6 @@
     "KeyBind": 0,
     "Array": true
   },
-  "BugUp": {
-    "State": false,
-    "KeyBind": 0,
-    "Array": true
-  },
   "CameraClip": {
     "State": false,
     "KeyBind": 0,
@@ -265,7 +265,7 @@
     "Array": true
   },
   "FastPlace": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },

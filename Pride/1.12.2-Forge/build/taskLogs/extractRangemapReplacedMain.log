@@ -2,7 +2,7 @@ Unsupposrted library path: D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12
 Unsupposrted library path: D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\build\classes\kotlin\api
 Unsupposrted library path: D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
-Processing 181 files
+Processing 182 files
 startProcessing "co/uk/hexeption/utils/OutlineUtils.java" md5: 368b7316da3e0c976b96bdfed5b69819
 endProcessing "co/uk/hexeption/utils/OutlineUtils.java"
 
@@ -123,6 +123,9 @@ startProcessing "me/utils/render/VisualUtils.java" md5: 38a483bbc2cae13da3728d62
     Compile Error! Pb(2) IMinecraft cannot be resolved to a type
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
 endProcessing "me/utils/render/VisualUtils.java"
+
+startProcessing "me/utils/timer/TimeHelper.java" md5: 23524e4553d77d8b62da10e12dc4e4b2
+endProcessing "me/utils/timer/TimeHelper.java"
 
 startProcessing "net/ccbluex/liquidbounce/features/module/modules/combat/AutoArmor.java" md5: cab76d36d3b54722a681a62d9276650e
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved

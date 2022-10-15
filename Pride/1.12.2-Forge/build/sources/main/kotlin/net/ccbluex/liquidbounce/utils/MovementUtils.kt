@@ -1,10 +1,8 @@
-/*
- * LiquidBounce Hacked Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge.
- * https://github.com/CCBlueX/LiquidBounce/
- */
+
 package net.ccbluex.liquidbounce.utils
 
+import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntity
+import net.minecraft.entity.Entity
 import net.minecraft.entity.EntityLivingBase
 import java.math.BigDecimal
 import kotlin.math.cos
@@ -53,6 +51,7 @@ object MovementUtils : MinecraftInstance() {
         lastZ = mc.thePlayer!!.posZ
         bps = distance * (20 * mc.timer.timerSpeed)
     }
+
     fun getBlockSpeed(entityIn: EntityLivingBase): Double {
         return BigDecimal.valueOf(
             Math.sqrt(
@@ -62,6 +61,19 @@ object MovementUtils : MinecraftInstance() {
                 ) + Math.pow(entityIn.posZ - entityIn.prevPosZ, 2.0)
             ) * 20
         ).setScale(1, BigDecimal.ROUND_HALF_UP).toDouble()
+    }
+    fun isOnGround(height: Double): Boolean {
+        return !mc.theWorld!!.getCollidingBoundingBoxes(
+                mc.thePlayer!!,
+                mc.thePlayer!!.entityBoundingBox.offset(0.0, -height, 0.0)
+            ).isEmpty()
+    }
+
+    fun isOnGround(entity: IEntity, height: Double): Boolean {
+        return !mc.theWorld!!.getCollidingBoundingBoxes(
+                entity,
+                entity.entityBoundingBox.offset(0.0, -height, 0.0)
+            ).isEmpty()
     }
     @JvmStatic
     val direction: Double

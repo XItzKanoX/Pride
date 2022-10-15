@@ -1,56 +1,56 @@
-[21:38:10] [main/INFO]: Extra: []
-[21:38:10] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Administrator/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[21:38:10] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:38:10] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:38:10] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:38:10] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:38:10] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[21:38:10] [main/INFO]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_342, running on Windows 10:amd64:10.0, installed at C:\Users\Administrator\.jdks\corretto-1.8.0_342\jre
-[21:38:10] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[21:38:10] [main/ERROR]: Full: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[21:38:10] [main/ERROR]: Trimmed: c:/users/administrator/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[21:38:11] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[21:38:11] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
-[21:38:11] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugininecraftFormatting
-[21:38:11] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugininecraftFormatting
-[21:38:11] [main/INFO] [FML]: Found a command line coremod : net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
-[21:38:11] [main/WARN] [FML]: The coremod net.ccbluex.liquidbounce.injection.forge.MixinLoader does not have a MCVersion annotation, it may cause issues with this version of MinecraftinecraftFormatting
-[21:38:11] [main/INFO] [FML]: Ignoring missing certificate for coremod MixinLoader (net.ccbluex.liquidbounce.injection.forge.MixinLoader), as this is probably a dev workspaceinecraftFormatting
-[21:38:11] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.injection.forge.MixinLoader:<init>:18]: [LiquidBounce] Injecting with IFMLLoadingPlugin.inecraftFormatting
-[21:38:12] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8/dbe9e5db694a7c3cd644d5bb98f8a21295c75048/mixin-0.8.jar Service=LaunchWrapper Env=CLIENTinecraftFormatting
-[21:38:12] [main/INFO] [mixin]: Compatibility level set to JAVA_8inecraftFormatting
-[21:38:12] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweakerinecraftFormatting
-[21:38:12] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugininecraftFormatting
-[21:38:12] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugininecraftFormatting
-[21:38:12] [main/INFO] [GradleStart]: Injecting location in coremod net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
-[21:38:12] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
-[21:38:17] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thinginecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
-[21:38:17] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
-[21:38:17] [main/WARN] [mixin]: Reference map 'liquidbounce.mixins.refmap.json' for liquidbounce.forge.mixins.json could not be read. If this is a development environment you can ignore this messageinecraftFormatting
-[21:38:18] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}inecraftFormatting
-[21:38:20] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player218inecraftFormatting
-[21:38:25] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:inecraftFormatting
-[21:38:25] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4inecraftFormatting
-[21:38:27] [main/INFO] [FML]: -- System Details --
+[18:28:55] [main/INFO]: Extra: []
+[18:28:55] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Administrator/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:28:56] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:28:56] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:28:56] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:28:56] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:28:56] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[18:28:56] [main/INFO]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_342, running on Windows 10:amd64:10.0, installed at C:\Users\Administrator\.jdks\corretto-1.8.0_342\jre
+[18:28:56] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[18:28:56] [main/ERROR]: Full: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[18:28:56] [main/ERROR]: Trimmed: c:/users/administrator/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[18:28:56] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[18:28:56] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
+[18:28:57] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugininecraftFormatting
+[18:28:57] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugininecraftFormatting
+[18:28:57] [main/INFO] [FML]: Found a command line coremod : net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
+[18:28:57] [main/WARN] [FML]: The coremod net.ccbluex.liquidbounce.injection.forge.MixinLoader does not have a MCVersion annotation, it may cause issues with this version of MinecraftinecraftFormatting
+[18:28:57] [main/INFO] [FML]: Ignoring missing certificate for coremod MixinLoader (net.ccbluex.liquidbounce.injection.forge.MixinLoader), as this is probably a dev workspaceinecraftFormatting
+[18:28:57] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.injection.forge.MixinLoader:<init>:18]: [LiquidBounce] Injecting with IFMLLoadingPlugin.inecraftFormatting
+[18:28:57] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8/dbe9e5db694a7c3cd644d5bb98f8a21295c75048/mixin-0.8.jar Service=LaunchWrapper Env=CLIENTinecraftFormatting
+[18:28:57] [main/INFO] [mixin]: Compatibility level set to JAVA_8inecraftFormatting
+[18:28:57] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweakerinecraftFormatting
+[18:28:57] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugininecraftFormatting
+[18:28:57] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugininecraftFormatting
+[18:28:57] [main/INFO] [GradleStart]: Injecting location in coremod net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
+[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
+[18:29:02] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thinginecraftFormatting
+[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
+[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
+[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
+[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
+[18:29:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
+[18:29:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
+[18:29:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
+[18:29:03] [main/WARN] [mixin]: Reference map 'liquidbounce.mixins.refmap.json' for liquidbounce.forge.mixins.json could not be read. If this is a development environment you can ignore this messageinecraftFormatting
+[18:29:04] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}inecraftFormatting
+[18:29:06] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player234inecraftFormatting
+[18:29:11] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:inecraftFormatting
+[18:29:11] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4inecraftFormatting
+[18:29:13] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_342, Amazon.com Inc.
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
-	Memory: 771729160 bytes (735 MB) / 968359936 bytes (923 MB) up to 7618953216 bytes (7266 MB)
+	Memory: 744064832 bytes (709 MB) / 946339840 bytes (902 MB) up to 7618953216 bytes (7266 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
@@ -58,492 +58,59 @@ Details:
 MixinLoader (unknown)
   
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'inecraftFormatting
-[21:38:27] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 InitializedinecraftFormatting
-[21:38:27] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: java.lang.NullPointerExceptioninecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.Reader.<init>(Reader.java:78)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.copy(IOUtils.java:2272)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1041)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1021)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.Shader.<init>(Shader.java:31)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<init>(RainbowFontShader.kt:12)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<clinit>(RainbowFontShader.kt:12)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.handler$zca000$injectRainbow5(FontRenderer.java:989)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderStringAtPos(FontRenderer.java)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderString(FontRenderer.java:534)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:295)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:279)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.drawMemoryBar(SplashProgress.java:466)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.run(SplashProgress.java:309)inecraftFormatting
-[21:38:27] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.Thread.run(Thread.java:750)inecraftFormatting
-[21:38:27] [main/INFO] [FML]: Replaced 1036 ore ingredientsinecraftFormatting
-[21:38:27] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
-[21:38:29] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 128205600 nanosinecraftFormatting
-[21:38:30] [main/INFO] [FML]: Forge Mod Loader has identified 4 mods to loadinecraftFormatting
-[21:38:30] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".inecraftFormatting
-[21:38:30] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Defaulting to no-operation (NOP) logger implementationinecraftFormatting
-[21:38:30] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.inecraftFormatting
-[21:38:30] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).inecraftFormatting
-[21:38:30] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN Please initialize the log4j system properly.inecraftFormatting
-[21:38:30] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.inecraftFormatting
-[21:38:30] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at CLIENTinecraftFormatting
-[21:38:30] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at SERVERinecraftFormatting
-[21:38:31] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft ForgeinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Processing ObjectHolder annotationsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Found 1168 ObjectHolder annotationsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Identifying ItemStackHolder annotationsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Found 0 ItemStackHolder annotationsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Configured a dormant chunk cache size of 0inecraftFormatting
-[21:38:31] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.jsoninecraftFormatting
-[21:38:31] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Injecting itemstacksinecraftFormatting
-[21:38:31] [main/INFO] [FML]: Itemstack injection completeinecraftFormatting
-[21:38:37] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859inecraftFormatting
-[21:38:38] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...inecraftFormatting
-[21:38:38] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenALinecraftFormatting
-[21:38:38] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)inecraftFormatting
-[21:38:39] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.inecraftFormatting
-[21:38:39] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine startedinecraftFormatting
-[21:38:50] [main/INFO] [FML]: Max texture size: 16384inecraftFormatting
-[21:38:50] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlasinecraftFormatting
-[21:38:52] [main/WARN] [mixin]: @Final field particleEmitters:Ljava/util/Queue; in liquidbounce.forge.mixins.json:render.MixinEffectRenderer should be finalinecraftFormatting
-[21:38:52] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:38:52] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:38:52] [main/INFO] [FML]: Injecting itemstacksinecraftFormatting
-[21:38:52] [main/INFO] [FML]: Itemstack injection completeinecraftFormatting
-[21:38:52] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 4 modsinecraftFormatting
-[21:38:52] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:inecraftFormatting
-[21:38:52] [main/INFO] [LiquidBounce]: Starting Pride b30, by CCBlueX, JieMo, LvZiQiaoinecraftFormatting
-[21:38:52] [main/INFO] [LiquidBounce]: Loading Fonts.inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\jelloSB.ttf (系统找不到指定的文件。)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:175)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\jellom.ttf (系统找不到指定的文件。)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:176)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:38:58] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:177)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:178)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:179)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:180)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:38:59] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:181)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:182)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:183)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: java.io.FileNotFoundException: .\Pride-1.12\fonts\pride\font\jello.ttf (系统找不到指定的路径。)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.open(FileInputStream.java:195)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.io.FileInputStream.<init>(FileInputStream.java:138)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getFont(Fonts.java:414)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:184)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:00] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getFont:420]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: java.io.FileNotFoundException: minecraft:pride/font/alibabasanslight.ttfinecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getAlibabaSansLight(Fonts.java:369)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:193)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:03] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:374]: Error loading fontinecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: java.io.FileNotFoundException: minecraft:pride/font/alibabasanslight.ttfinecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getAlibabaSansLight(Fonts.java:369)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:194)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:03] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:374]: Error loading fontinecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: java.io.FileNotFoundException: minecraft:pride/font/alibabasanslight.ttfinecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.getAlibabaSansLight(Fonts.java:369)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.ui.font.Fonts.loadFonts(Fonts.java:195)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.ccbluex.liquidbounce.LiquidBounce.startClient(LiquidBounce.kt:113)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.handler$zze000$startGame(Minecraft.java:3415)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.init(Minecraft.java:535)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:377)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:03] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:373]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:03] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.ui.font.Fonts:getAlibabaSansLight:374]: Error loading fontinecraftFormatting
-[21:39:04] [main/INFO] [LiquidBounce]: Loaded Fonts. (11712ms)inecraftFormatting
-[21:39:04] [main/INFO] [LiquidBounce]: [ModuleManager] Loading modules...inecraftFormatting
-[21:39:05] [main/INFO] [LiquidBounce]: [ModuleManager] Loaded 151 modules.inecraftFormatting
-[21:39:05] [main/INFO] [LiquidBounce]: [Remapper] Loading srg...inecraftFormatting
-[21:39:05] [main/INFO] [LiquidBounce]: [Remapper] Loaded srg.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: modules.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: values.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: accounts.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: friends.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: xray-blocks.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: shortcuts.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: clickgui.json.inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: Loading heads...inecraftFormatting
-[21:39:06] [main/INFO] [LiquidBounce]: Loading heads from https://headdb.org/api/category/all...inecraftFormatting
-[21:39:08] [main/INFO] [LiquidBounce]: Loaded 956 heads from HeadDB.inecraftFormatting
-[21:39:08] [main/INFO] [LiquidBounce]: Registered http://capes.liquidbounce.net/api/v1/cape/uuid/%s as 'api' service type.inecraftFormatting
-[21:39:08] [main/INFO] [LiquidBounce]: Loaded.inecraftFormatting
-[21:39:09] [main/INFO] [LiquidBounce]: [FileManager] Loaded config: hud.json.inecraftFormatting
-[21:39:09] [main/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loadedinecraftFormatting
-[21:39:09] [Thread-8/ERROR] [LiquidBounce]: Failed to setup Discord RPC.inecraftFormatting
-java.lang.RuntimeException: java.io.FileNotFoundException: \\?\pipe\discord-ipc-0 (系统找不到指定的文件。)
-	at com.jagrosh.discordipc.entities.pipe.WindowsPipe.<init>(WindowsPipe.java:45) ~[WindowsPipe.class:?]
-	at com.jagrosh.discordipc.entities.pipe.Pipe.createPipe(Pipe.java:158) ~[Pipe.class:?]
-	at com.jagrosh.discordipc.entities.pipe.Pipe.openPipe(Pipe.java:67) ~[Pipe.class:?]
-	at com.jagrosh.discordipc.IPCClient.connect(IPCClient.java:116) ~[IPCClient.class:?]
-	at net.ccbluex.liquidbounce.features.special.ClientRichPresence.setup(ClientRichPresence.kt:78) [ClientRichPresence.class:?]
-	at net.ccbluex.liquidbounce.LiquidBounce$startClient$1.invoke(LiquidBounce.kt:184) [LiquidBounce$startClient$1.class:?]
-	at net.ccbluex.liquidbounce.LiquidBounce$startClient$1.invoke(LiquidBounce.kt:43) [LiquidBounce$startClient$1.class:?]
-	at kotlin.concurrent.ThreadsKt$thread$thread$1.run(Thread.kt:30) [ThreadsKt$thread$thread$1.class:1.3.72-release-468 (1.3.72)]
-Caused by: java.io.FileNotFoundException: \\?\pipe\discord-ipc-0 (系统找不到指定的文件。)
-	at java.io.RandomAccessFile.open0(Native Method) ~[?:1.8.0_342]
-	at java.io.RandomAccessFile.open(RandomAccessFile.java:316) ~[?:1.8.0_342]
-	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243) ~[?:1.8.0_342]
-	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:124) ~[?:1.8.0_342]
-	at com.jagrosh.discordipc.entities.pipe.WindowsPipe.<init>(WindowsPipe.java:43) ~[WindowsPipe.class:?]
-	... 7 more
-[21:39:10] [main/INFO] [LiquidBounce]: [Shader] Successfully loaded: background.fraginecraftFormatting
-[21:39:10] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session idinecraftFormatting
-[21:39:14] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2inecraftFormatting
-[21:39:14] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypairinecraftFormatting
-[21:39:14] [Server thread/INFO] [FML]: Injecting existing registry data into this server instanceinecraftFormatting
-[21:39:14] [Server thread/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:39:14] [Server thread/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:39:14] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@610b6858)inecraftFormatting
-[21:39:15] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancementsinecraftFormatting
-[21:39:15] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@610b6858)inecraftFormatting
-[21:39:15] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@610b6858)inecraftFormatting
-[21:39:15] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0inecraftFormatting
-[21:39:16] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 12%inecraftFormatting
-[21:39:18] [Server thread/INFO] [FML]: Unloading dimension -1inecraftFormatting
-[21:39:18] [Server thread/INFO] [FML]: Unloading dimension 1inecraftFormatting
-[21:39:18] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 6, from 10inecraftFormatting
-[21:39:20] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2inecraftFormatting
-[21:39:20] [Netty Server IO #1/INFO] [FML]: Client protocol version 2inecraftFormatting
-[21:39:20] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 4 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2768,mcp@9.42inecraftFormatting
-[21:39:20] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection establishedinecraftFormatting
-[21:39:20] [Server thread/INFO] [FML]: [Server thread] Server side modded connection establishedinecraftFormatting
-[21:39:20] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player218[local:E:edc32ed0] logged in with entity id 349 at (33.29176571802236, 66.0, 331.17866340676204)inecraftFormatting
-[21:39:20] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player218 joined the gameinecraftFormatting
-[21:39:21] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...inecraftFormatting
-[21:39:21] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
-[21:39:22] [main/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 20 advancementsinecraftFormatting
-[21:39:22] [Thread-14/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] §7[§a§lChat§7] §9Connecting to chat server...inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: java.lang.NullPointerExceptioninecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.Reader.<init>(Reader.java:78)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.copy(IOUtils.java:2272)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1041)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1021)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.Shader.<init>(Shader.java:31)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowShader.<init>(RainbowShader.kt:12)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowShader.<clinit>(RainbowShader.kt:49)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.ui.client.hud.element.elements.Arraylist.drawElement(Arraylist.kt:200)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.ui.client.hud.HUD.render(HUD.kt:72)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.features.module.modules.render.HUD.onRender2D(HUD.kt:84)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.event.EventManager.callEvent(EventManager.kt:59)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.GuiIngame.callRender2DEvent(GuiIngame.java:1516)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.GuiIngame.handler$zbb000$renderTooltip(GuiIngame.java:1501)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.GuiIngame.renderHotbar(GuiIngame.java)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.client.GuiIngameForge.renderHotbar(GuiIngameForge.java:346)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:142)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1098)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1118)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.Minecraft.run(Minecraft.java:397)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.main.Main.main(SourceFile:123)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.reflect.Method.invoke(Method.java:498)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)inecraftFormatting
-[21:39:22] [main/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at GradleStart.main(GradleStart.java:25)inecraftFormatting
-[21:39:22] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...inecraftFormatting
-[21:39:22] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
-[21:39:24] [Thread-14/INFO] [net.minecraft.client.gui.GuiNewChat]: [CHAT] §7[§a§lChat§7] §9Connected to chat server!inecraftFormatting
-[21:39:25] [Thread-14/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).inecraftFormatting
-[21:39:25] [Thread-14/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN Please initialize the log4j system properly.inecraftFormatting
-[21:39:25] [Thread-14/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.inecraftFormatting
-[21:39:29] [main/INFO] [LiquidBounce]: [FileManager] Saved config: modules.json.inecraftFormatting
-[21:39:30] [main/INFO] [LiquidBounce]: [FileManager] Saved config: modules.json.inecraftFormatting
-[21:44:05] [main/INFO] [LiquidBounce]: [FileManager] Saved config: modules.json.inecraftFormatting
-[21:44:05] [main/INFO] [LiquidBounce]: [FileManager] Saved config: values.json.inecraftFormatting
-[21:44:05] [main/INFO] [LiquidBounce]: [FileManager] Saved config: clickgui.json.inecraftFormatting
-[21:44:05] [main/INFO] [LiquidBounce]: [FileManager] Saved config: xray-blocks.json.inecraftFormatting
-[21:44:05] [main/INFO] [LiquidBounce]: [FileManager] Saved config: hud.json.inecraftFormatting
-[21:44:05] [main/INFO] [LiquidBounce]: [FileManager] Saved config: shortcuts.json.inecraftFormatting
-[21:44:05] [main/INFO] [net.minecraft.client.Minecraft]: Stopping!inecraftFormatting
-[21:44:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping serverinecraftFormatting
-[21:44:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving playersinecraftFormatting
-[21:44:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worldsinecraftFormatting
-[21:44:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworldinecraftFormatting
-[21:44:05] [Server thread/INFO] [FML]: Unloading dimension 0inecraftFormatting
-[21:44:05] [Server thread/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[21:44:05] [Server thread/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[21:44:05] [main/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...inecraftFormatting
-[21:44:05] [main/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.cominecraftFormatting
+[18:29:13] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 InitializedinecraftFormatting
+[18:29:13] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: java.lang.NullPointerExceptioninecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.Reader.<init>(Reader.java:78)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.copy(IOUtils.java:2272)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1041)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1021)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.Shader.<init>(Shader.java:31)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<init>(RainbowFontShader.kt:12)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<clinit>(RainbowFontShader.kt:12)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.handler$zca000$injectRainbow5(FontRenderer.java:989)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderStringAtPos(FontRenderer.java)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderString(FontRenderer.java:534)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:295)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:279)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.drawMemoryBar(SplashProgress.java:466)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.run(SplashProgress.java:309)inecraftFormatting
+[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.Thread.run(Thread.java:750)inecraftFormatting
+[18:29:14] [main/INFO] [FML]: Replaced 1036 ore ingredientsinecraftFormatting
+[18:29:14] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
+[18:29:16] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 153590990 nanosinecraftFormatting
+[18:29:16] [main/INFO] [FML]: Forge Mod Loader has identified 4 mods to loadinecraftFormatting
+[18:29:17] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".inecraftFormatting
+[18:29:17] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Defaulting to no-operation (NOP) logger implementationinecraftFormatting
+[18:29:17] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.inecraftFormatting
+[18:29:17] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).inecraftFormatting
+[18:29:17] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN Please initialize the log4j system properly.inecraftFormatting
+[18:29:17] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.inecraftFormatting
+[18:29:17] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at CLIENTinecraftFormatting
+[18:29:17] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at SERVERinecraftFormatting
+[18:29:18] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft ForgeinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Processing ObjectHolder annotationsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Found 1168 ObjectHolder annotationsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Identifying ItemStackHolder annotationsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Found 0 ItemStackHolder annotationsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Configured a dormant chunk cache size of 0inecraftFormatting
+[18:29:18] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.jsoninecraftFormatting
+[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Injecting itemstacksinecraftFormatting
+[18:29:18] [main/INFO] [FML]: Itemstack injection completeinecraftFormatting
+[18:29:21] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859inecraftFormatting
+[18:29:26] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...inecraftFormatting
+[18:29:26] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenALinecraftFormatting
+[18:29:26] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)inecraftFormatting
+[18:29:26] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.inecraftFormatting
+[18:29:26] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine startedinecraftFormatting
+[18:29:38] [main/INFO] [FML]: Max texture size: 16384inecraftFormatting
+[18:29:39] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlasinecraftFormatting

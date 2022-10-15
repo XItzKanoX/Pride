@@ -35,6 +35,7 @@ import net.ccbluex.liquidbounce.injection.backend.Backend
 import net.ccbluex.liquidbounce.injection.backend.CPacketPlayerBlockPlacementImpl
 import net.ccbluex.liquidbounce.injection.backend.ClassProviderImpl.createCPacketPlayerBlockPlacement
 import net.ccbluex.liquidbounce.injection.backend.ClassProviderImpl.createCPacketPlayerDigging
+import net.ccbluex.liquidbounce.injection.backend.ClassProviderImpl.isCPacketPlayerBlockPlacement
 import net.ccbluex.liquidbounce.injection.backend.unwrap
 import net.ccbluex.liquidbounce.utils.*
 import net.ccbluex.liquidbounce.utils.extensions.getDistanceToEntityBox
@@ -56,8 +57,10 @@ import net.minecraft.entity.EntityLivingBase
 import net.minecraft.entity.effect.EntityLightningBolt
 import net.minecraft.network.play.client.CPacketPlayer
 import net.minecraft.network.play.client.CPacketPlayerDigging
+import net.minecraft.network.play.client.CPacketPlayerTryUseItem
 import net.minecraft.network.play.server.SPacketSpawnGlobalEntity
 import net.minecraft.util.EnumFacing
+import net.minecraft.util.EnumHand
 import net.minecraft.util.math.BlockPos
 import org.lwjgl.input.Keyboard
 import org.lwjgl.opengl.GL11
@@ -861,7 +864,7 @@ class KillAura : Module() {
         if (thePlayer.isBlocking || blockingStatus) {
             mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM,
                 WBlockPos.ORIGIN, classProvider.getEnumFacing(EnumFacingType.DOWN)))
-//            if (afterAttackValue.get()) blockingStatus = false
+            if (afterAttackValue.get()) blockingStatus = false
         }
 
         // Call attack event
@@ -996,11 +999,13 @@ class KillAura : Module() {
     private fun startBlocking(interactEntity: IEntity) {
         if (LiquidBounce.moduleManager[OldHitting::class.java].state){
             if(blockModeValue.get().equals("Vanilla",true)) {
-                mc.netHandler.addToSendQueue(createUseItemPacket(mc.thePlayer!!.heldItem, WEnumHand.MAIN_HAND))
+                mc.netHandler.addToSendQueue(createblockpacket2(mc.thePlayer!!.inventory.getCurrentItemInHand(), ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM)!!)
+                mc.netHandler.addToSendQueue(createblockpacket2(mc.thePlayer!!.inventory.getCurrentItemInHand(), ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM)!!)
                 blockingStatus = true
             }
             if (blockModeValue.get().equals("normal", true)) {
-                mc.netHandler.addToSendQueue(createUseItemPacket(mc.thePlayer!!.inventory.getCurrentItemInHand(), WEnumHand.MAIN_HAND))
+                mc.netHandler.addToSendQueue(createblockpacket(mc.thePlayer!!.heldItem, WEnumHand.MAIN_HAND)!!)
+                mc.netHandler.addToSendQueue(createblockpacket(mc.thePlayer!!.heldItem, WEnumHand.OFF_HAND)!!)
                 blockingStatus = true
             }
             if(blockModeValue.get().equals("UseItem", true)) {

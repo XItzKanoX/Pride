@@ -80,15 +80,24 @@
     "Swing": "Normal",
     "Rotation": true
   },
+  "AntiVoid": {
+    "Mode": "Hypixel",
+    "Hypixel-PullbackTime": 800.0,
+    "MaxFallDistance": 10.0,
+    "ResetMotion": true,
+    "BlinkStartFallDistance": 2.59,
+    "BlinkAutoScaffold": true,
+    "OnlyVoid": false
+  },
   "AtAllProvider": {
     "MinDelay": 500,
     "MaxDelay": 1000,
     "Retry": false
   },
   "AttackEffects": {
-    "Amount": 5,
+    "Amount": 20,
     "Sound": true,
-    "LightingSound": true,
+    "LightingSound": false,
     "Mode": "Blood"
   },
   "AutoArmor": {
@@ -217,12 +226,6 @@
     "AirStrafe": false,
     "NoHurt": true
   },
-  "BugUp": {
-    "Mode": "FlyFlag",
-    "MaxFallDistance": 10,
-    "MaxDistanceToSetback": 2.5,
-    "Indicator": true
-  },
   "Cape": {
     "Style": "Dark"
   },
@@ -260,7 +263,7 @@
     "Range-Reset": true
   },
   "ClickGUI": {
-    "Style": "Null",
+    "Style": "LiquidBounce",
     "Scale": 1.0,
     "MaxElements": 15,
     "R": 0,
@@ -286,7 +289,7 @@
     "HurtTime": 10
   },
   "Damage": {
-    "Mode": "NCP",
+    "Mode": "AAC",
     "Damage": 1
   },
   "Derp": {
@@ -328,7 +331,8 @@
     "NoMove": false,
     "CustomDelay": 0,
     "CustomSpeed": 2,
-    "CustomTimer": 1.1
+    "CustomTimer": 1.1,
+    "StopMoving": false
   },
   "Fly": {
     "Mode": "Vanilla",
@@ -464,8 +468,8 @@
     "Swing": true,
     "KeepSprint": true,
     "DelayedBlock": true,
-    "AutoBlock-AfterAttack": false,
-    "BlockMode": "Packet",
+    "AutoBlock-AfterAttack": true,
+    "BlockMode": "Normal",
     "BlockRate": 100,
     "RayCast": true,
     "RayCastIgnored": false,
@@ -474,7 +478,7 @@
     "MaxTurnSpeed": 180.0,
     "MinTurnSpeed": 180.0,
     "Lighting": false,
-    "Lighting-Mode": "Dead",
+    "Lighting-Mode": "Attack",
     "Lighting-Sound": true,
     "SilentRotation": true,
     "Strafe": "Off",
@@ -490,7 +494,7 @@
     "NoInvAttack": false,
     "NoInvDelay": 200,
     "LimitedMultiTargets": 0,
-    "Mark": "FDP",
+    "Mark": "None",
     "FakeSharp": true,
     "Circle": true,
     "CircleRed": 255,
@@ -739,7 +743,11 @@
     "AllDirectionsJump": false
   },
   "SuperKnockback": {
-    "HurtTime": 10
+    "HurtTime": 10,
+    "Mode": "HYTPacket",
+    "OnlyMove": false,
+    "OnlyGround": false,
+    "Delay": 0
   },
   "TNTBlock": {
     "Fuse": 10,

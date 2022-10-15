@@ -1,4 +1,4 @@
-Processing 181 files
+Processing 182 files
 Start Processing: co/uk/hexeption/utils/OutlineUtils.java
 Rename method net/minecraft/client/renderer/OpenGlHelper/setLightmapTextureCoords (IFF)V[1784,1808]::setLightmapTextureCoords->func_77475_a
 Rename field net/minecraft/client/renderer/OpenGlHelper/lightmapTexUnit[1810,1825]::lightmapTexUnit->field_77476_b
@@ -355,6 +355,10 @@ Import: org.lwjgl.opengl.GL11
 Import: java.awt.*
 Import: static org.lwjgl.opengl.GL11.*
 End  Processing: me/utils/render/VisualUtils.java
+
+Start Processing: me/utils/timer/TimeHelper.java
+FOUND CONSTR method me/utils/timer/TimeHelper/TimeHelper ()V me/utils/timer/TimeHelper
+End  Processing: me/utils/timer/TimeHelper.java
 
 Start Processing: net/ccbluex/liquidbounce/features/module/modules/combat/AutoArmor.java
 New Key: class java/util/Map
@@ -1526,35 +1530,35 @@ Import: java.awt.*
 End  Processing: net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiChat.java
 
 Start Processing: net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinGuiConnecting.java
-Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[2664,2674]::sendPacket->func_179290_a
-Rename method net/minecraft/network/NetworkManager/createNetworkManagerAndConnect (Ljava/net/InetAddress;IZ)Lnet/minecraft/network/NetworkManager;[3258,3288]::createNetworkManagerAndConnect->func_181124_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[3291,3293]::mc->field_146297_k
-Rename field net/minecraft/client/Minecraft/gameSettings[3306,3318]::gameSettings->field_71474_y
-Rename method net/minecraft/client/settings/GameSettings/isUsingNativeTransport ()Z[3320,3342]::isUsingNativeTransport->func_181148_f
-Rename method net/minecraft/network/NetworkManager/setNetHandler (Lnet/minecraft/network/INetHandler;)V[3369,3382]::setNetHandler->func_150719_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[3425,3427]::mc->field_146297_k
-Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3493,3503]::sendPacket->func_179290_a
-Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3600,3610]::sendPacket->func_179290_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[3720,3722]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/getSession ()Lnet/minecraft/util/Session;[3735,3745]::getSession->func_110432_I
-Rename method net/minecraft/util/Session/getProfile ()Lcom/mojang/authlib/GameProfile;[3751,3761]::getProfile->func_148256_e
-Rename field net/minecraft/client/gui/GuiScreen/mc[3991,3993]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4006,4022]::displayGuiScreen->func_147108_a
-Rename field net/minecraft/client/gui/GuiScreen/mc[4588,4590]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4603,4619]::displayGuiScreen->func_147108_a
-Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[4904,4914]::drawScreen->func_73863_a
-Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[5038,5050]::getMinecraft->func_71410_x
-Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[5069,5090]::drawDefaultBackground->func_146276_q_
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5143,5157]::getScaledWidth->func_78326_a
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5180,5195]::getScaledHeight->func_78328_b
-Rename field net/minecraft/client/gui/GuiScreen/mc[5277,5279]::mc->field_146297_k
-Rename method net/minecraft/client/Minecraft/getCurrentServerData ()Lnet/minecraft/client/multiplayer/ServerData;[5292,5312]::getCurrentServerData->func_147104_D
-Rename field net/minecraft/client/multiplayer/ServerData/serverIP[5369,5377]::serverIP->field_78845_b
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5459,5473]::getScaledWidth->func_78326_a
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5496,5511]::getScaledHeight->func_78328_b
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5600,5614]::getScaledWidth->func_78326_a
-Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5637,5652]::getScaledHeight->func_78328_b
-Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[5695,5705]::drawScreen->func_73863_a
+Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[2730,2740]::sendPacket->func_179290_a
+Rename method net/minecraft/network/NetworkManager/createNetworkManagerAndConnect (Ljava/net/InetAddress;IZ)Lnet/minecraft/network/NetworkManager;[3345,3375]::createNetworkManagerAndConnect->func_181124_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[3378,3380]::mc->field_146297_k
+Rename field net/minecraft/client/Minecraft/gameSettings[3393,3405]::gameSettings->field_71474_y
+Rename method net/minecraft/client/settings/GameSettings/isUsingNativeTransport ()Z[3407,3429]::isUsingNativeTransport->func_181148_f
+Rename method net/minecraft/network/NetworkManager/setNetHandler (Lnet/minecraft/network/INetHandler;)V[3457,3470]::setNetHandler->func_150719_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[3513,3515]::mc->field_146297_k
+Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3582,3592]::sendPacket->func_179290_a
+Rename method net/minecraft/network/NetworkManager/sendPacket (Lnet/minecraft/network/Packet;)V[3690,3700]::sendPacket->func_179290_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[3810,3812]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getSession ()Lnet/minecraft/util/Session;[3825,3835]::getSession->func_110432_I
+Rename method net/minecraft/util/Session/getProfile ()Lcom/mojang/authlib/GameProfile;[3841,3851]::getProfile->func_148256_e
+Rename field net/minecraft/client/gui/GuiScreen/mc[4087,4089]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4102,4118]::displayGuiScreen->func_147108_a
+Rename field net/minecraft/client/gui/GuiScreen/mc[4698,4700]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/displayGuiScreen (Lnet/minecraft/client/gui/GuiScreen;)V[4713,4729]::displayGuiScreen->func_147108_a
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[5023,5033]::drawScreen->func_73863_a
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[5158,5170]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/gui/GuiScreen/drawDefaultBackground ()V[5191,5212]::drawDefaultBackground->func_146276_q_
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5267,5281]::getScaledWidth->func_78326_a
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5304,5319]::getScaledHeight->func_78328_b
+Rename field net/minecraft/client/gui/GuiScreen/mc[5405,5407]::mc->field_146297_k
+Rename method net/minecraft/client/Minecraft/getCurrentServerData ()Lnet/minecraft/client/multiplayer/ServerData;[5420,5440]::getCurrentServerData->func_147104_D
+Rename field net/minecraft/client/multiplayer/ServerData/serverIP[5499,5507]::serverIP->field_78845_b
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5591,5605]::getScaledWidth->func_78326_a
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5628,5643]::getScaledHeight->func_78328_b
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledWidth ()I[5733,5747]::getScaledWidth->func_78326_a
+Rename method net/minecraft/client/gui/ScaledResolution/getScaledHeight ()I[5770,5785]::getScaledHeight->func_78328_b
+Rename method net/minecraft/client/gui/GuiScreen/drawScreen (IIF)V[5830,5840]::drawScreen->func_73863_a
 Import: com.mojang.authlib.GameProfile
 Import: net.ccbluex.liquidbounce.injection.backend.ServerDataImplKt
 Import: net.ccbluex.liquidbounce.ui.font.Fonts
@@ -2245,15 +2249,15 @@ Import: org.spongepowered.asm.mixin.injection.callback.CallbackInfo
 End  Processing: net/ccbluex/liquidbounce/injection/forge/mixins/item/MixinMixinItemStack.java
 
 Start Processing: net/ccbluex/liquidbounce/injection/forge/mixins/network/MixinNetHandlerLoginClient.java
-Rename method net/minecraft/util/CryptManager/createNewSharedKey ()Ljavax/crypto/SecretKey;[2011,2029]::createNewSharedKey->func_75890_a
-Rename method net/minecraft/network/login/server/SPacketEncryptionRequest/getServerId ()Ljava/lang/String;[2059,2070]::getServerId->func_149609_c
-Rename method net/minecraft/network/login/server/SPacketEncryptionRequest/getPublicKey ()Ljava/security/PublicKey;[2119,2131]::getPublicKey->func_149608_d
-Rename method net/minecraft/util/CryptManager/getServerIdHash (Ljava/lang/String;Ljava/security/PublicKey;Ljavax/crypto/SecretKey;)[B[2189,2204]::getServerIdHash->func_75895_a
-Rename method net/minecraft/network/NetworkManager/getRemoteAddress ()Ljava/net/SocketAddress;[2377,2393]::getRemoteAddress->func_74430_c
-Rename method net/minecraft/network/NetworkManager/getRemoteAddress ()Ljava/net/SocketAddress;[2456,2472]::getRemoteAddress->func_74430_c
-Rename method net/minecraft/network/NetworkManager/closeChannel (Lnet/minecraft/util/text/ITextComponent;)V[4055,4067]::closeChannel->func_150718_a
-Rename method net/minecraft/network/NetworkManager/closeChannel (Lnet/minecraft/util/text/ITextComponent;)V[4612,4624]::closeChannel->func_150718_a
-Rename method net/minecraft/network/NetworkManager/closeChannel (Lnet/minecraft/util/text/ITextComponent;)V[4833,4845]::closeChannel->func_150718_a
+Rename method net/minecraft/util/CryptManager/createNewSharedKey ()Ljavax/crypto/SecretKey;[2061,2079]::createNewSharedKey->func_75890_a
+Rename method net/minecraft/network/login/server/SPacketEncryptionRequest/getServerId ()Ljava/lang/String;[2110,2121]::getServerId->func_149609_c
+Rename method net/minecraft/network/login/server/SPacketEncryptionRequest/getPublicKey ()Ljava/security/PublicKey;[2171,2183]::getPublicKey->func_149608_d
+Rename method net/minecraft/util/CryptManager/getServerIdHash (Ljava/lang/String;Ljava/security/PublicKey;Ljavax/crypto/SecretKey;)[B[2242,2257]::getServerIdHash->func_75895_a
+Rename method net/minecraft/network/NetworkManager/getRemoteAddress ()Ljava/net/SocketAddress;[2433,2449]::getRemoteAddress->func_74430_c
+Rename method net/minecraft/network/NetworkManager/getRemoteAddress ()Ljava/net/SocketAddress;[2512,2528]::getRemoteAddress->func_74430_c
+Rename method net/minecraft/network/NetworkManager/closeChannel (Lnet/minecraft/util/text/ITextComponent;)V[4139,4151]::closeChannel->func_150718_a
+Rename method net/minecraft/network/NetworkManager/closeChannel (Lnet/minecraft/util/text/ITextComponent;)V[4707,4719]::closeChannel->func_150718_a
+Rename method net/minecraft/network/NetworkManager/closeChannel (Lnet/minecraft/util/text/ITextComponent;)V[4933,4945]::closeChannel->func_150718_a
 Import: com.google.gson.Gson
 Import: com.google.gson.JsonElement
 Import: net.ccbluex.liquidbounce.injection.backend.ISPacketEncryptionRequestKt

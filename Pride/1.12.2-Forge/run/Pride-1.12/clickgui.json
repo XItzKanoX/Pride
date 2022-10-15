@@ -1,9 +1,9 @@
 {
   "Combat": {
-    "open": false,
+    "open": true,
     "visible": true,
-    "posX": 100,
-    "posY": 5,
+    "posX": 633,
+    "posY": 21,
     "Aimbot": {
       "Settings": false
     },
@@ -53,7 +53,7 @@
       "Settings": false
     },
     "KillAura": {
-      "Settings": false
+      "Settings": true
     },
     "NoFriends": {
       "Settings": false
@@ -75,10 +75,10 @@
     }
   },
   "Player": {
-    "open": false,
+    "open": true,
     "visible": true,
-    "posX": 100,
-    "posY": 25,
+    "posX": 428,
+    "posY": 94,
     "AntiAFK": {
       "Settings": false
     },
@@ -122,12 +122,15 @@
   "Movement": {
     "open": false,
     "visible": true,
-    "posX": 100,
-    "posY": 45,
+    "posX": 222,
+    "posY": 40,
     "AirJump": {
       "Settings": false
     },
     "AirLadder": {
+      "Settings": true
+    },
+    "AntiVoid": {
       "Settings": false
     },
     "AutoWalk": {
@@ -137,9 +140,6 @@
       "Settings": false
     },
     "BufferSpeed": {
-      "Settings": false
-    },
-    "BugUp": {
       "Settings": false
     },
     "FastClimb": {
@@ -225,15 +225,15 @@
     }
   },
   "Render": {
-    "open": false,
+    "open": true,
     "visible": true,
-    "posX": 100,
-    "posY": 65,
+    "posX": 275,
+    "posY": 73,
     "AntiBlind": {
       "Settings": false
     },
     "AttackEffects": {
-      "Settings": false
+      "Settings": true
     },
     "BlockESP": {
       "Settings": false
@@ -374,8 +374,8 @@
   "Misc": {
     "open": false,
     "visible": true,
-    "posX": 100,
-    "posY": 105,
+    "posX": 479,
+    "posY": 47,
     "AntiBot": {
       "Settings": false
     },
@@ -422,8 +422,8 @@
   "Exploit": {
     "open": false,
     "visible": true,
-    "posX": 100,
-    "posY": 125,
+    "posX": 206,
+    "posY": 98,
     "AbortBreaking": {
       "Settings": false
     },
@@ -440,7 +440,7 @@
       "Settings": false
     },
     "Damage": {
-      "Settings": false
+      "Settings": true
     },
     "ForceUnicodeChat": {
       "Settings": false
@@ -501,7 +501,7 @@
     }
   },
   "Targets": {
-    "open": false,
+    "open": true,
     "visible": true,
     "posX": 100,
     "posY": 185

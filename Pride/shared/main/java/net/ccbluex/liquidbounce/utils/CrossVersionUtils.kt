@@ -1,13 +1,20 @@
 package net.ccbluex.liquidbounce.utils
 
 import net.ccbluex.liquidbounce.LiquidBounce
+import net.ccbluex.liquidbounce.api.enums.EnumFacingType
 import net.ccbluex.liquidbounce.api.enums.WEnumHand
 import net.ccbluex.liquidbounce.api.minecraft.item.IItemStack
 import net.ccbluex.liquidbounce.api.minecraft.network.IPacket
 import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketClientStatus
 import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketEntityAction
+import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayerBlockPlacement
+import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayerDigging
+import net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
+import net.ccbluex.liquidbounce.chat.packet.packets.Packet
 import net.ccbluex.liquidbounce.injection.backend.Backend
 import net.ccbluex.liquidbounce.injection.backend.WrapperImpl.classProvider
+import net.minecraft.network.play.client.CPacketPlayerTryUseItem
+import net.minecraft.util.EnumHand
 
 inline fun createUseItemPacket(itemStack: IItemStack?, hand: WEnumHand): IPacket {
     @Suppress("ConstantConditionIf")
@@ -17,7 +24,22 @@ inline fun createUseItemPacket(itemStack: IItemStack?, hand: WEnumHand): IPacket
         classProvider.createCPacketTryUseItem(hand)
     }
 }
-
+inline fun createblockpacket2(itemStack: IItemStack?, hand: ICPacketPlayerDigging.WAction): IPacket? {
+    @Suppress("ConstantConditionIf")
+    return if (Backend.MINECRAFT_VERSION_MINOR == 8) {
+        classProvider.createCPacketPlayerBlockPlacement(itemStack)
+    } else {
+        classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM, WBlockPos.ORIGIN, MinecraftInstance.classProvider.getEnumFacing(EnumFacingType.DOWN))
+    }
+}
+inline fun createblockpacket(itemStack: IItemStack?, hand: WEnumHand): IPacket? {
+    @Suppress("ConstantConditionIf")
+    return if (Backend.MINECRAFT_VERSION_MINOR == 8) {
+        classProvider.createCPacketTryUseItem(hand)
+    } else {
+        classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM, WBlockPos.ORIGIN, MinecraftInstance.classProvider.getEnumFacing(EnumFacingType.DOWN))
+    }
+}
 inline fun createOpenInventoryPacket(): IPacket {
     @Suppress("ConstantConditionIf")
     return if (Backend.MINECRAFT_VERSION_MINOR == 8) {
