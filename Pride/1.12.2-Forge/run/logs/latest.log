@@ -1,56 +1,56 @@
-[18:28:55] [main/INFO]: Extra: []
-[18:28:55] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Administrator/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[18:28:56] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[18:28:56] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[18:28:56] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[18:28:56] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[18:28:56] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[18:28:56] [main/INFO]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_342, running on Windows 10:amd64:10.0, installed at C:\Users\Administrator\.jdks\corretto-1.8.0_342\jre
-[18:28:56] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[18:28:56] [main/ERROR]: Full: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[18:28:56] [main/ERROR]: Trimmed: c:/users/administrator/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[18:28:56] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[18:28:56] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
-[18:28:57] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugininecraftFormatting
-[18:28:57] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugininecraftFormatting
-[18:28:57] [main/INFO] [FML]: Found a command line coremod : net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
-[18:28:57] [main/WARN] [FML]: The coremod net.ccbluex.liquidbounce.injection.forge.MixinLoader does not have a MCVersion annotation, it may cause issues with this version of MinecraftinecraftFormatting
-[18:28:57] [main/INFO] [FML]: Ignoring missing certificate for coremod MixinLoader (net.ccbluex.liquidbounce.injection.forge.MixinLoader), as this is probably a dev workspaceinecraftFormatting
-[18:28:57] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.injection.forge.MixinLoader:<init>:18]: [LiquidBounce] Injecting with IFMLLoadingPlugin.inecraftFormatting
-[18:28:57] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8/dbe9e5db694a7c3cd644d5bb98f8a21295c75048/mixin-0.8.jar Service=LaunchWrapper Env=CLIENTinecraftFormatting
-[18:28:57] [main/INFO] [mixin]: Compatibility level set to JAVA_8inecraftFormatting
-[18:28:57] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweakerinecraftFormatting
-[18:28:57] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugininecraftFormatting
-[18:28:57] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugininecraftFormatting
-[18:28:57] [main/INFO] [GradleStart]: Injecting location in coremod net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
-[18:28:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
-[18:29:02] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thinginecraftFormatting
-[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
-[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
-[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
-[18:29:02] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
-[18:29:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
-[18:29:03] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
-[18:29:03] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
-[18:29:03] [main/WARN] [mixin]: Reference map 'liquidbounce.mixins.refmap.json' for liquidbounce.forge.mixins.json could not be read. If this is a development environment you can ignore this messageinecraftFormatting
-[18:29:04] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}inecraftFormatting
-[18:29:06] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player234inecraftFormatting
-[18:29:11] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:inecraftFormatting
-[18:29:11] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4inecraftFormatting
-[18:29:13] [main/INFO] [FML]: -- System Details --
+[22:13:50] [main/INFO]: Extra: []
+[22:13:50] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/Administrator/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[22:13:50] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:13:50] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:13:50] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[22:13:50] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[22:13:50] [main/INFO]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[22:13:50] [main/INFO]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_342, running on Windows 10:amd64:10.0, installed at C:\Users\Administrator\.jdks\corretto-1.8.0_342\jre
+[22:13:50] [main/ERROR]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[22:13:50] [main/ERROR]: Full: C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[22:13:50] [main/ERROR]: Trimmed: c:/users/administrator/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[22:13:51] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[22:13:51] [main/INFO]: Detected deobfuscated environment, loading log configs for colored console logs.
+[22:13:51] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugininecraftFormatting
+[22:13:51] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugininecraftFormatting
+[22:13:51] [main/INFO] [FML]: Found a command line coremod : net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
+[22:13:51] [main/WARN] [FML]: The coremod net.ccbluex.liquidbounce.injection.forge.MixinLoader does not have a MCVersion annotation, it may cause issues with this version of MinecraftinecraftFormatting
+[22:13:51] [main/INFO] [FML]: Ignoring missing certificate for coremod MixinLoader (net.ccbluex.liquidbounce.injection.forge.MixinLoader), as this is probably a dev workspaceinecraftFormatting
+[22:13:51] [main/INFO] [STDOUT]: [net.ccbluex.liquidbounce.injection.forge.MixinLoader:<init>:18]: [LiquidBounce] Injecting with IFMLLoadingPlugin.inecraftFormatting
+[22:13:52] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8 Source=file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8/dbe9e5db694a7c3cd644d5bb98f8a21295c75048/mixin-0.8.jar Service=LaunchWrapper Env=CLIENTinecraftFormatting
+[22:13:52] [main/INFO] [mixin]: Compatibility level set to JAVA_8inecraftFormatting
+[22:13:52] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweakerinecraftFormatting
+[22:13:52] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugininecraftFormatting
+[22:13:52] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugininecraftFormatting
+[22:13:52] [main/INFO] [GradleStart]: Injecting location in coremod net.ccbluex.liquidbounce.injection.forge.MixinLoaderinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweakerinecraftFormatting
+[22:13:52] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
+[22:13:57] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thinginecraftFormatting
+[22:13:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
+[22:13:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapperinecraftFormatting
+[22:13:57] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweakerinecraftFormatting
+[22:13:57] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweakerinecraftFormatting
+[22:13:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweakerinecraftFormatting
+[22:13:58] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
+[22:13:58] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweakerinecraftFormatting
+[22:13:58] [main/WARN] [mixin]: Reference map 'liquidbounce.mixins.refmap.json' for liquidbounce.forge.mixins.json could not be read. If this is a development environment you can ignore this messageinecraftFormatting
+[22:13:59] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}inecraftFormatting
+[22:14:01] [main/INFO] [net.minecraft.client.Minecraft]: Setting user: Player406inecraftFormatting
+[22:14:07] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:inecraftFormatting
+[22:14:07] [main/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4inecraftFormatting
+[22:14:10] [main/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_342, Amazon.com Inc.
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
-	Memory: 744064832 bytes (709 MB) / 946339840 bytes (902 MB) up to 7618953216 bytes (7266 MB)
+	Memory: 552707400 bytes (527 MB) / 860880896 bytes (821 MB) up to 7618953216 bytes (7266 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
@@ -58,59 +58,68 @@ Details:
 MixinLoader (unknown)
   
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'inecraftFormatting
-[18:29:13] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 InitializedinecraftFormatting
-[18:29:13] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: java.lang.NullPointerExceptioninecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.Reader.<init>(Reader.java:78)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.copy(IOUtils.java:2272)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1041)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1021)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.Shader.<init>(Shader.java:31)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<init>(RainbowFontShader.kt:12)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<clinit>(RainbowFontShader.kt:12)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.handler$zca000$injectRainbow5(FontRenderer.java:989)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderStringAtPos(FontRenderer.java)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderString(FontRenderer.java:534)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:295)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:279)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.drawMemoryBar(SplashProgress.java:466)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.run(SplashProgress.java:309)inecraftFormatting
-[18:29:14] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.Thread.run(Thread.java:750)inecraftFormatting
-[18:29:14] [main/INFO] [FML]: Replaced 1036 ore ingredientsinecraftFormatting
-[18:29:14] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
-[18:29:16] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 153590990 nanosinecraftFormatting
-[18:29:16] [main/INFO] [FML]: Forge Mod Loader has identified 4 mods to loadinecraftFormatting
-[18:29:17] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".inecraftFormatting
-[18:29:17] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Defaulting to no-operation (NOP) logger implementationinecraftFormatting
-[18:29:17] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.inecraftFormatting
-[18:29:17] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).inecraftFormatting
-[18:29:17] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN Please initialize the log4j system properly.inecraftFormatting
-[18:29:17] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.inecraftFormatting
-[18:29:17] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at CLIENTinecraftFormatting
-[18:29:17] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at SERVERinecraftFormatting
-[18:29:18] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft ForgeinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Processing ObjectHolder annotationsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Found 1168 ObjectHolder annotationsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Identifying ItemStackHolder annotationsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Found 0 ItemStackHolder annotationsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Configured a dormant chunk cache size of 0inecraftFormatting
-[18:29:18] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.jsoninecraftFormatting
-[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Injecting itemstacksinecraftFormatting
-[18:29:18] [main/INFO] [FML]: Itemstack injection completeinecraftFormatting
-[18:29:21] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859inecraftFormatting
-[18:29:26] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...inecraftFormatting
-[18:29:26] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenALinecraftFormatting
-[18:29:26] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)inecraftFormatting
-[18:29:26] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.inecraftFormatting
-[18:29:26] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine startedinecraftFormatting
-[18:29:38] [main/INFO] [FML]: Max texture size: 16384inecraftFormatting
-[18:29:39] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlasinecraftFormatting
+[22:14:10] [main/INFO] [FML]: MinecraftForge v14.23.5.2768 InitializedinecraftFormatting
+[22:14:10] [main/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: java.lang.NullPointerExceptioninecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.Reader.<init>(Reader.java:78)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.io.InputStreamReader.<init>(InputStreamReader.java:113)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.copy(IOUtils.java:2272)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1041)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at org.apache.commons.io.IOUtils.toString(IOUtils.java:1021)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.Shader.<init>(Shader.java:31)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<init>(RainbowFontShader.kt:12)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader.<clinit>(RainbowFontShader.kt:12)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.handler$zca000$injectRainbow5(FontRenderer.java:989)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderStringAtPos(FontRenderer.java)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.renderString(FontRenderer.java:534)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:295)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraft.client.gui.FontRenderer.drawString(FontRenderer.java:279)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.drawMemoryBar(SplashProgress.java:466)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at net.minecraftforge.fml.client.SplashProgress$2.run(SplashProgress.java:309)inecraftFormatting
+[22:14:10] [Thread-3/INFO] [STDERR]: [net.ccbluex.liquidbounce.utils.render.shader.Shader:<init>:34]: 	at java.lang.Thread.run(Thread.java:750)inecraftFormatting
+[22:14:10] [main/INFO] [FML]: Replaced 1036 ore ingredientsinecraftFormatting
+[22:14:11] [main/INFO] [FML]: Searching D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\run\.\mods for modsinecraftFormatting
+[22:14:12] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 163703500 nanosinecraftFormatting
+[22:14:13] [main/INFO] [FML]: Forge Mod Loader has identified 4 mods to loadinecraftFormatting
+[22:14:13] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".inecraftFormatting
+[22:14:13] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: Defaulting to no-operation (NOP) logger implementationinecraftFormatting
+[22:14:13] [main/INFO] [STDERR]: [org.slf4j.helpers.Util:report:128]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.inecraftFormatting
+[22:14:13] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).inecraftFormatting
+[22:14:13] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN Please initialize the log4j system properly.inecraftFormatting
+[22:14:13] [main/INFO] [STDERR]: [org.apache.log4j.helpers.LogLog:warn:171]: log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.inecraftFormatting
+[22:14:13] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at CLIENTinecraftFormatting
+[22:14:13] [main/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at SERVERinecraftFormatting
+[22:14:14] [main/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft ForgeinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Processing ObjectHolder annotationsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Found 1168 ObjectHolder annotationsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Identifying ItemStackHolder annotationsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Found 0 ItemStackHolder annotationsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Configured a dormant chunk cache size of 0inecraftFormatting
+[22:14:14] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.jsoninecraftFormatting
+[22:14:14] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Injecting itemstacksinecraftFormatting
+[22:14:14] [main/INFO] [FML]: Itemstack injection completeinecraftFormatting
+[22:14:17] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2859inecraftFormatting
+[22:14:22] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...inecraftFormatting
+[22:14:22] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenALinecraftFormatting
+[22:14:22] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)inecraftFormatting
+[22:14:22] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.inecraftFormatting
+[22:14:23] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine startedinecraftFormatting
+[22:14:35] [main/INFO] [FML]: Max texture size: 16384inecraftFormatting
+[22:14:36] [main/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 512x512 textures-atlasinecraftFormatting
+[22:14:38] [main/WARN] [mixin]: @Final field particleEmitters:Ljava/util/Queue; in liquidbounce.forge.mixins.json:render.MixinEffectRenderer should be finalinecraftFormatting
+[22:14:38] [main/INFO] [FML]: Applying holder lookupsinecraftFormatting
+[22:14:38] [main/INFO] [FML]: Holder lookups appliedinecraftFormatting
+[22:14:38] [main/INFO] [FML]: Injecting itemstacksinecraftFormatting
+[22:14:38] [main/INFO] [FML]: Itemstack injection completeinecraftFormatting
+[22:14:38] [main/INFO] [FML]: Forge Mod Loader has successfully loaded 4 modsinecraftFormatting
+[22:14:38] [main/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:inecraftFormatting
+[22:14:38] [main/INFO] [LiquidBounce]: Starting Pride b30, by CCBlueX, JieMo, LvZiQiaoinecraftFormatting
+[22:14:38] [main/INFO] [LiquidBounce]: Loading Fonts.inecraftFormatting

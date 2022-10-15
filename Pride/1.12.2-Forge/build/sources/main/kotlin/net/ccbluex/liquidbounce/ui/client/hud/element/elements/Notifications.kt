@@ -1,5 +1,6 @@
 package net.ccbluex.liquidbounce.ui.client.hud.element.elements
 
+import javafx.scene.effect.BlurType
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.api.minecraft.client.gui.IFontRenderer
 import net.ccbluex.liquidbounce.api.minecraft.util.IResourceLocation
@@ -152,7 +153,7 @@ class Notification(
         GL11.glTranslated(width - (width * pct), 0.0, 0.0)
         GL11.glTranslatef(-width.toFloat(), 0F, 0F)
         //Draw Noti
-        //BlurUtils.draw(0f,-1f,width.toFloat(),height.toFloat(),1f)
+//        blur.draw(0f,-1f,width.toFloat(),height.toFloat(),1f)
       RenderUtils.drawShadowWithCustomAlpha(-22F, 0F, width + 22F, height.toFloat(), 200F)
         RenderUtils.drawGradientSideways(-22.0, 0.0, width.toDouble(), height.toDouble(),  Color(0, 0, 0, 200).rgb, Color( 255, 255, 255, 100).rgb)
         RenderUtils.drawRect(-22F, 0F, width.toFloat(), height.toFloat(), Color(0, 0, 0, 150))

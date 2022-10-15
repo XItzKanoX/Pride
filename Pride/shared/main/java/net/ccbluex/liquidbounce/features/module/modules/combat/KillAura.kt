@@ -118,7 +118,7 @@ class KillAura : Module() {
     // AutoBlock
     private val delayedBlockValue = BoolValue("DelayedBlock", true)
     private val afterAttackValue = BoolValue("AutoBlock-AfterAttack", false)
-    private val blockModeValue = ListValue("BlockMode", arrayOf("None", "Normal", "Vanilla", "Packet", "Fake", "Mouse", "GameSettings", "UseItem" ), "Packet")
+    private val blockModeValue = ListValue("BlockMode", arrayOf("None", "C07C08", "C07", "Packet", "Fake", "Mouse", "GameSettings", "UseItem" ), "Packet")
     private val blockRate = IntegerValue("BlockRate", 100, 1, 100)
 
     // Raycast
@@ -998,14 +998,14 @@ class KillAura : Module() {
      */
     private fun startBlocking(interactEntity: IEntity) {
         if (LiquidBounce.moduleManager[OldHitting::class.java].state){
-            if(blockModeValue.get().equals("Vanilla",true)) {
-                mc.netHandler.addToSendQueue(createblockpacket2(mc.thePlayer!!.inventory.getCurrentItemInHand(), ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM)!!)
-                mc.netHandler.addToSendQueue(createblockpacket2(mc.thePlayer!!.inventory.getCurrentItemInHand(), ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM)!!)
+            if(blockModeValue.get().equals("c07c08",true)) {
+                mc.netHandler.addToSendQueue(createblockc08c07(mc.thePlayer!!.inventory.getCurrentItemInHand(), ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM)!!)
+                mc.netHandler.addToSendQueue(createblockc08c07(mc.thePlayer!!.inventory.getCurrentItemInHand(), ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM)!!)
                 blockingStatus = true
             }
-            if (blockModeValue.get().equals("normal", true)) {
-                mc.netHandler.addToSendQueue(createblockpacket(mc.thePlayer!!.heldItem, WEnumHand.MAIN_HAND)!!)
-                mc.netHandler.addToSendQueue(createblockpacket(mc.thePlayer!!.heldItem, WEnumHand.OFF_HAND)!!)
+            if (blockModeValue.get().equals("c07", true)) {
+                mc.netHandler.addToSendQueue(createblockc07(mc.thePlayer!!.heldItem, WEnumHand.MAIN_HAND)!!)
+                mc.netHandler.addToSendQueue(createblockc07(mc.thePlayer!!.heldItem, WEnumHand.OFF_HAND)!!)
                 blockingStatus = true
             }
             if(blockModeValue.get().equals("UseItem", true)) {
@@ -1033,7 +1033,7 @@ class KillAura : Module() {
      */
     private fun stopBlocking() {
         if (blockingStatus) {
-            if(blockModeValue.get().equals("Vanilla", true)){
+            if(blockModeValue.get().equals("c07c08", true)){
                 mc.netHandler.addToSendQueue(
                         classProvider.createCPacketPlayerDigging(
                                 ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM,
@@ -1045,7 +1045,7 @@ class KillAura : Module() {
             if(blockModeValue.get().equals("UseItem", true)) {
                 KeyBinding.setKeyBindState(mc.gameSettings.keyBindUseItem.keyCode, false)
             }
-            if (blockModeValue.get().equals("normal", true)) {
+            if (blockModeValue.get().equals("c08", true)) {
                 mc.gameSettings.keyBindUseItem.pressed = false
                 mc.thePlayer!!.itemInUseCount = 0
             }

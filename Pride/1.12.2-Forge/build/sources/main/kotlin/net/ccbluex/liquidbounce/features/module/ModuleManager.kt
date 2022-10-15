@@ -69,6 +69,7 @@ class ModuleManager : Listenable {
                 NoRotateSet::class.java,
                 ChestStealer::class.java,
                 Scaffold::class.java,
+//                PlayerHealthSend::class.java,
                 CivBreak::class.java,
                 Tower::class.java,
                 FastBreak::class.java,

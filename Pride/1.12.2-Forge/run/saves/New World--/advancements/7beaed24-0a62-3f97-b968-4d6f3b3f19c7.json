@@ -115,6 +115,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "plains": "2022-10-15 21:25:30 +0800",
       "roofed_forest": "2022-10-14 21:36:04 +0800",
       "river": "2022-10-14 21:36:28 +0800"
     },

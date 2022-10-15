@@ -53,12 +53,12 @@ public class Debug extends MinecraftInstance {
         GlStateManager.rotate((float) (f1 * -80.0F), 1, 0, 0);
     }
     public static void Remix(EnumHandSide p_187459_1_, float equippedProg, float swingProgress) {
-            double f = 0;
-            genCustom((float) f, 0.83f);
-            func_178103_d2();
-            f = Math.sin(swingProgress * swingProgress * Math.PI);
-            double f1 = Math.sin(Math.sqrt(swingProgress) * Math.PI);
-            float f4 = MathHelper.sin(MathHelper.sqrt(f1) * 3.83f);
+        double f = 0;
+        genCustom((float) f, 0.83f);
+        func_178103_d2();
+        f = Math.sin(swingProgress * swingProgress * Math.PI);
+        double f1 = Math.sin(Math.sqrt(swingProgress) * Math.PI);
+        float f4 = MathHelper.sin(MathHelper.sqrt(f1) * 3.83f);
         GlStateManager.translate(-0.5f, 0.2f, 0.2f);
         GlStateManager.rotate((-f4) * 0.0f, 0.0f, 0.0f, 0.0f);
         GlStateManager.rotate((-f4) * 43.0f, 58.0f, 23.0f, 45.0f);

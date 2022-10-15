@@ -7,7 +7,6 @@ package net.ccbluex.liquidbounce.features.module.modules.combat
 
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketEntityAction
-import net.ccbluex.liquidbounce.api.minecraft.network.play.client.ICPacketPlayer
 import net.ccbluex.liquidbounce.api.minecraft.util.WBlockPos
 import net.ccbluex.liquidbounce.event.*
 import net.ccbluex.liquidbounce.features.module.Module
@@ -22,13 +21,8 @@ import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.FloatValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
-import net.minecraft.network.play.client.CPacketEntityAction
-import net.minecraft.network.play.client.CPacketPlayer
 import net.minecraft.network.play.server.SPacketEntityVelocity
-import net.minecraft.network.play.server.SPacketPlayerPosLook
-import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.MathHelper
-import java.util.concurrent.ThreadLocalRandom
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -42,10 +36,7 @@ class Velocity : Module() {
     private val verticalValue = FloatValue("Vertical", 0F, 0F, 1F)
     private val velocityTickValue = IntegerValue("VelocityTick", 1, 0, 10)
     private val modeValue = ListValue("Mode", arrayOf("HuaYuTing", "HuaYuTingJump", "Legit", "aac5.2.0", "AAC5Reduce", "Cancel", "Vulcan","Simple", "Vanilla", "Tick",  "AAC", "AACPush", "AACZero", "AACv4",
-            "Reverse", "SmoothReverse", "Jump",
-            "HYT",
-            "HYT2",
-            "Glitch"), "Simple")
+        "Reverse", "SmoothReverse", "Jump", "Glitch"), "Simple")
 
     private val onlyGroundValue = BoolValue("OnlyGround", false)
     private val onlyCombatValue = BoolValue("OnlyCombat", false)
@@ -67,7 +58,6 @@ class Velocity : Module() {
     private var velocityTimer = MSTimer()
     private var velocityInput = false
     private var velocityTick = 0
-    private var velocityAirTick = 0
     private var huayutingjumpflag = false
     // SmoothReverse
     private var reverseHurt = false
@@ -155,27 +145,17 @@ class Velocity : Module() {
                     velocityInput = false
                 }
             }
-            "hyt" -> {
-                if (mc.thePlayer!!.hurtTime> 1 && velocityInput) {
-                    mc.thePlayer!!.motionX *= 0.21
-                    mc.thePlayer!!.motionZ *= 0.21
-                }
-            }
-            "hyt2" -> {
-                if (mc.thePlayer!!.hurtTime> 1 && velocityInput) {
-                    mc.thePlayer!!.motionX *= 0.21
-                    mc.thePlayer!!.motionZ *= 0.21
-                }
-            }
             "huayutingjump" -> {
                 if(mc.thePlayer!!.hurtTime > 0 && huayutingjumpflag) {
                     if(mc.thePlayer!!.onGround){
-                        mc.thePlayer!!!!.hurtTime <= 6
-                        mc.thePlayer!!.motionX *= 0.600151164
-                        mc.thePlayer!!.motionZ *= 0.600151164
-                        mc.thePlayer!!.hurtTime <= 4
-                        mc.thePlayer!!.motionX *= 0.700151164
-                        mc.thePlayer!!.motionZ *= 0.700151164
+                        if (mc.thePlayer!!.hurtTime <= 6) {
+                            mc.thePlayer!!.motionX *= 0.600151164
+                            mc.thePlayer!!.motionZ *= 0.600151164
+                        }
+                        if (mc.thePlayer!!.hurtTime <= 4) {
+                            mc.thePlayer!!.motionX *= 0.700151164
+                            mc.thePlayer!!.motionZ *= 0.700151164
+                        }
                     }else if(mc.thePlayer!!.hurtTime <= 9) {
                         mc.thePlayer!!.motionX *= 0.6001421204
                         mc.thePlayer!!.motionZ *= 0.6001421204
@@ -221,7 +201,7 @@ class Velocity : Module() {
 
             "aacv4" -> {
                 if (thePlayer.hurtTime>0 && !thePlayer.onGround){
-                    val reduce=aacv4MotionReducerValue.get();
+                    val reduce=aacv4MotionReducerValue.get()
                     thePlayer.motionX *= reduce
                     thePlayer.motionZ *= reduce
                 }
@@ -238,7 +218,7 @@ class Velocity : Module() {
 
                     // Reduce Y
                     if (thePlayer.hurtResistantTime > 0 && aacPushYReducerValue.get()
-                            && !LiquidBounce.moduleManager[Speed::class.java]!!.state)
+                        && !LiquidBounce.moduleManager[Speed::class.java].state)
                         thePlayer.motionY -= 0.014999993
                 }
 
@@ -279,31 +259,10 @@ class Velocity : Module() {
             velocityTimer.reset()
 
             when (modeValue.get().toLowerCase()) {
-                "hyt" -> {
-                     var canCancel = false
-                    if (classProvider.isSPacketEntityVelocity(event.packet)) {
-                        event.cancelEvent()
-                        canCancel = true
-                    }
-                    if (event.packet is SPacketPlayerPosLook) {
-                        val packet = event.packet
-                        event.cancelEvent()
-                        mc.netHandler.addToSendQueue(
-                                classProvider.createCPacketPlayerPosLook(packet.x, packet.y, packet.z, packet.yaw, packet.pitch, mc.thePlayer!!.onGround)
-                        )
-                        canCancel = false
-                    }
-                }
-                "hyt2" ->{
-                        val packet = event.packet.asSPacketPosLook()
-                        event.cancelEvent()
-                        mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerLook(packet.yaw,packet.pitch,mc.thePlayer!!.onGround))
-
-                }
                 "vulcan" -> {
                     velocityInput = true
-                    val horizontal = 0F
-                    val vertical = 0F
+                    val horizontal = horizontalValue.get()
+                    val vertical = verticalValue.get()
 
                     if (horizontal == 0F && vertical == 0F) {
                         event.cancelEvent()
@@ -353,10 +312,8 @@ class Velocity : Module() {
                 }
                 "tick" -> {
                     velocityInput = true
-                    val horizontal = 0F
-                    val vertical = 0F
 
-                        event.cancelEvent()
+                    event.cancelEvent()
 
                 }
                 "simple" -> {

@@ -10,7 +10,7 @@
     "Array": true
   },
   "AirJump": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -125,7 +125,7 @@
     "Array": true
   },
   "AutoWalk": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -145,7 +145,7 @@
     "Array": true
   },
   "BlockESP": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -155,7 +155,7 @@
     "Array": true
   },
   "BlockWalk": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -175,12 +175,12 @@
     "Array": true
   },
   "CameraClip": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
   "Cape": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -240,7 +240,7 @@
     "Array": true
   },
   "ESP": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -265,7 +265,7 @@
     "Array": true
   },
   "FastPlace": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -280,7 +280,7 @@
     "Array": true
   },
   "Fly": {
-    "State": false,
+    "State": true,
     "KeyBind": 33,
     "Array": true
   },
@@ -305,7 +305,7 @@
     "Array": true
   },
   "Fullbright": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -345,7 +345,7 @@
     "Array": true
   },
   "IceSpeed": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -390,12 +390,12 @@
     "Array": true
   },
   "KillAura": {
-    "State": false,
+    "State": true,
     "KeyBind": 19,
     "Array": true
   },
   "LadderJump": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -405,7 +405,7 @@
     "Array": false
   },
   "LiquidWalk": {
-    "State": false,
+    "State": true,
     "KeyBind": 36,
     "Array": true
   },
@@ -615,7 +615,7 @@
     "Array": true
   },
   "SkinDerp": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },

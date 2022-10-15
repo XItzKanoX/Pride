@@ -9,12 +9,12 @@
     "TargetDead": false
   },
   "features": {
-    "AntiForge": true,
-    "AntiForgeFML": true,
+    "AntiForge": false,
+    "AntiForgeFML": false,
     "AntiForgeProxy": true,
     "AntiForgePayloads": true,
-    "BungeeSpoof": false,
-    "AutoReconnectDelay": 5000
+    "BungeeSpoof": true,
+    "AutoReconnectDelay": 60000
   },
   "thealtening": {
     "API-Key": ""
@@ -81,7 +81,7 @@
     "Rotation": true
   },
   "AntiVoid": {
-    "Mode": "Hypixel",
+    "Mode": "MotionFlag",
     "Hypixel-PullbackTime": 800.0,
     "MaxFallDistance": 10.0,
     "ResetMotion": true,
@@ -122,8 +122,8 @@
   "AutoHead": {
     "EatHead": true,
     "EatApples": true,
-    "Health": 10.0,
-    "Delay": 750
+    "Health": 5.85,
+    "Delay": 100
   },
   "AutoL": {
     "AutoLmsg": "@[Pride]"
@@ -327,12 +327,12 @@
     "LongJump": false
   },
   "FastUse": {
-    "Mode": "NCP",
-    "NoMove": false,
+    "Mode": "Vulcan",
+    "NoMove": true,
     "CustomDelay": 0,
     "CustomSpeed": 2,
-    "CustomTimer": 1.1,
-    "StopMoving": false
+    "CustomTimer": 1.05,
+    "StopMoving": true
   },
   "Fly": {
     "Mode": "Vanilla",
@@ -409,10 +409,10 @@
     "Lava": true
   },
   "InvMove": {
-    "NoDetectable": false,
-    "Rotate": true,
+    "NoDetectable": true,
+    "Rotate": false,
     "AACAdditionPro": false,
-    "NoMoveClicks": false
+    "NoMoveClicks": true
   },
   "InventoryCleaner": {
     "MaxDelay": 600,
@@ -455,48 +455,48 @@
     "Mode": "Quit"
   },
   "KillAura": {
-    "MaxCPS": 8,
-    "MinCPS": 5,
+    "MaxCPS": 11,
+    "MinCPS": 10,
     "HurtTime": 10,
-    "Cooldown": 1.0,
-    "Range": 3.7,
-    "BlockRange": 3.0,
-    "ThroughWallsRange": 3.0,
+    "Cooldown": 0.0,
+    "Range": 5.0,
+    "BlockRange": 0.0,
+    "ThroughWallsRange": 0.0,
     "RangeSprintReducement": 0.0,
     "Priority": "Distance",
     "TargetMode": "Switch",
     "Swing": true,
     "KeepSprint": true,
     "DelayedBlock": true,
-    "AutoBlock-AfterAttack": true,
-    "BlockMode": "Normal",
+    "AutoBlock-AfterAttack": false,
+    "BlockMode": "C07C08",
     "BlockRate": 100,
-    "RayCast": true,
+    "RayCast": false,
     "RayCastIgnored": false,
-    "LivingRayCast": true,
+    "LivingRayCast": false,
     "AAC": false,
-    "MaxTurnSpeed": 180.0,
-    "MinTurnSpeed": 180.0,
-    "Lighting": false,
+    "MaxTurnSpeed": 10086.0,
+    "MinTurnSpeed": 10086.0,
+    "Lighting": true,
     "Lighting-Mode": "Attack",
     "Lighting-Sound": true,
-    "SilentRotation": true,
-    "Strafe": "Off",
-    "RandomCenter": true,
+    "SilentRotation": false,
+    "Strafe": "Silent",
+    "RandomCenter": false,
     "Outborder": false,
-    "FOV": 180.0,
+    "FOV": 360.0,
     "AlwaysHitable": true,
     "Predict": true,
-    "MaxPredictSize": 1.0,
-    "MinPredictSize": 1.0,
+    "MaxPredictSize": 0.53,
+    "MinPredictSize": 0.1,
     "FailRate": 0.0,
-    "FakeSwing": true,
+    "FakeSwing": false,
     "NoInvAttack": false,
     "NoInvDelay": 200,
     "LimitedMultiTargets": 0,
-    "Mark": "None",
+    "Mark": "Jello",
     "FakeSharp": true,
-    "Circle": true,
+    "Circle": false,
     "CircleRed": 255,
     "CircleGreen": 255,
     "CircleBlue": 255,
@@ -542,7 +542,7 @@
     "FOV": 1.0
   },
   "NoFall": {
-    "Mode": "SpoofGround",
+    "Mode": "MLG",
     "MinMLGHeight": 5.0
   },
   "NoFucker": {
@@ -557,7 +557,7 @@
     "NoZero": false
   },
   "NoSlow": {
-    "PacketMode": "AntiCheat",
+    "PacketMode": "HuaYuTing",
     "BlockForwardMultiplier": 1.0,
     "BlockStrafeMultiplier": 1.0,
     "ConsumeForwardMultiplier": 1.0,
@@ -596,7 +596,8 @@
     "Scale": 1.03
   },
   "OldHitting": {
-    "Mode": "SideDown"
+    "Mode": "SideDown",
+    "Only-Sword": true
   },
   "Phase": {
     "Mode": "Vanilla"
@@ -706,7 +707,7 @@
     "Custom": false
   },
   "Speed": {
-    "Mode": "NCPBHop",
+    "Mode": "VulcanHop",
     "CustomSpeed": 1.6,
     "CustomY": 0.0,
     "CustomTimer": 1.0,
@@ -744,7 +745,7 @@
   },
   "SuperKnockback": {
     "HurtTime": 10,
-    "Mode": "HYTPacket",
+    "Mode": "MCYC",
     "OnlyMove": false,
     "OnlyGround": false,
     "Delay": 0
@@ -757,7 +758,7 @@
   "TargetStrafe": {
     "RenderMode": "Pentagon",
     "ThirdPersonView": false,
-    "Radius": 0.1,
+    "Radius": 5.0,
     "HoldSpace": false,
     "OnlySpeed": false,
     "keyFly": false
@@ -828,7 +829,7 @@
   },
   "Trigger": {
     "MaxCPS": 8,
-    "MinCPS": 5
+    "MinCPS": 8
   },
   "TrueSight": {
     "Barriers": true,

@@ -22,14 +22,14 @@ import net.ccbluex.liquidbounce.value.ListValue
 @ModuleInfo(name = "Criticals", description = "Automatically deals critical hits.", category = ModuleCategory.COMBAT)
 class Criticals : Module() {
 
-    val modeValue = ListValue("Mode", arrayOf("NewPacket", "Lite", "HytVulcan",  "Vulcan", "vulcanfake", "Spartan", "StarPacket", "Packet", "NcpPacket", "NoGround", "Hop", "TPHop", "Jump", "LowJump", "Visual"), "Packet")
+    val modeValue = ListValue("Mode", arrayOf("NewPacket", "Lite", "HytTest", "HytVulcan",  "Vulcan", "vulcanfake", "Spartan", "StarPacket", "Packet", "NcpPacket", "NoGround", "Hop", "TPHop", "Jump", "LowJump", "Visual"), "Packet")
     val delayValue = IntegerValue("Delay", 0, 0, 500)
     private val lookValue = BoolValue("SendC06", false)
     private val hurtTimeValue = IntegerValue("HurtTime", 10, 0, 10)
 
     var attacks = 0
     val msTimer = MSTimer()
-    fun sendCriticalPacket(
+    private fun sendCriticalPacket(
         xOffset: Double = 0.0,
         yOffset: Double = 0.0,
         zOffset: Double = 0.0,
@@ -89,6 +89,32 @@ class Criticals : Module() {
                     sendCriticalPacket(xOffset = motionX / 3, yOffset = 0.20000004768372, zOffset = motionZ / 3, ground = false)
                     sendCriticalPacket(xOffset = motionX / 1.5, yOffset = 0.12160004615784, zOffset = motionZ / 1.5, ground = false)
                 }
+                "hyttest" -> {
+                    classProvider.createCPacketPlayerPosition(
+                        mc.thePlayer!!.posX,
+                        mc.thePlayer!!.posY + 0.00001100134977413,
+                        mc.thePlayer!!.posZ,
+                        false
+                    )
+                    classProvider.createCPacketPlayerPosition(
+                        mc.thePlayer!!.posX,
+                        mc.thePlayer!!.posY + 0.00000000013487744,
+                        mc.thePlayer!!.posZ,
+                        false
+                    )
+                    classProvider.createCPacketPlayerPosition(
+                        mc.thePlayer!!.posX,
+                        mc.thePlayer!!.posY + 0.00000571003114589,
+                        mc.thePlayer!!.posZ,
+                        false
+                    )
+                    classProvider.createCPacketPlayerPosition(
+                        mc.thePlayer!!.posX,
+                        mc.thePlayer!!.posY + 0.00000001578887744,
+                        mc.thePlayer!!.posZ,
+                        false
+                    )
+                }
                 "hytvulcan" -> {
                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(x, y +  0.000511322554, z, false))
                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(x, y + 0.00011119999543618, z, false))
@@ -127,10 +153,10 @@ class Criticals : Module() {
                     sendCriticalPacket(yOffset = 0.01400000001304, ground = false)
                     sendCriticalPacket(yOffset = 0.00150000001304, ground = false)
                 }
-            "lite" -> {
-                sendCriticalPacket(yOffset = 0.015626, ground = false)
-                sendCriticalPacket(yOffset = 0.00000000343, ground = false)
-            }
+                "lite" -> {
+                    sendCriticalPacket(yOffset = 0.015626, ground = false)
+                    sendCriticalPacket(yOffset = 0.00000000343, ground = false)
+                }
                 "packet" -> {
                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(x, y + 0.0625, z, true))
                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(x, y, z, false))

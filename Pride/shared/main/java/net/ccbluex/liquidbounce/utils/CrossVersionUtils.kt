@@ -24,20 +24,21 @@ inline fun createUseItemPacket(itemStack: IItemStack?, hand: WEnumHand): IPacket
         classProvider.createCPacketTryUseItem(hand)
     }
 }
-inline fun createblockpacket2(itemStack: IItemStack?, hand: ICPacketPlayerDigging.WAction): IPacket? {
+inline fun createblockc08c07(itemStack: IItemStack?, hand: ICPacketPlayerDigging.WAction): IPacket? {
     @Suppress("ConstantConditionIf")
     return if (Backend.MINECRAFT_VERSION_MINOR == 8) {
         classProvider.createCPacketPlayerBlockPlacement(itemStack)
+        classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM, WBlockPos.ORIGIN, MinecraftInstance.classProvider.getEnumFacing(EnumFacingType.DOWN))
     } else {
         classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM, WBlockPos.ORIGIN, MinecraftInstance.classProvider.getEnumFacing(EnumFacingType.DOWN))
     }
 }
-inline fun createblockpacket(itemStack: IItemStack?, hand: WEnumHand): IPacket? {
+inline fun createblockc07(itemStack: IItemStack?, hand: WEnumHand): IPacket? {
     @Suppress("ConstantConditionIf")
     return if (Backend.MINECRAFT_VERSION_MINOR == 8) {
-        classProvider.createCPacketTryUseItem(hand)
+        classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM, WBlockPos.ORIGIN, classProvider.getEnumFacing(EnumFacingType.DOWN))
     } else {
-        classProvider.createCPacketPlayerDigging(ICPacketPlayerDigging.WAction.RELEASE_USE_ITEM, WBlockPos.ORIGIN, MinecraftInstance.classProvider.getEnumFacing(EnumFacingType.DOWN))
+      classProvider.createCPacketTryUseItem(hand)
     }
 }
 inline fun createOpenInventoryPacket(): IPacket {

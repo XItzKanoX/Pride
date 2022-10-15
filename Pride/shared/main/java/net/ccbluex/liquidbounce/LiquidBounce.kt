@@ -15,6 +15,7 @@ import net.ccbluex.liquidbounce.event.ClientShutdownEvent
 import net.ccbluex.liquidbounce.event.EventManager
 import net.ccbluex.liquidbounce.features.command.CommandManager
 import net.ccbluex.liquidbounce.features.module.ModuleManager
+import net.ccbluex.liquidbounce.features.module.modules.render.PlayerHealthSend
 import net.ccbluex.liquidbounce.features.special.AntiForge
 import net.ccbluex.liquidbounce.features.special.BungeeCordSpoof
 import net.ccbluex.liquidbounce.features.special.ClientRichPresence
@@ -58,6 +59,7 @@ object LiquidBounce {
     lateinit var moduleManager: ModuleManager
     lateinit var commandManager: CommandManager
     lateinit var eventManager: EventManager
+    lateinit var playerhealthsend: PlayerHealthSend
     lateinit var fileManager: FileManager
     lateinit var scriptManager: ScriptManager
     lateinit var combatManager: CombatManager
@@ -138,6 +140,10 @@ object LiquidBounce {
         // ClickGUI
         clickGui = ClickGui()
         fileManager.loadConfig(fileManager.clickGuiConfig)
+
+        playerhealthsend = PlayerHealthSend()
+        eventManager.registerListener(playerhealthsend)
+        eventManager.registerListener(this.playerhealthsend)
 
         // Tabs (Only for Forge!)
         if (hasForge()) {

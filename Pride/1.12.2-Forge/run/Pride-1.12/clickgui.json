@@ -56,7 +56,7 @@
       "Settings": true
     },
     "NoFriends": {
-      "Settings": false
+      "Settings": true
     },
     "SuperKnockback": {
       "Settings": false
@@ -75,10 +75,10 @@
     }
   },
   "Player": {
-    "open": true,
+    "open": false,
     "visible": true,
-    "posX": 428,
-    "posY": 94,
+    "posX": 445,
+    "posY": 85,
     "AntiAFK": {
       "Settings": false
     },
@@ -120,10 +120,10 @@
     }
   },
   "Movement": {
-    "open": false,
+    "open": true,
     "visible": true,
-    "posX": 222,
-    "posY": 40,
+    "posX": 491,
+    "posY": 62,
     "AirJump": {
       "Settings": false
     },
@@ -131,7 +131,7 @@
       "Settings": true
     },
     "AntiVoid": {
-      "Settings": false
+      "Settings": true
     },
     "AutoWalk": {
       "Settings": false
@@ -215,7 +215,7 @@
       "Settings": false
     },
     "TargetStrafe": {
-      "Settings": false
+      "Settings": true
     },
     "WallClimb": {
       "Settings": false
@@ -227,13 +227,13 @@
   "Render": {
     "open": true,
     "visible": true,
-    "posX": 275,
-    "posY": 73,
+    "posX": 318,
+    "posY": 40,
     "AntiBlind": {
       "Settings": false
     },
     "AttackEffects": {
-      "Settings": true
+      "Settings": false
     },
     "BlockESP": {
       "Settings": false
@@ -296,7 +296,7 @@
       "Settings": false
     },
     "OldHitting": {
-      "Settings": false
+      "Settings": true
     },
     "Projectiles": {
       "Settings": false
@@ -329,8 +329,8 @@
   "World": {
     "open": false,
     "visible": true,
-    "posX": 100,
-    "posY": 85,
+    "posX": 263,
+    "posY": 142,
     "AutoBreak": {
       "Settings": false
     },
@@ -488,22 +488,22 @@
       "Settings": false
     }
   },
-  "Fun": {
-    "open": false,
+  "Targets": {
+    "open": true,
     "visible": true,
     "posX": 100,
-    "posY": 145,
+    "posY": 185
+  },
+  "Fun": {
+    "open": true,
+    "visible": true,
+    "posX": 188,
+    "posY": 110,
     "Derp": {
       "Settings": false
     },
     "SkinDerp": {
       "Settings": false
     }
-  },
-  "Targets": {
-    "open": true,
-    "visible": true,
-    "posX": 100,
-    "posY": 185
   }
 }
