@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:3
+difficulty:0
 fancyGraphics:true
 ao:2
 renderClouds:true
@@ -97,8 +97,8 @@ soundCategory_ambient:1.0
 soundCategory_voice:1.0
 modelPart_cape:true
 modelPart_jacket:true
-modelPart_left_sleeve:true
+modelPart_left_sleeve:false
 modelPart_right_sleeve:false
 modelPart_left_pants_leg:true
-modelPart_right_pants_leg:true
-modelPart_hat:false
+modelPart_right_pants_leg:false
+modelPart_hat:true

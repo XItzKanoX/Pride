@@ -10,7 +10,7 @@
   },
   "features": {
     "AntiForge": false,
-    "AntiForgeFML": false,
+    "AntiForgeFML": true,
     "AntiForgeProxy": true,
     "AntiForgePayloads": true,
     "BungeeSpoof": true,

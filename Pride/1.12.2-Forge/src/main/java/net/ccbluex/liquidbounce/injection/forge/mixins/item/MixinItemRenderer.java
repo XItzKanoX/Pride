@@ -24,6 +24,7 @@ import net.minecraft.util.EnumHandSide;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.lwjgl.input.Mouse;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -142,7 +143,7 @@ public abstract class MixinItemRenderer {
                 }
             } else {
                 if(ot.getState()){
-                    if (aura.getBlockingStatus() || (player.getActiveItemStack() == itemStackOffHand || thePlayerisBlocking || mc2.gameSettings.keyBindUseItem.pressed) && (!ot.getOnlySword().get() || itemStackMainHand.getItem() instanceof ItemSword)) {
+                    if (aura.getBlockingStatus() || (Mouse.isButtonDown(3)) && (!ot.getOnlySword().get() || itemStackMainHand.getItem() instanceof ItemSword)) {
                         final String z = ot.getModeValue().get();
                         switch(z){
                             case "Pride": {

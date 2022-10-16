@@ -75,13 +75,10 @@ object LiquidBounce {
     // Menu Background
     var background: IResourceLocation? = null
 
-
-
     // Discord RPC
     lateinit var clientRichPresence: ClientRichPresence
 
     lateinit var wrapper: Wrapper
-
 
     /**
      * Execute if client will be started
@@ -110,8 +107,6 @@ object LiquidBounce {
 
         // Init Discord RPC
         clientRichPresence = ClientRichPresence()
-
-
 
         // Create command manager
         commandManager = CommandManager()

@@ -90,7 +90,7 @@
     "Array": true
   },
   "AutoL": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -390,7 +390,7 @@
     "Array": true
   },
   "KillAura": {
-    "State": true,
+    "State": false,
     "KeyBind": 19,
     "Array": true
   },
