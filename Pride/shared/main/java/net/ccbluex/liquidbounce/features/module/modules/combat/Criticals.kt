@@ -22,7 +22,7 @@ import net.ccbluex.liquidbounce.value.ListValue
 @ModuleInfo(name = "Criticals", description = "Automatically deals critical hits.", category = ModuleCategory.COMBAT)
 class Criticals : Module() {
 
-    val modeValue = ListValue("Mode", arrayOf("NewPacket", "Lite", "HytTest", "HytVulcan",  "Vulcan", "vulcanfake", "Spartan", "StarPacket", "Packet", "NcpPacket", "NoGround", "Hop", "TPHop", "Jump", "LowJump", "Visual"), "Packet")
+    val modeValue = ListValue("Mode", arrayOf("NewPacket", "Lite", "HytTest", "HytVulcan", "HuayutingNew", "Vulcan", "vulcanfake", "Spartan", "StarPacket", "Packet", "NcpPacket", "NoGround", "Hop", "TPHop", "Jump", "LowJump", "Visual"), "Packet")
     val delayValue = IntegerValue("Delay", 0, 0, 500)
     private val lookValue = BoolValue("SendC06", false)
     private val hurtTimeValue = IntegerValue("HurtTime", 10, 0, 10)
@@ -114,6 +114,15 @@ class Criticals : Module() {
                         mc.thePlayer!!.posZ,
                         false
                     ))
+                }
+                "huayutingnew" -> {
+                    attacks++
+                    if (attacks > 5) {
+                        sendCriticalPacket(yOffset = 0.0114514, ground = false)
+                        sendCriticalPacket(yOffset = 0.0019 ,ground = false)
+                        sendCriticalPacket(yOffset = 0.000001 ,ground = false)
+                        attacks = 0
+                    }
                 }
                 "hytvulcan" -> {
                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(x, y +  0.000511322554, z, false))
