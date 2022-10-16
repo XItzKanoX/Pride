@@ -1,17 +1,5 @@
 {
-  "minecraft:recipes/building_blocks/magenta_wool": {
-    "criteria": {
-      "has_white_wool": "2022-10-15 13:58:29 +0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/light_blue_wool": {
-    "criteria": {
-      "has_white_wool": "2022-10-15 13:58:29 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/orange_wool": {
     "criteria": {
       "has_white_wool": "2022-10-15 13:58:29 +0800"
     },
@@ -41,9 +29,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/painting": {
+  "minecraft:recipes/tools/golden_pickaxe": {
     "criteria": {
-      "has_wool": "2022-10-15 13:58:29 +0800"
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
     },
     "done": true
   },
@@ -53,13 +41,117 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/light_gray_wool": {
+  "minecraft:recipes/misc/gold_nugget": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blue_wool": {
     "criteria": {
       "has_white_wool": "2022-10-15 13:58:29 +0800"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/blue_wool": {
+  "minecraft:recipes/building_blocks/gold_block": {
+    "criteria": {
+      "has_at_least_9_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_chestplate": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_axe": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_bed": {
+    "criteria": {
+      "has_white_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/green_wool": {
+    "criteria": {
+      "has_white_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_carpet": {
+    "criteria": {
+      "has_white_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_helmet": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool": {
+    "criteria": {
+      "has_white_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-10-15 14:00:15 +0800",
+      "roofed_forest": "2022-10-15 13:58:37 +0800",
+      "river": "2022-10-15 13:58:29 +0800"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/magenta_wool": {
+    "criteria": {
+      "has_white_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_hoe": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/orange_wool": {
+    "criteria": {
+      "has_white_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_sword": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/golden_apple": {
+    "criteria": {
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2022-10-15 13:58:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_wool": {
     "criteria": {
       "has_white_wool": "2022-10-15 13:58:29 +0800"
     },
@@ -77,19 +169,7 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/white_bed": {
-    "criteria": {
-      "has_white_wool": "2022-10-15 13:58:29 +0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/cyan_wool": {
-    "criteria": {
-      "has_white_wool": "2022-10-15 13:58:29 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/green_wool": {
     "criteria": {
       "has_white_wool": "2022-10-15 13:58:29 +0800"
     },
@@ -101,24 +181,22 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/white_carpet": {
+  "minecraft:recipes/redstone/light_weighted_pressure_plate": {
     "criteria": {
-      "has_white_wool": "2022-10-15 13:58:29 +0800"
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/brown_wool": {
+  "minecraft:recipes/tools/golden_shovel": {
     "criteria": {
-      "has_white_wool": "2022-10-15 13:58:29 +0800"
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
+  "minecraft:recipes/combat/golden_boots": {
     "criteria": {
-      "plains": "2022-10-15 14:00:15 +0800",
-      "roofed_forest": "2022-10-15 13:58:37 +0800",
-      "river": "2022-10-15 13:58:29 +0800"
+      "has_gold_ingot": "2022-10-16 11:47:54 +0800"
     },
-    "done": false
+    "done": true
   }
 }

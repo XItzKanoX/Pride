@@ -142,12 +142,13 @@ public abstract class MixinItemRenderer {
                 }
             } else {
                 if(ot.getState()){
-                    if (aura.getBlockingStatus() || itemStackOffHand.getItem() instanceof ItemShield && (player.getActiveItemStack() == itemStackOffHand || thePlayerisBlocking) && itemStackMainHand.getItem() instanceof ItemSword) {
+                    if (aura.getBlockingStatus() || (player.getActiveItemStack() == itemStackOffHand || thePlayerisBlocking || mc.gameSettings.keyBindUseItem.pressed) && (!ot.getOnlySword().get() || itemStackMainHand.getItem() instanceof ItemSword)) {
                         final String z = ot.getModeValue().get();
                         switch(z){
                             case "Pride": {
                                 Pride(enumhandside, p_187457_7_, p_187457_5_);
                                 break;
+
                             }
 
                             case "Vanilla": {

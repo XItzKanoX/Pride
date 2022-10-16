@@ -4,7 +4,7 @@ mouseSensitivity:0.5
 fov:1.0
 gamma:101.0
 saturation:0.0
-renderDistance:12
+renderDistance:11
 guiScale:2
 particles:0
 bobView:true
@@ -98,7 +98,7 @@ soundCategory_voice:1.0
 modelPart_cape:true
 modelPart_jacket:true
 modelPart_left_sleeve:true
-modelPart_right_sleeve:true
+modelPart_right_sleeve:false
 modelPart_left_pants_leg:true
 modelPart_right_pants_leg:true
-modelPart_hat:true
+modelPart_hat:false

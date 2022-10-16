@@ -2,7 +2,7 @@ Unsupposrted library path: D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12
 Unsupposrted library path: D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\build\classes\kotlin\api
 Unsupposrted library path: D:\BLD\我的世界\Src\Liquidbounce For Pride\Pride\1.12.2-Forge\build\resources\api
 Symbol range map extraction starting
-Processing 182 files
+Processing 183 files
 startProcessing "co/uk/hexeption/utils/OutlineUtils.java" md5: 368b7316da3e0c976b96bdfed5b69819
 endProcessing "co/uk/hexeption/utils/OutlineUtils.java"
 
@@ -1658,7 +1658,7 @@ startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinTabCom
     Compile Error! Pb(50) LiquidBounce cannot be resolved
 endProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/gui/MixinTabCompleter.java"
 
-startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/item/MixinItemRenderer.java" md5: 04e990c401f95c3e3301ff2ec121f6ec
+startProcessing "net/ccbluex/liquidbounce/injection/forge/mixins/item/MixinItemRenderer.java" md5: 73528b467cef48975432aff4e42c9254
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.combat.KillAura cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.features.module.modules.render.AntiBlind cannot be resolved
@@ -2897,7 +2897,7 @@ endProcessing "net/ccbluex/liquidbounce/ui/client/tools/GuiPortScanner.java"
 startProcessing "net/ccbluex/liquidbounce/ui/font/FontDetails.java" md5: 4cc22e4faea5c3f57673f8f35653ce3b
 endProcessing "net/ccbluex/liquidbounce/ui/font/FontDetails.java"
 
-startProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java" md5: acbe4fee8464ffeaee36415654302edc
+startProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java" md5: d1e776e21395c4e1d6e9e7ffb4509bc4
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.LiquidBounce cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.utils.misc.HttpUtils cannot be resolved
@@ -2992,8 +2992,8 @@ startProcessing "net/ccbluex/liquidbounce/ui/font/Fonts.java" md5: acbe4fee8464f
     Compile Error! Pb(2) IClassProvider cannot be resolved to a type
     Compile Error! Pb(2) GameFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
-    Compile Error! Pb(2) GameFontRenderer cannot be resolved to a type
     Compile Error! Pb(83) LiquidBounce cannot be resolved to a variable
+    Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
     Compile Error! Pb(2) IFontRenderer cannot be resolved to a type
@@ -3415,6 +3415,9 @@ endProcessing "net/ccbluex/liquidbounce/utils/misc/sound/TipSoundPlayer.java"
 startProcessing "net/ccbluex/liquidbounce/utils/render/AnimationUtils.java" md5: 42934f3a98258ac20af84a01f9106297
 endProcessing "net/ccbluex/liquidbounce/utils/render/AnimationUtils.java"
 
+startProcessing "net/ccbluex/liquidbounce/utils/render/BlendUtils.java" md5: 3c3dba62a4ea100d27c3acefcfc3ff3d
+endProcessing "net/ccbluex/liquidbounce/utils/render/BlendUtils.java"
+
 startProcessing "net/ccbluex/liquidbounce/utils/render/Colors.java" md5: 3255b64e5f0324993831f610e515eac6
 endProcessing "net/ccbluex/liquidbounce/utils/render/Colors.java"
 
@@ -3442,7 +3445,7 @@ startProcessing "net/ccbluex/liquidbounce/utils/render/PotionData.java" md5: a2c
     Compile Error! Pb(2) IPotion cannot be resolved to a type
 endProcessing "net/ccbluex/liquidbounce/utils/render/PotionData.java"
 
-startProcessing "net/ccbluex/liquidbounce/utils/render/RenderUtils.java" md5: 948ade9748b517be6d50f9126e55caee
+startProcessing "net/ccbluex/liquidbounce/utils/render/RenderUtils.java" md5: 0ccdce0a48fc7b86773bbaceb3819bb7
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved
     Compile Error! Pb(390) The import net.ccbluex.liquidbounce.api cannot be resolved

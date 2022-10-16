@@ -90,30 +90,30 @@ class Criticals : Module() {
                     sendCriticalPacket(xOffset = motionX / 1.5, yOffset = 0.12160004615784, zOffset = motionZ / 1.5, ground = false)
                 }
                 "hyttest" -> {
-                    classProvider.createCPacketPlayerPosition(
+                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(
                         mc.thePlayer!!.posX,
                         mc.thePlayer!!.posY + 0.00001100134977413,
                         mc.thePlayer!!.posZ,
                         false
-                    )
-                    classProvider.createCPacketPlayerPosition(
+                    ))
+                    mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(
                         mc.thePlayer!!.posX,
                         mc.thePlayer!!.posY + 0.00000000013487744,
                         mc.thePlayer!!.posZ,
                         false
-                    )
-                    classProvider.createCPacketPlayerPosition(
+                    ))
+                    mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(
                         mc.thePlayer!!.posX,
                         mc.thePlayer!!.posY + 0.00000571003114589,
                         mc.thePlayer!!.posZ,
                         false
-                    )
-                    classProvider.createCPacketPlayerPosition(
+                    ))
+                    mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(
                         mc.thePlayer!!.posX,
                         mc.thePlayer!!.posY + 0.00000001578887744,
                         mc.thePlayer!!.posZ,
                         false
-                    )
+                    ))
                 }
                 "hytvulcan" -> {
                     mc.netHandler.addToSendQueue(classProvider.createCPacketPlayerPosition(x, y +  0.000511322554, z, false))

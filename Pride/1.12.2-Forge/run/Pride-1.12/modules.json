@@ -70,7 +70,7 @@
     "Array": true
   },
   "AutoBow": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -90,7 +90,7 @@
     "Array": true
   },
   "AutoL": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -130,7 +130,7 @@
     "Array": true
   },
   "AutoWeapon": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -225,7 +225,7 @@
     "Array": true
   },
   "Criticals": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -240,7 +240,7 @@
     "Array": true
   },
   "ESP": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -250,7 +250,7 @@
     "Array": true
   },
   "FastBow": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -281,7 +281,7 @@
   },
   "Fly": {
     "State": false,
-    "KeyBind": 33,
+    "KeyBind": 34,
     "Array": true
   },
   "ForceUnicodeChat": {
@@ -390,7 +390,7 @@
     "Array": true
   },
   "KillAura": {
-    "State": false,
+    "State": true,
     "KeyBind": 19,
     "Array": true
   },
@@ -470,7 +470,7 @@
     "Array": true
   },
   "NoFriends": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -665,7 +665,7 @@
     "Array": true
   },
   "TNTBlock": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },

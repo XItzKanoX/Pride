@@ -6,6 +6,7 @@
 package net.ccbluex.liquidbounce.ui.font;
 
 import com.google.gson.*;
+import me.ui.Fonts.FluxFont;
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.api.minecraft.client.gui.IFontRenderer;
 import net.ccbluex.liquidbounce.utils.ClientUtils;
@@ -311,6 +312,8 @@ public class Fonts extends MinecraftInstance {
 
         return null;
     }
+
+
     private static Font getBold(int size) {
         Font font;
         try {
@@ -324,6 +327,11 @@ public class Fonts extends MinecraftInstance {
         }
         return font;
     }
+
+    public float getCharWidth(char c) {
+        return fontSFUI35.getStringWidth(String.valueOf(c));
+    }
+
     private static Font getSFUI(int size) {
         Font font;
         try {

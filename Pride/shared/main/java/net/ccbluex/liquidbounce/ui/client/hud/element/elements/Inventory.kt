@@ -22,10 +22,7 @@ import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.render.ColorUtils
 import net.ccbluex.liquidbounce.utils.render.Palette
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
-import net.ccbluex.liquidbounce.value.BoolValue
-import net.ccbluex.liquidbounce.value.FloatValue
-import net.ccbluex.liquidbounce.value.IntegerValue
-import net.ccbluex.liquidbounce.value.ListValue
+import net.ccbluex.liquidbounce.value.*
 import net.minecraft.client.Minecraft
 import net.minecraft.client.renderer.GlStateManager
 import net.minecraft.client.renderer.RenderHelper
@@ -62,6 +59,7 @@ class Inventory(x: Double = -1.0, y: Double = 121.0, scale: Float = 1F) : Elemen
     private val colorModeValue = ListValue("Text-Color", arrayOf("Custom", "Rainbow", "Fade", "Astolfo", "NewRainbow","Gident"), "Custom")
     private val distanceValue = IntegerValue("Distance", 0, 0, 400)
     private val gradientAmountValue = IntegerValue("Gradient-Amount", 25, 1, 50)
+    private var fontValue = FontValue("Font", Fonts.jello35)
     private val x1 = IntegerValue("x1", 2, 0, 300)
     private val x2 = IntegerValue("x2", 170, 0, 200)
     private val y1 = IntegerValue("y1", 10, 0, 200)
@@ -171,7 +169,7 @@ class Inventory(x: Double = -1.0, y: Double = 121.0, scale: Float = 1F) : Elemen
         }
 
 
-        Fonts.bold35.drawString("Inventory", 10, 23, Color(0xFFFFFF).rgb)
+        fontValue.get().drawString("Inventory", 10, 23, Color(0xFFFFFF).rgb)
             if (lowerInv != null) {
                 this.inventoryRows = lowerInv.getSizeInventory()
             }

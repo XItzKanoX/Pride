@@ -7,10 +7,12 @@
 package net.ccbluex.liquidbounce.ui.client.hud.element.elements
 
 import me.utils.render.VisualUtils
+import me.utils.render.VisualUtils.skyRainbow
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntity
 import net.ccbluex.liquidbounce.api.minecraft.util.IResourceLocation
 import net.ccbluex.liquidbounce.features.module.modules.combat.KillAura
+import net.ccbluex.liquidbounce.ui.client.hud.designer.GuiHudDesigner
 import net.ccbluex.liquidbounce.ui.client.hud.element.Border
 import net.ccbluex.liquidbounce.ui.client.hud.element.Element
 import net.ccbluex.liquidbounce.ui.client.hud.element.ElementInfo
@@ -18,11 +20,12 @@ import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.Colors
 import net.ccbluex.liquidbounce.utils.extensions.getDistanceToEntityBox
 import net.ccbluex.liquidbounce.utils.render.ColorUtils
+import net.ccbluex.liquidbounce.utils.render.Colors.getHealthColor
 import net.ccbluex.liquidbounce.utils.render.Palette
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
-import net.ccbluex.liquidbounce.value.FloatValue
-import net.ccbluex.liquidbounce.value.IntegerValue
-import net.ccbluex.liquidbounce.value.ListValue
+import net.ccbluex.liquidbounce.value.*
+import net.minecraft.client.gui.GuiChat
+import net.minecraft.entity.player.EntityPlayer
 import org.lwjgl.opengl.GL11
 import java.awt.Color
 import java.text.DecimalFormat
@@ -48,11 +51,13 @@ class Target : Element() {
     private val gidentspeed = IntegerValue("GidentSpeed", 100, 1, 1000)
     private val distanceValue = IntegerValue("Distance", 0, 0, 400)
     private val amountValue = IntegerValue("Amount", 25, 1, 50)
+    private var fontValue = FontValue("Font", Fonts.jello35)
     private var easingHealth: Float = 0F
     private var lastTarget: IEntity? = null
 
     override fun drawElement(): Border {
         val target = (LiquidBounce.moduleManager[KillAura::class.java] as KillAura).target
+
 
         if (classProvider.isEntityPlayer(target) && target != null) {
             if (target != lastTarget || easingHealth < 0 || easingHealth > target.maxHealth ||
@@ -60,7 +65,7 @@ class Target : Element() {
                 easingHealth = target.health
             }
 
-            val width = (38 + (target.name?.let(Fonts.font40::getStringWidth) ?: 0))
+            val width = (38 + (target.name?.let(  fontValue.get()::getStringWidth) ?: 0))
                     .coerceAtLeast(118)
                     .toFloat()
 
@@ -74,8 +79,9 @@ class Target : Element() {
                         36F, Color(252, 185, 65).rgb)
 
             // Health bar
+
             for (i in 0..(amountValue.get() - 1))
-            RenderUtils.drawGradientSideways(3.0, 34.0, ((target.health / target.maxHealth) * width).toDouble(), 37.0, VisualUtils.getGradientOffset2(
+            RenderUtils.drawGradientSideways(0.0, 34.0, ((target.health / target.maxHealth) * width).toDouble() + 7, 38.0, VisualUtils.getGradientOffset2(
                     Color(redValue.get(), greenValue.get(), blueValue.get()),
                     Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb,
                     VisualUtils.getGradientOffset2(
@@ -92,14 +98,14 @@ class Target : Element() {
 
             easingHealth += ((target.health - easingHealth) / 2.0F.pow(10.0F - fadeSpeed.get())) * RenderUtils.deltaTime
 
-            target.name?.let { Fonts.fontSFUI40.drawString(it, 36, 3, 0xffffff) }
-            Fonts.fontSFUI35.drawString("Distance: ${decimalFormat.format(mc.thePlayer!!.getDistanceToEntityBox(target))}", 36, 15, 0xffffff)
+            target.name?.let {   fontValue.get().drawStringWithShadow(it, 39, 3, 0xffffff) }
+          fontValue.get().drawStringWithShadow("Distance: ${decimalFormat.format(mc.thePlayer!!.getDistanceToEntityBox(target))}", 39, 15, 0xffffff)
 
             // Draw info
             val playerInfo = mc.netHandler.getPlayerInfo(target.uniqueID)
             if (playerInfo != null) {
-                Fonts.fontSFUI35.drawString("Ping: ${playerInfo.responseTime.coerceAtLeast(0)}",
-                        36, 24, 0xffffff)
+                fontValue.get().drawStringWithShadow("Ping: ${playerInfo.responseTime.coerceAtLeast(0)}",
+                        39, 24, 0xffffff)
 
                 // Draw head
                 val locationSkin = playerInfo.locationSkin

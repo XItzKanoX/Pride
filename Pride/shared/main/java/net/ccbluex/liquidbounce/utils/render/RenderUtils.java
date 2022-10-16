@@ -112,6 +112,56 @@ public final class RenderUtils extends MinecraftInstance {
         }
         return animation;
     }
+    public static void rectangle(double left, double top, double right, double bottom, int color) {
+        double var5;
+        if (left < right) {
+            var5 = left;
+            left = right;
+            right = var5;
+        }
+        if (top < bottom) {
+            var5 = top;
+            top = bottom;
+            bottom = var5;
+        }
+        float var11 = (float) (color >> 24 & 255) / 255.0f;
+        float var6 = (float) (color >> 16 & 255) / 255.0f;
+        float var7 = (float) (color >> 8 & 255) / 255.0f;
+        float var8 = (float) (color & 255) / 255.0f;
+        Tessellator tessellator = Tessellator.getInstance();
+        BufferBuilder worldRenderer = tessellator.getBuffer();
+        GlStateManager.enableBlend();
+        GlStateManager.disableTexture2D();
+        GlStateManager.tryBlendFuncSeparate((int) 770, (int) 771, (int) 1, (int) 0);
+        GlStateManager.color((float) var6, (float) var7, (float) var8, (float) var11);
+        worldRenderer.begin(7, DefaultVertexFormats.POSITION);
+        worldRenderer.pos(left, bottom, 0.0).endVertex();
+        worldRenderer.pos(right, bottom, 0.0).endVertex();
+        worldRenderer.pos(right, top, 0.0).endVertex();
+        worldRenderer.pos(left, top, 0.0).endVertex();
+        tessellator.draw();
+        GlStateManager.enableTexture2D();
+        GlStateManager.disableBlend();
+        GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
+    }
+    public static void rectangleBordered(double x, double y, double x1, double y1, double width, int internalColor,
+                                         int borderColor) {
+        RenderUtils.rectangle(x + width, y + width, x1 - width, y1 - width, internalColor);
+        GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
+        RenderUtils.rectangle(x + width, y, x1 - width, y + width, borderColor);
+        GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
+        RenderUtils.rectangle(x, y, x + width, y1, borderColor);
+        GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
+        RenderUtils.rectangle(x1 - width, y, x1, y1, borderColor);
+        GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
+        RenderUtils.rectangle(x + width, y1 - width, x1 - width, y1, borderColor);
+        GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
+    }
+    public static void autoExhibition(double x, double y, double x1, double y1, double size) {
+        rectangleBordered(x, y, x1 + size, y1 + size, 0.5, net.ccbluex.liquidbounce.utils.render.Colors.getColor(90), net.ccbluex.liquidbounce.utils.render.Colors.getColor(0));
+        rectangleBordered(x + 1.0, y + 1.0, x1 + size - 1.0, y1 + size - 1.0, 1.0, net.ccbluex.liquidbounce.utils.render.Colors.getColor(90), net.ccbluex.liquidbounce.utils.render.Colors.getColor(61));
+        rectangleBordered(x + 2.5, y + 2.5, x1 + size - 2.5, y1 + size - 2.5, 0.5, net.ccbluex.liquidbounce.utils.render.Colors.getColor(61), Colors.getColor(0));
+    }
     public static void originalRoundedRect(float paramXStart, float paramYStart, float paramXEnd, float paramYEnd, float radius, int color) {
         float alpha = (color >> 24 & 0xFF) / 255.0F;
         float red = (color >> 16 & 0xFF) / 255.0F;

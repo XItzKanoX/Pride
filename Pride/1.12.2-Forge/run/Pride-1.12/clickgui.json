@@ -2,8 +2,8 @@
   "Combat": {
     "open": true,
     "visible": true,
-    "posX": 633,
-    "posY": 21,
+    "posX": 649,
+    "posY": 37,
     "Aimbot": {
       "Settings": false
     },
@@ -20,7 +20,7 @@
       "Settings": false
     },
     "AutoHead": {
-      "Settings": false
+      "Settings": true
     },
     "AutoL": {
       "Settings": false
@@ -53,7 +53,7 @@
       "Settings": false
     },
     "KillAura": {
-      "Settings": true
+      "Settings": false
     },
     "NoFriends": {
       "Settings": true
@@ -75,9 +75,9 @@
     }
   },
   "Player": {
-    "open": false,
+    "open": true,
     "visible": true,
-    "posX": 445,
+    "posX": 439,
     "posY": 85,
     "AntiAFK": {
       "Settings": false
@@ -120,10 +120,10 @@
     }
   },
   "Movement": {
-    "open": true,
+    "open": false,
     "visible": true,
-    "posX": 491,
-    "posY": 62,
+    "posX": 590,
+    "posY": 6,
     "AirJump": {
       "Settings": true
     },
@@ -225,7 +225,7 @@
     }
   },
   "Render": {
-    "open": true,
+    "open": false,
     "visible": true,
     "posX": 318,
     "posY": 40,
@@ -266,7 +266,7 @@
       "Settings": false
     },
     "HUD": {
-      "Settings": false
+      "Settings": true
     },
     "ItemESP": {
       "Settings": false
@@ -327,10 +327,10 @@
     }
   },
   "World": {
-    "open": false,
+    "open": true,
     "visible": true,
-    "posX": 263,
-    "posY": 142,
+    "posX": 217,
+    "posY": 199,
     "AutoBreak": {
       "Settings": false
     },

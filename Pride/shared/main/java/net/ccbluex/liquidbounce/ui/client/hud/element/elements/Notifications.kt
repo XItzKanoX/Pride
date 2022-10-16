@@ -30,13 +30,13 @@ class Notifications(
     scale: Float = 1F,
     side: Side = Side(Side.Horizontal.RIGHT, Side.Vertical.DOWN)
 ) : Element(x, y, scale, side) {
-
     private val backGroundAlphaValue = IntegerValue("BackGroundAlpha", 170, 0, 255)
-    private val fontValue = FontValue("Font", Fonts.font35)
-
+//    private var fontValue = FontValue("Font", Fonts.jello35)
     /**
      * Example notification for CustomHUD designer
      */
+
+
     private val exampleNotification = Notification("Notification",
             "This is an example notification.",
         NotifyType.INFO
@@ -77,6 +77,7 @@ class Notifications(
 }
 
 class Notification(
+
         val title: String,
         val content: String,
         val type: NotifyType,
@@ -99,7 +100,8 @@ class Notification(
      * Draw notification
      */
     fun drawNotification(index: Int): Boolean {
-        val realY = -(index + 1) * height
+        var fontValue = FontValue("Font", Fonts.jello35)
+       val realY = -(index + 1) * height
         val nowTime = System.currentTimeMillis()
         val image = MinecraftInstance.classProvider.createResourceLocation("pride/notification/" + type.name + ".png")
         //Y-Axis Animation
@@ -163,8 +165,8 @@ class Notification(
                 max(width - width * ((nowTime - displayTime) / (animeTime * 2F + time)), -22F).toDouble(),
                 height.toFloat().toDouble(),
                 Color(0, 0, 0, 200).rgb, Color( 255, 255, 255, 100).rgb)
-        Fonts.fontSFUI35.drawString(title, 7F, 4F, -1)
-        Fonts.font30.drawString(content, 7F, 17F, -1)
+        fontValue.get().drawString(title, 7F, 4F, -1)
+        fontValue.get().drawString(content, 7F, 17F, -1)
         RenderUtils.drawImage(image, -19,  3, 22, 22)
         MinecraftInstance.classProvider.getGlStateManager().resetColor()
         return false

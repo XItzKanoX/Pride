@@ -44,6 +44,7 @@ import net.ccbluex.liquidbounce.utils.extensions.isClientFriend
 import net.ccbluex.liquidbounce.utils.extensions.isMob
 import net.ccbluex.liquidbounce.utils.misc.RandomUtils
 import net.ccbluex.liquidbounce.utils.render.EaseUtils
+import net.ccbluex.liquidbounce.utils.render.Palette
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
 import net.ccbluex.liquidbounce.utils.timer.MSTimer
 import net.ccbluex.liquidbounce.utils.timer.TimeUtils
@@ -210,7 +211,7 @@ class KillAura : Module() {
 
     // Container Delay
     private var containerOpen = -1L
-
+    private var displayText: String = ""
     // Fake block status
     var blockingStatus = false
     private var espAnimation = 0.0
@@ -623,7 +624,8 @@ class KillAura : Module() {
                 val drawTime = (System.currentTimeMillis() % 2000).toInt()
                 val drawMode = drawTime > 1000
                 var drawPercent = drawTime / 1000.0
-                //true when goes up
+
+                    //true when goes up
                 if (!drawMode) {
                     drawPercent = 1 - drawPercent
                 } else {
@@ -636,6 +638,7 @@ class KillAura : Module() {
                 val height = bb.maxY - bb.minY
                 val posX = target!!.lastTickPosX + (target!!.posX - target!!.lastTickPosX) * mc.timer.renderPartialTicks
                 var posY = target!!.lastTickPosY + (target!!.posY - target!!.lastTickPosY) * mc.timer.renderPartialTicks
+
                 if (drawMode) {
                     posY -= 0.5
                 } else {
@@ -671,10 +674,7 @@ class KillAura : Module() {
                         moveFace = -moveFace
                     }
                     val firstPoint = points[0]
-                    GL11.glVertex3d(
-                            firstPoint.xCoord - mc.renderManager.viewerPosX, firstPoint.yCoord - moveFace - min - mc.renderManager.viewerPosY,
-                            firstPoint.zCoord - mc.renderManager.viewerPosZ
-                    )
+                    GL11.glVertex3d(firstPoint.xCoord - mc.renderManager.viewerPosX, firstPoint.yCoord - moveFace - min - mc.renderManager.viewerPosY, firstPoint.zCoord - mc.renderManager.viewerPosZ)
                     GL11.glColor4f(1F, 1F, 1F, 0.7F * (i / 20F))
                     for (vec3 in points) {
                         GL11.glVertex3d(

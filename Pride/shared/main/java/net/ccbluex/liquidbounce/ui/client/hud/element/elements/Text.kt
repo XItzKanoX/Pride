@@ -1,14 +1,5 @@
-/*
- * LiquidBounce Hacked Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge.
- * https://github.com/CCBlueX/LiquidBounce/
- */
 package net.ccbluex.liquidbounce.ui.client.hud.element.elements
 
-
-import me.utils.render.Palette2
-import me.utils.render.UiUtils2
-import me.utils.render.VisualUtils
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.ui.client.hud.element.Border
 import net.ccbluex.liquidbounce.ui.client.hud.element.Element
@@ -18,13 +9,16 @@ import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.CPSCounter
 import net.ccbluex.liquidbounce.utils.EntityUtils
 import net.ccbluex.liquidbounce.utils.ServerUtils
-import net.ccbluex.liquidbounce.utils.render.ColorUtils
+import net.ccbluex.liquidbounce.utils.render.Palette
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
-import net.ccbluex.liquidbounce.utils.render.RenderUtils.drawGradientSideways
-import net.ccbluex.liquidbounce.utils.render.RenderUtils.drawRect
 import net.ccbluex.liquidbounce.utils.render.shader.shaders.RainbowFontShader
+import net.ccbluex.liquidbounce.utils.timer.MSTimer
 import net.ccbluex.liquidbounce.value.*
+import net.minecraft.client.Minecraft
+import net.minecraft.client.renderer.GlStateManager
+import net.minecraft.util.ChatAllowedCharacters
 import org.lwjgl.input.Keyboard
+import org.lwjgl.opengl.GL11
 import java.awt.Color
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
@@ -38,60 +32,67 @@ import kotlin.math.sqrt
 @ElementInfo(name = "Text")
 class Text(x: Double = 10.0, y: Double = 10.0, scale: Float = 1F,
            side: Side = Side.default()) : Element(x, y, scale, side) {
-
     companion object {
 
-        val DATE_FORMAT = SimpleDateFormat("MMddyy")
+        val DATE_FORMAT = SimpleDateFormat("yyyy-MM-dd")
         val HOUR_FORMAT = SimpleDateFormat("HH:mm")
-        val Y_FORMAT = DecimalFormat("0.000000000")
         val DECIMAL_FORMAT = DecimalFormat("0.00")
+        val DECIMAL_FORMAT_INT = DecimalFormat("0")
 
         /**
          * Create default element
          */
         fun defaultClient(): Text {
-            val text = Text(x = 2.0, y = 2.0, scale = 1F)
+            val text = Text(x = 2.0, y = 2.0, scale = 2F)
 
-            text.displayString.set(LiquidBounce.CLIENT_NAME + " b" + LiquidBounce.CLIENT_VERSION)
+            text.displayString.set("%clientName%")
             text.shadow.set(true)
-            text.fontValue.set(Fonts.minecraftFont)
-            text.setColor(Color(200, 50, 50))
+            text.fontValue.set(Fonts.font40)
+            text.setColor(Color(0, 111, 255))
+
             return text
         }
 
     }
-
+    private val brightnessValue = FloatValue("Brightness", 1f, 0f, 1f)
+    private val Mode = ListValue("Border-Mode", arrayOf("Slide", "Skeet"), "Slide")
     private val displayString = TextValue("DisplayText", "")
-    private val rectMode = ListValue("RectMode", arrayOf("None","Line","Background", "OneTap", "Skeet", "Slide"),"Line")
-    private val colorModeValue = ListValue("Text-Color", arrayOf("Custom" , "Fade", "Gident"), "Fade")
-    private val redValue = IntegerValue("Red", 255, 0, 255)
-    private val greenValue = IntegerValue("Green", 255, 0, 255)
-    private val blueValue = IntegerValue("Blue", 255, 0, 255)
-    private val colorRedValue2 = IntegerValue("R2", 0, 0, 255)
-    private val colorGreenValue2 = IntegerValue("G2", 111, 0, 255)
-    private val colorBlueValue2 = IntegerValue("B2", 255, 0, 255)
-    private val bgredValue = IntegerValue("Background-Red", 0, 0, 255)
-    private val bggreenValue = IntegerValue("Background-Green", 0, 0, 255)
-    private val bgblueValue = IntegerValue("Background-Blue", 0, 0, 255)
-    private val bgalphaValue = IntegerValue("Background-Alpha", 120, 0, 255)
-    private val amountValue = IntegerValue("Amount", 25, 1, 50)
+    private val redValue = IntegerValue("Text-R", 255, 0, 255)
+    private val greenValue = IntegerValue("Text-G", 255, 0, 255)
+    private val blueValue = IntegerValue("Text-B", 255, 0, 255)
+    private val colorRedValue2 = IntegerValue("Text-R2", 0, 0, 255)
+    private val colorGreenValue2 = IntegerValue("Text-G2", 111, 0, 255)
+    private val colorBlueValue2 = IntegerValue("Text-B2", 255, 0, 255)
     private val gidentspeed = IntegerValue("GidentSpeed", 100, 1, 1000)
-    private val distanceValue = IntegerValue("Distance", 0, 0, 400)
+    private val newRainbowIndex = IntegerValue("NewRainbowOffset", 1, 1, 50)
+    private val astolfoRainbowOffset = IntegerValue("AstolfoOffset", 5, 1, 20)
+    private val astolfoclient = IntegerValue("AstolfoRange", 109, 1, 765)
+    private val astolfoRainbowIndex = IntegerValue("AstolfoIndex", 109, 1, 300)
+    private val saturationValue = FloatValue("Saturation", 0.9f, 0f, 1f)
+    private val colorModeValue = ListValue("Text-Color", arrayOf("Custom", "Rainbow", "Fade", "Astolfo", "NewRainbow","Gident"), "Gident")
     private val rainbowX = FloatValue("Rainbow-X", -1000F, -2000F, 2000F)
     private val rainbowY = FloatValue("Rainbow-Y", -1000F, -2000F, 2000F)
-    private val shadow = BoolValue("Shadow", false)
-    private var fontValue = FontValue("Font", Fonts.minecraftFont)
+    private val shadow = BoolValue("Shadow", true)
+    private val bord = BoolValue("Border", false)
+    private val slide = BoolValue("Slide", false)
+    private val char = BoolValue("NotChar", false)
+    private val slidedelay = IntegerValue("SlideDelay", 100, 0, 1000)
+    private val balpha = IntegerValue("BordAlpha", 255, 0, 255)
+    private val distanceValue = IntegerValue("Distance", 0, 0, 400)
+    private val amountValue = IntegerValue("Amount", 25, 1, 50)
+    private var fontValue = FontValue("Font", Fonts.font40)
 
     private var editMode = false
     private var editTicks = 0
     private var prevClick = 0L
 
-    private var displayText = display
+    private var speedStr = ""
+    private var displayText: String = ""
 
     private val display: String
         get() {
             val textContent = if (displayString.get().isEmpty() && !editMode)
-                "Text Element"
+                "Pride | Fps:%fps% | %serverip% | User:%username%"
             else
                 displayString.get()
 
@@ -100,56 +101,60 @@ class Text(x: Double = 10.0, y: Double = 10.0, scale: Float = 1F,
         }
 
     private fun getReplacement(str: String): String? {
-        val thePlayer = mc.thePlayer
-
-        if (thePlayer != null) {
+        if (mc.thePlayer != null) {
             when (str) {
-                "x" -> return DECIMAL_FORMAT.format(thePlayer.posX)
-                "y" -> return DECIMAL_FORMAT.format(thePlayer.posY)
-                "z" -> return DECIMAL_FORMAT.format(thePlayer.posZ)
-                "xdp" -> return thePlayer.posX.toString()
-                "ydp" -> return thePlayer.posY.toString()
-                "zdp" -> return thePlayer.posZ.toString()
-                "velocity" -> return DECIMAL_FORMAT.format(sqrt(thePlayer.motionX * thePlayer.motionX + thePlayer.motionZ * thePlayer.motionZ))
-                "ping" -> return EntityUtils.getPing(mc2.player).toString()
-                "0" -> return "§0"
-                "1" -> return "§1"
-                "2" -> return "§2"
-                "3" -> return "§3"
-                "4" -> return "§4"
-                "5" -> return "§5"
-                "6" -> return "§6"
-                "7" -> return "§7"
-                "8" -> return "§8"
-                "9" -> return "§9"
-                "a" -> return "§a"
-                "b" -> return "§b"
-                "c" -> return "§c"
-                "d" -> return "§d"
-                "e" -> return "§e"
-                "f" -> return "§f"
-                "n" -> return "§n"
-                "m" -> return "§m"
-                "l" -> return "§l"
-                "k" -> return "§k"
-                "o" -> return "§o"
-                "r" -> return "§r"
+                "x" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.posX)
+                "y" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.posY)
+                "z" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.posZ)
+                "xInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!.posX)
+                "yInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!.posY)
+                "zInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!!!.posZ)
+                "xdp" -> return mc.thePlayer!!.posX.toString()
+                "ydp" -> return mc.thePlayer!!.posY.toString()
+                "zdp" -> return mc.thePlayer!!.posZ.toString()
+                "velocity" -> return DECIMAL_FORMAT.format(sqrt(mc.thePlayer!!.motionX * mc.thePlayer!!.motionX + mc.thePlayer!!.motionZ * mc.thePlayer!!.motionZ))
+                "ping" -> return EntityUtils.getPing(mc2.player!!).toString()
+                "health" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.health)
+                "maxHealth" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.maxHealth)
+                "healthInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!.health)
+                "maxHealthInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!.maxHealth)
+                "yaw" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.rotationYaw)
+                "pitch" -> return DECIMAL_FORMAT.format(mc.thePlayer!!.rotationPitch)
+                "yawInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!.rotationYaw)
+                "pitchInt" -> return DECIMAL_FORMAT_INT.format(mc.thePlayer!!.rotationPitch)
+                "bps" -> return speedStr
+                "hurtTime" -> return mc.thePlayer!!.hurtTime.toString()
+                "onGround" -> return mc.thePlayer!!.onGround.toString()
             }
         }
 
         return when (str) {
-            "username" -> mc.session.username
+            "username" -> mc2.getSession().username
             "clientname" -> LiquidBounce.CLIENT_NAME
             "clientversion" -> "b${LiquidBounce.CLIENT_VERSION}"
             "clientcreator" -> LiquidBounce.CLIENT_CREATOR
-            "fps" -> mc.debugFPS.toString()
+            "fps" -> Minecraft.getDebugFPS().toString()
             "date" -> DATE_FORMAT.format(System.currentTimeMillis())
             "time" -> HOUR_FORMAT.format(System.currentTimeMillis())
             "serverip" -> ServerUtils.getRemoteIp()
             "cps", "lcps" -> return CPSCounter.getCPS(CPSCounter.MouseButton.LEFT).toString()
             "mcps" -> return CPSCounter.getCPS(CPSCounter.MouseButton.MIDDLE).toString()
             "rcps" -> return CPSCounter.getCPS(CPSCounter.MouseButton.RIGHT).toString()
-
+            "userName" -> mc.session.username
+            "clientName" -> LiquidBounce.CLIENT_NAME
+            "clientVersion" -> LiquidBounce.CLIENT_VERSION.toString()
+            "clientCreator" -> LiquidBounce.CLIENT_CREATOR
+            "fps" -> Minecraft.getDebugFPS().toString()
+            "date" -> DATE_FORMAT.format(System.currentTimeMillis())
+            "time" -> HOUR_FORMAT.format(System.currentTimeMillis())
+            "serverIp" -> ServerUtils.getRemoteIp()
+            "cps", "lcps" -> return CPSCounter.getCPS(CPSCounter.MouseButton.LEFT).toString()
+            "mcps" -> return CPSCounter.getCPS(CPSCounter.MouseButton.MIDDLE).toString()
+            "rcps" -> return CPSCounter.getCPS(CPSCounter.MouseButton.RIGHT).toString()
+//            "watchdogLastMin" -> BanChecker.WATCHDOG_BAN_LAST_MIN.toString()
+//            "staffLastMin" -> BanChecker.STAFF_BAN_LAST_MIN.toString()
+//            "sessionTime" -> return SessionUtils.getFormatSessionTime()
+//            "worldTime" -> return SessionUtils.getFormatWorldTime()
             else -> null // Null = don't replace
         }
     }
@@ -187,123 +192,160 @@ class Text(x: Double = 10.0, y: Double = 10.0, scale: Float = 1F,
     /**
      * Draw element
      */
+    var slidetext: Int = 0
+    var slidetimer: MSTimer = MSTimer()
+    var doslide = true
     override fun drawElement(): Border? {
-        val colorMode = colorModeValue.get()
-        val counter = intArrayOf(0)
-        val color = Color(redValue.get(), greenValue.get(), blueValue.get()).rgb
-        val colord = Color(redValue.get(), greenValue.get(), blueValue.get()).rgb+Color(0,0,0,50).rgb
         val fontRenderer = fontValue.get()
-
-        val counter2 = intArrayOf(0)
-        val rainbow = colorMode.equals("Rainbow", ignoreCase = true)
-
-        val charArray2 = displayText.toCharArray()
         var length2 = 4.5f
-
-
-        when (rectMode.get()) {
-            "Line" -> {
-                for (i in 0..(amountValue.get() - 1)) {
-                    RenderUtils.drawRect(
-                        -2f,
-                        -1f,
-                        fontRenderer.getStringWidth(displayText).toFloat() + 2f,
-                        fontRenderer.fontHeight.toFloat(),
-                        Color(0, 0, 0, bgalphaValue.get())
-                    )
-                    RenderUtils.drawRect(
-                        -2f,
-                        -2f,
-                        fontRenderer.getStringWidth(displayText).toFloat() + 2f,
-                        -1f,
-                        when (colorModeValue.get().toLowerCase()) {
-                            "fade" -> Palette2.fade2(
-                                Color(redValue.get(), greenValue.get(), blueValue.get()),
-                                counter[0] * 100,
-                                displayText.length * 200
-                            ).rgb
-                            "gident" -> VisualUtils.getGradientOffset(
-                                Color(
-                                    redValue.get(),
-                                    greenValue.get(),
-                                    blueValue.get()
-                                ),
-                                Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1),
-                                (Math.abs(
-                                    System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()
-                                ) / 10)
-                            ).rgb
-                            else -> color
-                        }
-                    )
+        val charArray = displayText.toCharArray()
+        if(char.get()) {
+            length2 = fontRenderer.getStringWidth(displayText).toFloat()
+        } else {
+            for (charIndex in charArray) {
+                length2 += fontRenderer.getStringWidth(charIndex.toString())
+            }
+        }
+        if (slide.get() && !classProvider.isGuiHudDesigner(mc.currentScreen)) {
+            if (slidetimer.hasTimePassed(slidedelay.get().toLong())) {
+                if (slidetext <= display.length && doslide) {
+                    slidetext += 1
+                    slidetimer.reset()
+                } else {
+                    if (!doslide && slidetext >= 0) {
+                        slidetext -= 1
+                        slidetimer.reset()
+                    }
                 }
             }
-
-            "Background"-> {
-                RenderUtils.drawRect(-2F, -2F, (length2), fontRenderer.fontHeight + 0F, Color(bgredValue.get(), bggreenValue.get(), bgblueValue.get(), bgalphaValue.get()))
+            if (slidetext == display.length && doslide) {
+                doslide = false
+            } else {
+                if (slidetext == 0 && !doslide) {
+                    doslide = true
+                }
             }
-            "OneTap"-> {
-                RenderUtils.drawRect(-4.0f, -8.0f, (fontRenderer.getStringWidth(displayText) + 3).toFloat(), fontRenderer.fontHeight.toFloat(), Color(43,43,43).rgb)
-                RenderUtils.drawGradientSideways(-3.0, -7.0, (fontRenderer.getStringWidth(displayText) +2.0).toDouble(), -3.0, if (rainbow)
-                    ColorUtils.rainbow(400000000L).rgb+Color(0,0,0,40).rgb else colord,if (rainbow)
-                    ColorUtils.rainbow(400000000L).rgb else color)
+            displayText = display.substring(0, slidetext)
+        } else {
+            displayText = display
+        }
+        val colorMode = colorModeValue.get()
+        val color = Color(redValue.get(), greenValue.get(), blueValue.get()).rgb
+        val rainbow = colorMode.equals("Rainbow", ignoreCase = true)
+        if (bord.get()) {
+            if (Mode.get() == "Skeet") {
+                RenderUtils.autoExhibition(-4.0, -5.2, (length2).toDouble(), (fontRenderer.fontHeight + 1.5).toDouble(),1.0)
+                val barLength = (length2).toDouble()
+                for (i in 0..(amountValue.get()-1)) {
+                    val barStart = i.toDouble() / amountValue.get().toDouble() * barLength
+                    val barEnd = (i + 1).toDouble() / amountValue.get().toDouble() * barLength
+                    RenderUtils.drawGradientSideways(-1.4 + barStart, -2.7, -1.4 + barEnd, -2.0,
+                        when {
+                            rainbow -> 0
+                            colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), i * distanceValue.get(), displayText.length * 200).rgb
+                            colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(i * distanceValue.get(), saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                            colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(),1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb
+                            colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(i * distanceValue.get(),newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
+                            else -> color
+                        },
+                        when {
+                            rainbow -> 0
+                            colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), i * distanceValue.get(), displayText.length * 200).rgb
+                            colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(i * distanceValue.get(), saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                            colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(),1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb
+                            colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(i * distanceValue.get(),newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
+                            else -> color
+                        })
+                }
             }
-            "Skeet"-> {
-                UiUtils2.drawRect(-11.0, -9.5, (fontRenderer.getStringWidth(displayText) + 9).toDouble(), fontRenderer.fontHeight.toDouble()+6,Color(0,0,0).rgb)
-                UiUtils2.outlineRect(-10.0, -8.5, (fontRenderer.getStringWidth(displayText) + 8).toDouble(), fontRenderer.fontHeight.toDouble()+5,8.0, Color(59,59,59).rgb,Color(59,59,59).rgb)
-                UiUtils2.outlineRect(-9.0, -7.5, (fontRenderer.getStringWidth(displayText) + 7).toDouble(), fontRenderer.fontHeight.toDouble()+4,4.0, Color(59,59,59).rgb,Color(40,40,40).rgb)
-                UiUtils2.outlineRect(-4.0, -3.0, (fontRenderer.getStringWidth(displayText) + 2).toDouble(), fontRenderer.fontHeight.toDouble()+0,1.0, Color(18,18,18).rgb,Color(0,0,0).rgb)
-            }
-            "Slide"-> {
-                drawRect(-4.0f, -4.5f, (length2).toFloat(), fontRenderer.fontHeight.toFloat(), Color(bgredValue.get(), bgredValue.get(), blueValue.get(), bgalphaValue.get()).rgb)
-
+            if (Mode.get() == "Slide") {
+                RenderUtils.drawRect(-4.0f, -4.5f, (length2).toFloat(), fontRenderer.fontHeight.toFloat(), Color(0, 0, 0, balpha.get()).rgb)
                 val barLength = (length2 + 1).toDouble()
                 for (i in 0..(amountValue.get()-1)) {
                     val barStart = i.toDouble() / amountValue.get().toDouble() * barLength
                     val barEnd = (i + 1).toDouble() / amountValue.get().toDouble() * barLength
-                    drawGradientSideways(-4.0 + barStart, -4.2, -1.0 + barEnd, -3.0,
+                    RenderUtils.drawGradientSideways(-4.0 + barStart, -4.2, -1.0 + barEnd, -3.0,
                         when {
-                            colorMode.equals("Fade", ignoreCase = true) -> Palette2.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), i * distanceValue.get(), displayText.length * 200).rgb
-                            colorMode.equals("Gident", ignoreCase = true) -> VisualUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(),1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb
+                            rainbow -> 0
+                            colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), i * distanceValue.get(), displayText.length * 200).rgb
+                            colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(i * distanceValue.get(), saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                            colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(),1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb
+                            colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(i * distanceValue.get(),newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
                             else -> color
                         },
                         when {
-                            colorMode.equals("Fade", ignoreCase = true) -> Palette2.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), i * distanceValue.get(), displayText.length * 200).rgb
-                            colorMode.equals("Gident", ignoreCase = true) -> VisualUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(),1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb
+                            rainbow -> 0
+                            colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), i * distanceValue.get(), displayText.length * 200).rgb
+                            colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(i * distanceValue.get(), saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                            colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(),1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + i * distanceValue.get()) / 10)).rgb
+                            colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(i * distanceValue.get(),newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
                             else -> color
                         })
                 }
             }
         }
-
-        RainbowFontShader.begin(rainbow, if (rainbowX.get() == 0.0F) 0.0F else 1.0F / rainbowX.get(), if (rainbowY.get() == 0.0F) 0.0F else 1.0F / rainbowY.get(), System.currentTimeMillis() % 10000 / 10000F).use {
-            fontRenderer.drawString(displayText, 0F, 0F,
-                when {
+        val counter = intArrayOf(0)
+        if(char.get()){
+            val rainbow = colorMode.equals("Rainbow", ignoreCase = true)
+            RainbowFontShader.begin(rainbow, if (rainbowX.get() == 0.0F) 0.0F else 1.0F / rainbowX.get(), if (rainbowY.get() == 0.0F) 0.0F else 1.0F / rainbowY.get(), System.currentTimeMillis() % 10000 / 10000F).use {
+                fontRenderer.drawString(displayText, 0F, 0F, when {
                     rainbow -> 0
-                    colorMode.equals("Fade", ignoreCase = true) -> Palette2.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), counter[0] * 100, displayText.length * 200).rgb
-                    colorMode.equals("Gident", ignoreCase = true) -> VisualUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + counter[0]) / 10)).rgb
+                    colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), counter[0] * 100, displayText.length * 200).rgb
+                    colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(counter[0] * 100, saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                    colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(counter[0] * 100, newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
+                    colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + counter[0]) / 10)).rgb
                     else -> color
                 }, shadow.get())
-
-            if (editMode && classProvider.isGuiHudDesigner(mc.currentScreen) && editTicks <= 40)
-                fontRenderer.drawString("_", fontRenderer.getStringWidth(displayText) + 2F,
-                    0F,                 when {
+                if (editMode && classProvider.isGuiHudDesigner(mc.currentScreen) && editTicks <= 40)
+                    fontRenderer.drawString("_", fontRenderer.getStringWidth(displayText).toFloat(),
+                        0F, when {
+                            rainbow -> 0
+                            colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), counter[0] * 100, displayText.length * 200).rgb
+                            colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(counter[0] * 100, saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                            colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + counter[0]) / 10)).rgb
+                            colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(counter[0] * 100, newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
+                            else -> color
+                        }, shadow.get())
+                counter[0] += 1
+            }
+        } else {
+            var length = 0
+            RainbowFontShader.begin(rainbow, if (rainbowX.get() == 0.0F) 0.0F else 1.0F / rainbowX.get(), if (rainbowY.get() == 0.0F) 0.0F else 1.0F / rainbowY.get(), System.currentTimeMillis() % 10000 / 10000F).use {
+                for (charIndex in charArray) {
+                    val rainbow = colorMode.equals("Rainbow", ignoreCase = true)
+                    fontRenderer.drawString(charIndex.toString(), length.toFloat(), 0F, when {
                         rainbow -> 0
-                        colorMode.equals("Fade", ignoreCase = true) -> Palette2.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), counter[0] * 100, displayText.length * 200).rgb
-                        colorMode.equals("Gident", ignoreCase = true) -> VisualUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + counter[0]) / 10)).rgb
+                        colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), counter[0] * 100, displayText.length * 200).rgb
+                        colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(counter[0] * 100, saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                        colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(counter[0] * 100, newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
+                        colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + counter[0]) / 10)).rgb
                         else -> color
                     }, shadow.get())
+                    counter[0] += 1
+                    counter[0] = counter[0].coerceIn(0, displayText.length)
+                    length += fontRenderer.getStringWidth(charIndex.toString())
+                }
+                if (editMode && classProvider.isGuiHudDesigner(mc.currentScreen) && editTicks <= 40)
+                    fontRenderer.drawString("_", length2,
+                        0F, when {
+                            rainbow -> 0
+                            colorMode.equals("Fade", ignoreCase = true) -> Palette.fade2(Color(redValue.get(), greenValue.get(), blueValue.get()), counter[0] * 100, displayText.length * 200).rgb
+                            colorMode.equals("Astolfo", ignoreCase = true) -> RenderUtils.Astolfo(counter[0] * 100, saturationValue.get(), brightnessValue.get(), astolfoRainbowOffset.get(), astolfoRainbowIndex.get(), astolfoclient.get().toFloat())
+                            colorMode.equals("Gident", ignoreCase = true) -> RenderUtils.getGradientOffset(Color(redValue.get(), greenValue.get(), blueValue.get()), Color(colorRedValue2.get(), colorGreenValue2.get(), colorBlueValue2.get(), 1), (Math.abs(System.currentTimeMillis() / gidentspeed.get().toDouble() + counter[0]) / 10)).rgb
+                            colorMode.equals("NewRainbow", ignoreCase = true) -> RenderUtils.getRainbow(counter[0] * 100, newRainbowIndex.get(), saturationValue.get(), brightnessValue.get())
+                            else -> color
+                        }, shadow.get())
+            }
         }
 
         if (editMode && !classProvider.isGuiHudDesigner(mc.currentScreen)) {
             editMode = false
             updateElement()
         }
-
         return Border(
             -2F,
             -2F,
-            fontRenderer.getStringWidth(displayText) + 2F,
+            length2,
             fontRenderer.fontHeight.toFloat()
         )
     }
@@ -336,7 +378,7 @@ class Text(x: Double = 10.0, y: Double = 10.0, scale: Float = 1F,
                 return
             }
 
-            if (ColorUtils.isAllowedCharacter(c) || c == '§')
+            if (ChatAllowedCharacters.isAllowedCharacter(c) || c == '§')
                 displayString.set(displayString.get() + c)
 
             updateElement()
@@ -348,6 +390,61 @@ class Text(x: Double = 10.0, y: Double = 10.0, scale: Float = 1F,
         greenValue.set(c.green)
         blueValue.set(c.blue)
         return this
+    }
+
+
+    fun drawRect(x: Float, y: Float, x2: Float, y2: Float, color: Int) {
+        GL11.glEnable(GL11.GL_BLEND)
+        GL11.glDisable(GL11.GL_TEXTURE_2D)
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA)
+        GL11.glEnable(GL11.GL_LINE_SMOOTH)
+        glColor(color)
+        GL11.glBegin(GL11.GL_QUADS)
+        GL11.glVertex2d(x2.toDouble(), y.toDouble())
+        GL11.glVertex2d(x.toDouble(), y.toDouble())
+        GL11.glVertex2d(x.toDouble(), y2.toDouble())
+        GL11.glVertex2d(x2.toDouble(), y2.toDouble())
+        GL11.glEnd()
+        GL11.glEnable(GL11.GL_TEXTURE_2D)
+        GL11.glDisable(GL11.GL_BLEND)
+        GL11.glDisable(GL11.GL_LINE_SMOOTH)
+    }
+
+    fun drawRect(x: Double, y: Double, x2: Double, y2: Double, color: Int) {
+        GL11.glEnable(GL11.GL_BLEND)
+        GL11.glDisable(GL11.GL_TEXTURE_2D)
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA)
+        GL11.glEnable(GL11.GL_LINE_SMOOTH)
+        glColor(color)
+        GL11.glBegin(GL11.GL_QUADS)
+        GL11.glVertex2d(x2, y)
+        GL11.glVertex2d(x, y)
+        GL11.glVertex2d(x, y2)
+        GL11.glVertex2d(x2, y2)
+        GL11.glEnd()
+        GL11.glEnable(GL11.GL_TEXTURE_2D)
+        GL11.glDisable(GL11.GL_BLEND)
+        GL11.glDisable(GL11.GL_LINE_SMOOTH)
+    }
+
+    fun glColor(red: Int, green: Int, blue: Int, alpha: Int) {
+        GlStateManager.color(red / 255f, green / 255f, blue / 255f, alpha / 255f)
+    }
+
+    fun glColor(color: Color) {
+        val red = color.red / 255f
+        val green = color.green / 255f
+        val blue = color.blue / 255f
+        val alpha = color.alpha / 255f
+        GlStateManager.color(red, green, blue, alpha)
+    }
+
+    fun glColor(hex: Int) {
+        val alpha = (hex shr 24 and 0xFF) / 255f
+        val red = (hex shr 16 and 0xFF) / 255f
+        val green = (hex shr 8 and 0xFF) / 255f
+        val blue = (hex and 0xFF) / 255f
+        GlStateManager.color(red, green, blue, alpha)
     }
 
 }
