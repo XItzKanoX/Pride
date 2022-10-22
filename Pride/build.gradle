@@ -1,0 +1,13 @@
+version = "b73"
+group = "net.ccbluex"
+
+subprojects {
+    version = "b73"
+    group = "net.ccbluex"
+}
+
+buildscript {
+    // The current Gradle version 4.9 is not compatible with the Kotlin Gradle plugin.
+    // ext.kotlin_version = '1.4.21'
+    ext.kotlin_version = '1.3.72'
+}

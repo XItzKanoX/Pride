@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 6/19/22 3:17 PM
+Description: Unexpected error
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/injection/backend/EnumFacingImpl
+	at net.ccbluex.liquidbounce.injection.backend.EnumFacingImplKt.wrap(EnumFacingImpl.kt:38)
+	at net.minecraft.client.Minecraft.handler$zze000$onClickBlock(Minecraft.java:3473)
+	at net.minecraft.client.Minecraft.sendClickBlockToController(Minecraft.java:3535)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2267)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1807)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.injection.backend.EnumFacingImpl
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 21 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.injection.backend.EnumFacingImplKt.wrap(EnumFacingImpl.kt:38)
+	at net.minecraft.client.Minecraft.handler$zze000$onClickBlock(Minecraft.java:3473)
+	at net.minecraft.client.Minecraft.sendClickBlockToController(Minecraft.java:3535)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2267)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player428'/208, l='MpServer', x=-1206.87, y=73.00, z=-336.28]]
+	Chunk stats: MultiplayerChunkCache: 504, 504
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (244,64,60), Chunk: (at 4,4,12 in 15,3; contains blocks 240,0,48 to 255,255,63), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 145972 game time, 145972 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 104 total; [EntitySkeleton['骷髅'/269, l='MpServer', x=-1235.38, y=26.00, z=-265.30], EntitySkeleton['骷髅'/272, l='MpServer', x=-1246.50, y=20.00, z=-284.50], EntityBat['蝙蝠'/273, l='MpServer', x=-1238.75, y=33.10, z=-261.25], EntitySkeleton['骷髅'/791, l='MpServer', x=-1217.50, y=44.00, z=-259.50], EntityCreeper['爬行者'/282, l='MpServer', x=-1263.51, y=27.00, z=-339.63], EntitySkeleton['骷髅'/283, l='MpServer', x=-1245.51, y=13.00, z=-363.23], EntityChicken['鸡'/284, l='MpServer', x=-1282.50, y=63.00, z=-314.50], EntityZombie['僵尸'/797, l='MpServer', x=-1206.35, y=72.32, z=-336.83], EntityCreeper['爬行者'/286, l='MpServer', x=-1269.50, y=14.00, z=-330.50], EntityCreeper['爬行者'/288, l='MpServer', x=-1270.50, y=16.00, z=-325.19], EntitySkeleton['骷髅'/290, l='MpServer', x=-1267.50, y=28.00, z=-334.50], EntityBat['蝙蝠'/291, l='MpServer', x=-1252.16, y=15.10, z=-326.36], EntityCreeper['爬行者'/292, l='MpServer', x=-1266.50, y=28.00, z=-335.50], EntityBat['蝙蝠'/294, l='MpServer', x=-1222.36, y=14.28, z=-383.80], EntityBat['蝙蝠'/295, l='MpServer', x=-1213.34, y=34.07, z=-399.60], EntityChicken['鸡'/296, l='MpServer', x=-1200.48, y=66.00, z=-414.81], EntityCreeper['爬行者'/299, l='MpServer', x=-1237.88, y=32.00, z=-374.03], EntityBat['蝙蝠'/301, l='MpServer', x=-1233.75, y=33.13, z=-381.91], EntityChicken['鸡'/302, l='MpServer', x=-1285.50, y=67.00, z=-322.50], EntityChicken['鸡'/303, l='MpServer', x=-1281.30, y=69.00, z=-320.50], EntityChicken['鸡'/304, l='MpServer', x=-1279.49, y=68.00, z=-316.81], EntityCreeper['爬行者'/308, l='MpServer', x=-1275.55, y=13.00, z=-337.34], EntityBat['蝙蝠'/820, l='MpServer', x=-1262.30, y=35.02, z=-374.33], EntityCreeper['爬行者'/309, l='MpServer', x=-1269.50, y=28.00, z=-338.50], EntityBat['蝙蝠'/821, l='MpServer', x=-1266.52, y=35.75, z=-370.41], EntityCreeper['爬行者'/310, l='MpServer', x=-1270.51, y=32.00, z=-351.20], EntitySpider['蜘蛛'/311, l='MpServer', x=-1268.50, y=28.00, z=-339.50], EntityCreeper['爬行者'/322, l='MpServer', x=-1266.51, y=35.00, z=-356.18], EntitySkeleton['骷髅'/326, l='MpServer', x=-1236.50, y=40.00, z=-411.50], EntityCreeper['爬行者'/338, l='MpServer', x=-1232.53, y=71.00, z=-327.81], EntityItem['item.item.egg'/339, l='MpServer', x=-1221.10, y=77.00, z=-326.28], EntityChicken['鸡'/340, l='MpServer', x=-1219.19, y=74.00, z=-334.58], EntityZombie['僵尸'/862, l='MpServer', x=-1141.50, y=12.00, z=-341.50], EntityZombie['僵尸'/863, l='MpServer', x=-1140.50, y=12.00, z=-342.50], EntityItem['item.item.egg'/612, l='MpServer', x=-1207.67, y=69.00, z=-274.69], EntitySkeleton['骷髅'/871, l='MpServer', x=-1257.50, y=26.00, z=-346.50], EntitySkeleton['骷髅'/872, l='MpServer', x=-1258.50, y=26.00, z=-344.50], EntitySkeleton['骷髅'/873, l='MpServer', x=-1261.50, y=26.00, z=-343.50], EntityChicken['鸡'/362, l='MpServer', x=-1141.45, y=65.00, z=-298.30], EntityChicken['鸡'/363, l='MpServer', x=-1140.80, y=65.00, z=-297.55], EntityItem['item.item.rottenFlesh'/619, l='MpServer', x=-1219.28, y=74.00, z=-337.16], EntityChicken['鸡'/364, l='MpServer', x=-1138.17, y=65.00, z=-297.09], EntitySkeleton['骷髅'/624, l='MpServer', x=-1205.50, y=27.00, z=-256.50], EntityChicken['鸡'/372, l='MpServer', x=-1141.42, y=66.00, z=-315.50], EntityChicken['鸡'/373, l='MpServer', x=-1144.50, y=64.00, z=-301.79], EntityZombie['僵尸'/375, l='MpServer', x=-1135.89, y=19.00, z=-330.19], EntityZombie['僵尸'/376, l='MpServer', x=-1134.50, y=63.00, z=-326.50], EntityChicken['鸡'/377, l='MpServer', x=-1165.79, y=63.00, z=-300.91], EntityItem['item.item.egg'/378, l='MpServer', x=-1165.23, y=63.00, z=-300.64], EntityZombie['僵尸'/636, l='MpServer', x=-1133.72, y=14.00, z=-297.50], EntityMinecartChest['运输矿车'/390, l='MpServer', x=-1144.50, y=19.06, z=-396.50], EntityItem['item.item.rottenFlesh'/391, l='MpServer', x=-1171.09, y=63.00, z=-354.96], EntityBat['蝙蝠'/392, l='MpServer', x=-1222.25, y=25.29, z=-316.58], EntityBat['蝙蝠'/393, l='MpServer', x=-1233.56, y=21.35, z=-318.73], EntityMinecartChest['运输矿车'/395, l='MpServer', x=-1145.50, y=13.06, z=-409.50], EntityCreeper['爬行者'/396, l='MpServer', x=-1145.50, y=13.00, z=-405.50], EntityCreeper['爬行者'/908, l='MpServer', x=-1138.50, y=19.00, z=-325.50], EntityItem['item.item.rottenFlesh'/397, l='MpServer', x=-1178.18, y=63.00, z=-370.76], EntitySpider['蜘蛛'/909, l='MpServer', x=-1140.50, y=19.00, z=-320.50], EntitySpider['蜘蛛'/398, l='MpServer', x=-1211.19, y=73.10, z=-346.30], EntityChicken['鸡'/401, l='MpServer', x=-1143.55, y=63.00, z=-326.87], EntityItem['item.item.egg'/402, l='MpServer', x=-1143.89, y=63.00, z=-327.47], EntityZombie['僵尸'/403, l='MpServer', x=-1197.50, y=36.00, z=-280.50], EntityWitch['女巫'/405, l='MpServer', x=-1189.50, y=53.00, z=-277.50], EntityWitch['女巫'/406, l='MpServer', x=-1187.50, y=53.00, z=-276.50], EntitySpider['蜘蛛'/410, l='MpServer', x=-1213.07, y=45.00, z=-271.93], EntitySkeleton['骷髅'/923, l='MpServer', x=-1134.50, y=45.00, z=-335.50], EntityZombie['僵尸'/413, l='MpServer', x=-1135.21, y=43.00, z=-360.50], EntityChicken['鸡'/415, l='MpServer', x=-1148.75, y=63.00, z=-346.69], EntityChicken['鸡'/416, l='MpServer', x=-1159.18, y=63.00, z=-348.44], EntityChicken['鸡'/417, l='MpServer', x=-1148.58, y=63.00, z=-341.78], EntityItem['item.item.egg'/418, l='MpServer', x=-1148.04, y=63.00, z=-341.84], EntityChicken['鸡'/419, l='MpServer', x=-1195.74, y=72.00, z=-300.40], EntityItem['item.item.egg'/420, l='MpServer', x=-1195.77, y=72.00, z=-300.13], EntityChicken['鸡'/421, l='MpServer', x=-1182.21, y=61.00, z=-310.43], EntityItem['item.item.egg'/422, l='MpServer', x=-1175.14, y=63.00, z=-306.35], EntityZombie['僵尸'/423, l='MpServer', x=-1222.50, y=15.00, z=-260.23], EntityChicken['鸡'/425, l='MpServer', x=-1207.59, y=69.00, z=-275.50], EntityChicken['鸡'/426, l='MpServer', x=-1212.43, y=69.00, z=-277.20], EntityItem['item.item.egg'/427, l='MpServer', x=-1208.50, y=64.00, z=-272.88], EntitySkeleton['骷髅'/430, l='MpServer', x=-1157.32, y=41.00, z=-349.51], EntityChicken['鸡'/431, l='MpServer', x=-1205.81, y=68.00, z=-298.66], EntityItem['item.item.egg'/432, l='MpServer', x=-1206.41, y=68.00, z=-298.58], EntityChicken['鸡'/433, l='MpServer', x=-1160.20, y=63.00, z=-356.32], EntitySkeleton['骷髅'/689, l='MpServer', x=-1229.50, y=41.00, z=-264.50], EntityZombie['僵尸'/690, l='MpServer', x=-1230.50, y=41.00, z=-266.50], EntityZombie['僵尸'/435, l='MpServer', x=-1206.50, y=28.00, z=-393.50], EntityZombie['僵尸'/691, l='MpServer', x=-1229.50, y=41.00, z=-266.50], EntitySkeleton['骷髅'/436, l='MpServer', x=-1206.50, y=28.00, z=-394.50], EntityBat['蝙蝠'/718, l='MpServer', x=-1142.50, y=19.34, z=-320.58], EntityBat['蝙蝠'/719, l='MpServer', x=-1137.30, y=19.44, z=-316.98], EntityChicken['鸡'/209, l='MpServer', x=-1212.93, y=67.00, z=-320.22], EntitySkeleton['骷髅'/236, l='MpServer', x=-1265.11, y=30.00, z=-256.55], EntitySkeleton['骷髅'/237, l='MpServer', x=-1268.50, y=16.00, z=-266.50], EntitySkeleton['骷髅'/238, l='MpServer', x=-1267.50, y=16.00, z=-267.50], EntityZombie['僵尸'/243, l='MpServer', x=-1273.73, y=17.00, z=-279.49], EntityZombie['僵尸'/246, l='MpServer', x=-1247.62, y=25.00, z=-332.33], EntityZombie['僵尸'/247, l='MpServer', x=-1246.74, y=25.00, z=-332.39], EntityItem['item.item.egg'/248, l='MpServer', x=-1232.13, y=71.00, z=-331.10], EntityPlayerSP['Player428'/208, l='MpServer', x=-1206.87, y=73.00, z=-336.28], EntityZombie['僵尸'/249, l='MpServer', x=-1284.76, y=15.00, z=-274.38], EntitySkeleton['骷髅'/250, l='MpServer', x=-1284.50, y=15.00, z=-276.50], EntitySkeleton['骷髅'/252, l='MpServer', x=-1280.15, y=15.00, z=-276.65], EntityBat['蝙蝠'/255, l='MpServer', x=-1246.33, y=43.90, z=-321.28]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:426)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_311, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 372586696 bytes (355 MB) / 2375024640 bytes (2265 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                                 | Signature |
+	|:--------- |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz

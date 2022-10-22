@@ -1,0 +1,26 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-10-15 18:04:35 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "zombie": "2022-10-15 18:04:35 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie": "2022-10-15 18:04:35 +0800"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "jungle": "2022-10-15 18:03:59 +0800"
+    },
+    "done": false
+  }
+}

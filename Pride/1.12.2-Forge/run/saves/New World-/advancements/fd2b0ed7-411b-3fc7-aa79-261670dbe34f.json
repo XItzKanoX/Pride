@@ -1,0 +1,15 @@
+{
+  "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
+    "criteria": {
+      "has_red_flower": "2022-09-23 23:04:11 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2022-09-23 23:04:20 +0800",
+      "plains": "2022-09-23 23:04:11 +0800"
+    },
+    "done": false
+  }
+}

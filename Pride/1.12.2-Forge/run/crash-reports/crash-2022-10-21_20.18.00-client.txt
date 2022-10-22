@@ -1,0 +1,130 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 10/21/22 8:18 PM
+Description: Rendering screen
+
+java.lang.NoClassDefFoundError: net/vitox/ParticleGenerator
+	at net.ccbluex.liquidbounce.utils.render.ParticleUtils.<clinit>(ParticleUtils.java:15)
+	at net.minecraft.client.gui.GuiScreen.handler$zbf000$drawWorldBackground(GuiScreen.java:814)
+	at net.minecraft.client.gui.GuiScreen.drawWorldBackground(GuiScreen.java)
+	at net.minecraft.client.gui.GuiScreen.drawDefaultBackground(GuiScreen.java:574)
+	at net.minecraft.client.gui.GuiIngameMenu.drawScreen(GuiIngameMenu.java:101)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1124)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1118)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.vitox.ParticleGenerator
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 22 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.utils.render.ParticleUtils.<clinit>(ParticleUtils.java:15)
+	at net.minecraft.client.gui.GuiScreen.handler$zbf000$drawWorldBackground(GuiScreen.java:814)
+	at net.minecraft.client.gui.GuiScreen.drawWorldBackground(GuiScreen.java)
+	at net.minecraft.client.gui.GuiScreen.drawDefaultBackground(GuiScreen.java:574)
+	at net.minecraft.client.gui.GuiIngameMenu.drawScreen(GuiIngameMenu.java:101)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.GuiIngameMenu
+	Mouse location: Scaled: (480, 257). Absolute: (960, 513)
+	Screen size: Scaled: (960, 514). Absolute: (1920, 1027). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player890'/307, l='MpServer', x=121.96, y=73.41, z=294.06]]
+	Chunk stats: MultiplayerChunkCache: 517, 517
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (156,64,256), Chunk: (at 12,4,0 in 9,16; contains blocks 144,0,256 to 159,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 267918 game time, 267918 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 71 total; [EntityZombieVillager['Zombie Villager'/3586, l='MpServer', x=195.50, y=26.00, z=328.50], EntityCow['Cow'/130, l='MpServer', x=100.83, y=73.00, z=218.32], EntityZombieVillager['Zombie Villager'/3587, l='MpServer', x=197.50, y=26.00, z=326.50], EntityCow['Cow'/132, l='MpServer', x=107.83, y=72.00, z=273.81], EntitySheep['Sheep'/133, l='MpServer', x=96.87, y=71.00, z=270.54], EntitySheep['Sheep'/134, l='MpServer', x=98.71, y=71.00, z=270.46], EntitySkeleton['Skeleton'/3462, l='MpServer', x=189.50, y=29.00, z=347.50], EntitySheep['Sheep'/135, l='MpServer', x=101.23, y=71.00, z=287.31], EntitySheep['Sheep'/136, l='MpServer', x=122.46, y=71.00, z=292.82], EntitySheep['Sheep'/137, l='MpServer', x=111.75, y=71.00, z=294.48], EntityItem['item.item.rottenFlesh'/2957, l='MpServer', x=124.22, y=69.00, z=306.13], EntityPig['Pig'/151, l='MpServer', x=175.24, y=68.00, z=323.53], EntitySpider['Spider'/3479, l='MpServer', x=189.50, y=19.00, z=364.50], EntityCow['Cow'/152, l='MpServer', x=122.83, y=71.00, z=285.84], EntityCreeper['Creeper'/3352, l='MpServer', x=182.40, y=29.00, z=346.84], EntityBat['Bat'/2592, l='MpServer', x=82.32, y=37.10, z=271.19], EntityBat['Bat'/2593, l='MpServer', x=56.50, y=44.57, z=249.73], EntitySheep['Sheep'/172, l='MpServer', x=132.68, y=69.00, z=289.21], EntitySheep['Sheep'/173, l='MpServer', x=113.77, y=68.00, z=314.84], EntityPlayerSP['Player890'/307, l='MpServer', x=121.96, y=73.41, z=294.06], EntityBat['Bat'/3382, l='MpServer', x=181.51, y=32.10, z=310.45], EntityBat['Bat'/3383, l='MpServer', x=189.49, y=38.52, z=307.38], EntitySheep['Sheep'/184, l='MpServer', x=175.81, y=64.00, z=237.52], EntityBat['Bat'/3384, l='MpServer', x=180.75, y=32.19, z=311.51], EntityPig['Pig'/185, l='MpServer', x=165.23, y=69.00, z=296.71], EntitySheep['Sheep'/186, l='MpServer', x=173.27, y=69.00, z=309.51], EntityCreeper['Creeper'/3644, l='MpServer', x=183.50, y=56.00, z=334.50], EntitySheep['Sheep'/202, l='MpServer', x=179.49, y=66.00, z=238.29], EntitySheep['Sheep'/203, l='MpServer', x=185.76, y=70.00, z=251.46], EntitySheep['Sheep'/204, l='MpServer', x=189.51, y=72.00, z=264.73], EntitySkeleton['Skeleton'/3532, l='MpServer', x=197.50, y=38.00, z=228.50], EntityPig['Pig'/205, l='MpServer', x=183.73, y=70.00, z=316.54], EntityZombie['Zombie'/3533, l='MpServer', x=60.50, y=23.00, z=285.50], EntityZombie['Zombie'/3537, l='MpServer', x=97.50, y=26.00, z=298.50], EntityCow['Cow'/211, l='MpServer', x=200.83, y=71.00, z=267.16], EntityItem['item.item.arrow'/2132, l='MpServer', x=99.75, y=72.00, z=257.10], EntitySkeleton['Skeleton'/3412, l='MpServer', x=72.50, y=56.00, z=271.50], EntityItem['item.item.bone'/2133, l='MpServer', x=100.51, y=71.00, z=258.70], EntitySkeleton['Skeleton'/3413, l='MpServer', x=72.50, y=56.00, z=272.50], EntitySpider['Spider'/3414, l='MpServer', x=73.50, y=56.00, z=272.50], EntityCreeper['Creeper'/3543, l='MpServer', x=172.78, y=30.00, z=312.50], EntitySheep['Sheep'/216, l='MpServer', x=193.59, y=68.00, z=310.19], EntitySheep['Sheep'/91, l='MpServer', x=57.80, y=70.00, z=261.50], EntityXPOrb['Experience Orb'/2908, l='MpServer', x=138.03, y=66.00, z=318.71], EntityXPOrb['Experience Orb'/2909, l='MpServer', x=137.75, y=65.00, z=320.80], EntityXPOrb['Experience Orb'/2910, l='MpServer', x=137.75, y=65.00, z=321.09], EntityZombie['Zombie'/3551, l='MpServer', x=68.50, y=42.00, z=312.50], EntityZombie['Zombie'/3552, l='MpServer', x=69.50, y=42.00, z=311.50], EntitySheep['Sheep'/101, l='MpServer', x=66.52, y=73.00, z=246.74], EntitySheep['Sheep'/102, l='MpServer', x=77.31, y=71.00, z=247.83], EntitySkeleton['Skeleton'/3430, l='MpServer', x=49.50, y=21.00, z=302.50], EntityCreeper['Creeper'/3561, l='MpServer', x=172.50, y=51.00, z=236.50], EntityItem['item.item.rottenFlesh'/3179, l='MpServer', x=130.59, y=62.00, z=312.61], EntityPig['Pig'/108, l='MpServer', x=66.26, y=71.00, z=321.80], EntityPig['Pig'/109, l='MpServer', x=84.34, y=68.00, z=343.49], EntitySpider['Spider'/3565, l='MpServer', x=105.50, y=50.00, z=241.50], EntityBat['Bat'/2799, l='MpServer', x=124.44, y=39.02, z=258.34], EntityCreeper['Creeper'/3568, l='MpServer', x=105.50, y=50.00, z=240.50], EntityCreeper['Creeper'/3569, l='MpServer', x=105.50, y=50.00, z=237.50], EntitySheep['Sheep'/114, l='MpServer', x=88.25, y=73.00, z=232.52], EntitySkeleton['Skeleton'/3570, l='MpServer', x=107.50, y=50.00, z=240.50], EntitySheep['Sheep'/115, l='MpServer', x=94.50, y=71.00, z=233.72], EntitySheep['Sheep'/116, l='MpServer', x=83.82, y=64.00, z=278.58], EntityPig['Pig'/118, l='MpServer', x=84.27, y=70.00, z=298.53], EntityPig['Pig'/119, l='MpServer', x=97.47, y=71.00, z=290.55], EntitySheep['Sheep'/120, l='MpServer', x=84.55, y=73.00, z=319.55], EntitySheep['Sheep'/121, l='MpServer', x=84.55, y=72.00, z=316.55], EntityZombie['Zombie'/3705, l='MpServer', x=42.50, y=40.00, z=360.50], EntityPig['Pig'/122, l='MpServer', x=70.13, y=71.00, z=312.08], EntityPig['Pig'/123, l='MpServer', x=85.65, y=67.00, z=339.54], EntityPig['Pig'/124, l='MpServer', x=84.25, y=68.00, z=341.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_342, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 1244949056 bytes (1187 MB) / 1946681344 bytes (1856 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                                 | Signature |
+	|:--------- |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
