@@ -1,0 +1,12 @@
+/.idea/
+!.idea/runConfigurations/
+*.iml
+*.ipr
+*.iws
+/bin/
+/.settings/
+/.gradle/
+# 项目排除路径
+/1.12.2-Forge/.gradle/
+/1.12.2-Forge/build/
+

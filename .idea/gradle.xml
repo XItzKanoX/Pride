@@ -4,16 +4,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="true" />
-        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Pride" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../Gradle" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../gradle" />
         <option name="gradleJvm" value="corretto-1.8" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Pride" />
-            <option value="$PROJECT_DIR$/Pride/1.12.2-Forge" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/1.12.2-Forge" />
           </set>
         </option>
       </GradleProjectSettings>
