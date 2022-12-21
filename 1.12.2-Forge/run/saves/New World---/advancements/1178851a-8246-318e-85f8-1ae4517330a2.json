@@ -1,0 +1,37 @@
+{
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2022-12-10 20:13:18 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-12-10 20:12:34 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "zombie": "2022-12-10 20:12:34 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie": "2022-12-10 20:12:34 +0800",
+      "creeper": "2022-12-10 20:13:17 +0800",
+      "enderman": "2022-12-10 20:15:53 +0800"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2022-12-10 20:11:22 +0800",
+      "jungle_hills": "2022-12-10 20:16:26 +0800",
+      "river": "2022-12-10 20:16:28 +0800",
+      "jungle": "2022-12-10 20:13:26 +0800"
+    },
+    "done": false
+  }
+}

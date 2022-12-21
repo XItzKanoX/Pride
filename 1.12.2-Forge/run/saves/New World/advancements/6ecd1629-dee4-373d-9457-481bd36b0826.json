@@ -1,0 +1,31 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-12-02 16:44:15 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "husk": "2022-12-02 16:44:15 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "husk": "2022-12-02 16:44:15 +0800"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2022-12-03 21:05:10 +0800",
+      "forest_hills": "2022-12-02 16:43:42 +0800",
+      "plains": "2022-12-02 16:43:59 +0800",
+      "birch_forest_hills": "2022-12-03 21:05:19 +0800",
+      "roofed_forest": "2022-12-03 21:05:23 +0800",
+      "river": "2022-12-03 21:05:02 +0800"
+    },
+    "done": false
+  }
+}

@@ -52,7 +52,7 @@ object LiquidBounce {
 
     // Client information
     const val CLIENT_NAME = "Pride"
-    const val CLIENT_VERSION = 37
+    const val CLIENT_VERSION = 38
     const val IN_DEV = true
     const val CLIENT_CREATOR = "CCBlueX, JieMo"
     lateinit var mainMenu: GuiScreen

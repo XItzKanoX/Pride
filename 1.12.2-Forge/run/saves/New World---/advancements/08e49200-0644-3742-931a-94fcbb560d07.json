@@ -1,0 +1,15 @@
+{
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2022-12-11 11:18:05 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2022-12-11 11:18:05 +0800",
+      "jungle": "2022-12-11 11:21:26 +0800"
+    },
+    "done": false
+  }
+}

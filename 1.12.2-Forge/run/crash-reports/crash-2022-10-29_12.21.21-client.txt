@@ -1,0 +1,133 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 10/29/22 12:21 PM
+Description: Updating screen events
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/injection/backend/GuiSlotImpl
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiSlotWrapper.<init>(GuiSlotWrapper.kt:12)
+	at net.ccbluex.liquidbounce.injection.backend.ClassProviderImpl.wrapGuiSlot(ClassProviderImpl.kt:588)
+	at net.ccbluex.liquidbounce.api.util.WrappedGuiSlot.<init>(WrappedGuiSlot.kt:17)
+	at net.ccbluex.liquidbounce.ui.client.altmanager.GuiAltManager$GuiList.<init>(GuiAltManager.java:404)
+	at net.ccbluex.liquidbounce.ui.client.altmanager.GuiAltManager.initGui(GuiAltManager.java:119)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.initGui(GuiScreenWrapper.kt:16)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:478)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1017)
+	at net.ccbluex.liquidbounce.injection.backend.MinecraftImpl.displayGuiScreen(MinecraftImpl.kt:98)
+	at me.ui.IGuiButton.onClick(IGuiButton.java:53)
+	at net.ccbluex.liquidbounce.ui.client.GuiMainMenu.mouseClicked(GuiMainMenu.kt:73)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.mouseClicked(GuiScreenWrapper.kt:17)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:533)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.superHandleMouseInput(GuiScreenWrapper.kt:36)
+	at net.ccbluex.liquidbounce.injection.backend.GuiScreenImpl.superHandleMouseInput(GuiScreenImpl.kt:42)
+	at net.ccbluex.liquidbounce.api.util.WrappedGuiScreen.handleMouseInput(WrappedGuiScreen.kt:33)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.handleMouseInput(GuiScreenWrapper.kt:20)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:501)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1758)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.injection.backend.GuiSlotImpl
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 34 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiSlotWrapper.<init>(GuiSlotWrapper.kt:12)
+	at net.ccbluex.liquidbounce.injection.backend.ClassProviderImpl.wrapGuiSlot(ClassProviderImpl.kt:588)
+	at net.ccbluex.liquidbounce.api.util.WrappedGuiSlot.<init>(WrappedGuiSlot.kt:17)
+	at net.ccbluex.liquidbounce.ui.client.altmanager.GuiAltManager$GuiList.<init>(GuiAltManager.java:404)
+	at net.ccbluex.liquidbounce.ui.client.altmanager.GuiAltManager.initGui(GuiAltManager.java:119)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.initGui(GuiScreenWrapper.kt:16)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:478)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1017)
+	at net.ccbluex.liquidbounce.injection.backend.MinecraftImpl.displayGuiScreen(MinecraftImpl.kt:98)
+	at me.ui.IGuiButton.onClick(IGuiButton.java:53)
+	at net.ccbluex.liquidbounce.ui.client.GuiMainMenu.mouseClicked(GuiMainMenu.kt:73)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.mouseClicked(GuiScreenWrapper.kt:17)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:533)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.superHandleMouseInput(GuiScreenWrapper.kt:36)
+	at net.ccbluex.liquidbounce.injection.backend.GuiScreenImpl.superHandleMouseInput(GuiScreenImpl.kt:42)
+	at net.ccbluex.liquidbounce.api.util.WrappedGuiScreen.handleMouseInput(WrappedGuiScreen.kt:33)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.handleMouseInput(GuiScreenWrapper.kt:20)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:501)
+
+-- Affected screen --
+Details:
+	Screen name: net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper
+Stacktrace:
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1758)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_352, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 1235678048 bytes (1178 MB) / 2090336256 bytes (1993 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                 | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz

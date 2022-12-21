@@ -1,0 +1,96 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 12/9/22 5:38 PM
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at net.ccbluex.liquidbounce.features.module.ModuleManager.getModule(ModuleManager.kt:279)
+	at net.minecraft.entity.EntityLivingBase.getArmSwingAnimationEnd(EntityLivingBase.java:3202)
+	at net.minecraft.entity.EntityLivingBase.updateArmSwingProgress(EntityLivingBase.java:1571)
+	at net.minecraft.entity.player.EntityPlayer.updateEntityActionState(EntityPlayer.java:487)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2352)
+	at net.minecraft.entity.player.EntityPlayer.onLivingUpdate(EntityPlayer.java:513)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2172)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:234)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:382)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:173)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:209)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:285)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:180)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:790)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.features.module.ModuleManager.getModule(ModuleManager.kt:279)
+	at net.minecraft.entity.EntityLivingBase.getArmSwingAnimationEnd(EntityLivingBase.java:3202)
+	at net.minecraft.entity.EntityLivingBase.updateArmSwingProgress(EntityLivingBase.java:1571)
+	at net.minecraft.entity.player.EntityPlayer.updateEntityActionState(EntityPlayer.java:487)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2352)
+	at net.minecraft.entity.player.EntityPlayer.onLivingUpdate(EntityPlayer.java:513)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2172)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:234)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 236
+	Entity Name: Player47
+	Entity's Exact location: 651.70, 60.00, 1013.16
+	Entity's Block location: World: (651,60,1013), Chunk: (at 11,3,5 in 40,63; contains blocks 640,0,1008 to 655,255,1023), Region: (1,1; contains chunks 32,32 to 63,63, blocks 512,0,512 to 1023,255,1023)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:382)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:173)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:209)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:285)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@55ce1172
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:180)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:790)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:668)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:185)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_352, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 1627838984 bytes (1552 MB) / 2007498752 bytes (1914 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                                 | Signature |
+	|:--------- |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player47'/236, l='New World', x=651.70, y=60.00, z=1013.16]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 10/21/22 7:49 PM
+Description: Unexpected error
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/utils/CPSCounter
+	at net.minecraft.client.Minecraft.handler$zze000$clickMouse(Minecraft.java:3491)
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2248)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1807)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.utils.CPSCounter
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 20 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.Minecraft.handler$zze000$clickMouse(Minecraft.java:3491)
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java)
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:2248)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:2019)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 9 total; [EntityPlayerSP['0bEJdlCocJdM'/22703, l='MpServer', x=-4.26, y=70.00, z=9.24], EntityOtherPlayerMP['CIT-89091e51388b'/24, l='MpServer', x=5.50, y=70.00, z=9.47], EntityOtherPlayerMP['§b关于我们'/18, l='MpServer', x=-0.53, y=70.00, z=19.47], EntityOtherPlayerMP['§b职位招募需求'/21, l='MpServer', x=-6.50, y=70.00, z=9.50], EntityOtherPlayerMP['§b玩家协议签署'/27, l='MpServer', x=-0.53, y=70.00, z=10.44], EntityOtherPlayerMP['lianhongpu'/22826, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['SSSNB'/22829, l='MpServer', x=0.81, y=70.00, z=17.25], EntityOtherPlayerMP['大富科技可接受的世纪东方'/22831, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['tjhouytrtr'/22832, l='MpServer', x=-0.56, y=70.00, z=15.25]]
+	Chunk stats: MultiplayerChunkCache: 110, 110
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (0,65,0), Chunk: (at 0,4,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 22784164 game time, 2733654051 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: adventure (ID 2). Hardcore: false. Cheats: false
+	Forced entities: 150 total; [EntityArmorStand['§e§l右键点击'/11, l='MpServer', x=-0.53, y=72.19, z=10.47], EntityArmorStand['§e§l右键点击'/12, l='MpServer', x=5.50, y=72.19, z=9.47], EntityArmorStand['§e§l右键点击'/13, l='MpServer', x=-6.50, y=72.19, z=9.50], EntityArmorStand['§e§l右键点击'/14, l='MpServer', x=-0.53, y=72.19, z=19.47], EntityPlayerSP['0bEJdlCocJdM'/22703, l='MpServer', x=-4.26, y=70.00, z=9.24], EntityOtherPlayerMP['§b关于我们'/18, l='MpServer', x=-0.53, y=70.00, z=19.47], EntityOtherPlayerMP['CIT-89091e51388b'/24, l='MpServer', x=5.50, y=70.00, z=9.47], EntityOtherPlayerMP['§b职位招募需求'/21, l='MpServer', x=-6.50, y=70.00, z=9.50], EntityOtherPlayerMP['§b关于我们'/18, l='MpServer', x=-0.53, y=70.00, z=19.47], EntityOtherPlayerMP['CIT-89091e51388b'/24, l='MpServer', x=5.50, y=70.00, z=9.47], EntityOtherPlayerMP['§b职位招募需求'/21, l='MpServer', x=-6.50, y=70.00, z=9.50], EntityOtherPlayerMP['§b玩家协议签署'/27, l='MpServer', x=-0.53, y=70.00, z=10.44], EntityOtherPlayerMP['§b玩家协议签署'/27, l='MpServer', x=-0.53, y=70.00, z=10.44], EntityOtherPlayerMP['xb06'/22699, l='MpServer', x=-0.53, y=70.00, z=11.34], EntityOtherPlayerMP['_NightBeelzebub_'/22700, l='MpServer', x=-0.59, y=70.00, z=12.09], EntityArmorStand['§b在职工作人员列表 §c(未更新)'/30, l='MpServer', x=5.50, y=71.78, z=9.47], EntityOtherPlayerMP['ikunmm'/22702, l='MpServer', x=-1.63, y=70.00, z=12.03], EntityOtherPlayerMP['iiqwq'/22704, l='MpServer', x=-0.53, y=70.00, z=12.53], EntityOtherPlayerMP['Cunuc'/22705, l='MpServer', x=-0.56, y=70.00, z=11.47], EntityOtherPlayerMP['belugg'/22706, l='MpServer', x=-0.56, y=70.00, z=12.66], EntityOtherPlayerMP['paiduaxin'/22707, l='MpServer', x=0.09, y=70.00, z=8.94], EntityOtherPlayerMP['FDP86_5Mpz'/22708, l='MpServer', x=-0.09, y=70.00, z=10.25], EntityOtherPlayerMP['wodexiaoyihhh'/22709, l='MpServer', x=-0.59, y=70.00, z=12.28], EntityOtherPlayerMP['Ad_closeNN'/22710, l='MpServer', x=-0.56, y=70.00, z=15.13], EntityOtherPlayerMP['Knowing'/22711, l='MpServer', x=-0.59, y=70.00, z=10.88], EntityOtherPlayerMP['lauriprkle'/22712, l='MpServer', x=-0.97, y=70.22, z=10.64], EntityOtherPlayerMP['MC_15975382'/22713, l='MpServer', x=-0.56, y=70.61, z=10.91], EntityOtherPlayerMP['Ad_closeNN'/22714, l='MpServer', x=-0.63, y=70.00, z=12.16], EntityOtherPlayerMP['lianhongpu'/22826, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['nbcvjkiuiyyg'/22715, l='MpServer', x=-2.04, y=70.00, z=10.60], EntityOtherPlayerMP['hjvhgvncfxgj'/22716, l='MpServer', x=-1.28, y=70.00, z=12.41], EntityOtherPlayerMP['Oaoakso'/22717, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['SSSNB'/22829, l='MpServer', x=0.81, y=70.00, z=17.25], EntityOtherPlayerMP['rthtttsba'/22718, l='MpServer', x=-0.56, y=70.00, z=11.56], EntityOtherPlayerMP['迷你世界大神半仙6'/22719, l='MpServer', x=-0.31, y=70.00, z=11.44], EntityOtherPlayerMP['大富科技可接受的世纪东方'/22831, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['zhoulele2021'/22720, l='MpServer', x=-0.22, y=70.00, z=11.09], EntityOtherPlayerMP['tjhouytrtr'/22832, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['KL_mcwww'/22721, l='MpServer', x=-1.53, y=70.00, z=11.38], EntityOtherPlayerMP['tianxiang'/22722, l='MpServer', x=-2.28, y=70.00, z=11.00], EntityOtherPlayerMP['xiao_bin146'/22723, l='MpServer', x=-0.94, y=70.00, z=11.69], EntityOtherPlayerMP['hjvhgvncfxgj'/22724, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['liu_b'/22725, l='MpServer', x=-0.72, y=70.00, z=11.25], EntityOtherPlayerMP['Lesunma_29'/22726, l='MpServer', x=-0.56, y=70.00, z=10.03], EntityOtherPlayerMP['zrx666'/22727, l='MpServer', x=-0.59, y=70.00, z=9.34], EntityOtherPlayerMP['POPCAT'/22728, l='MpServer', x=-0.88, y=70.00, z=11.94], EntityOtherPlayerMP['br111'/22729, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['EatFan'/22730, l='MpServer', x=-0.56, y=70.00, z=10.41], EntityOtherPlayerMP['huangzxxbox'/22731, l='MpServer', x=-0.56, y=70.00, z=11.41], EntityOtherPlayerMP['Mango__GG'/22732, l='MpServer', x=-0.81, y=70.00, z=11.16], EntityOtherPlayerMP['hjvhgvncfxgj'/22733, l='MpServer', x=0.56, y=70.00, z=10.31], EntityOtherPlayerMP['TarifMaison'/22734, l='MpServer', x=-0.84, y=70.00, z=10.91], EntityOtherPlayerMP['cmFh7w7B0EvKMr'/22735, l='MpServer', x=-0.56, y=70.00, z=15.00], EntityOtherPlayerMP['MucVCyq6qG5zPP'/22736, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['QAQ_paigu'/22737, l='MpServer', x=-0.25, y=70.00, z=9.44], EntityOtherPlayerMP['qweasd1234567890'/22738, l='MpServer', x=0.06, y=70.00, z=11.38], EntityOtherPlayerMP['54121'/22739, l='MpServer', x=-0.25, y=70.00, z=11.34], EntityOtherPlayerMP['yqqqyi'/22740, l='MpServer', x=-0.56, y=70.00, z=13.34], EntityOtherPlayerMP['TK_yaya_'/22741, l='MpServer', x=0.44, y=70.00, z=11.25], EntityOtherPlayerMP['迷你世界大神半仙6'/22742, l='MpServer', x=-0.53, y=70.06, z=10.59], EntityOtherPlayerMP['Nasseh'/22743, l='MpServer', x=-0.56, y=70.00, z=11.94], EntityOtherPlayerMP['damifeng'/22744, l='MpServer', x=0.22, y=70.00, z=10.56], EntityOtherPlayerMP['0s28QLKe'/22745, l='MpServer', x=-0.59, y=70.00, z=11.44], EntityOtherPlayerMP['noveline_nice'/22746, l='MpServer', x=-0.38, y=70.00, z=11.69], EntityOtherPlayerMP['kunasd'/22747, l='MpServer', x=-0.66, y=69.91, z=12.81], EntityOtherPlayerMP['JIANXIAOQIAN'/22748, l='MpServer', x=0.34, y=70.00, z=11.03], EntityOtherPlayerMP['SpotlessParty'/22749, l='MpServer', x=-0.41, y=70.00, z=12.28], EntityOtherPlayerMP['RqgernCheatFun'/22750, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['hjvhgvncfxgj'/22751, l='MpServer', x=-0.59, y=70.00, z=11.31], EntityOtherPlayerMP['xiaoximc'/22752, l='MpServer', x=-0.97, y=70.00, z=12.53], EntityOtherPlayerMP['kavei'/22753, l='MpServer', x=-1.75, y=70.00, z=10.75], EntityOtherPlayerMP['RqgernCheatFun'/22754, l='MpServer', x=-0.91, y=70.00, z=12.53], EntityOtherPlayerMP['上电脑课'/22755, l='MpServer', x=-0.56, y=70.00, z=12.66], EntityOtherPlayerMP['zhangyefeng'/22756, l='MpServer', x=-0.56, y=69.91, z=10.81], EntityOtherPlayerMP['ajawn'/22757, l='MpServer', x=-1.75, y=70.00, z=9.44], EntityOtherPlayerMP['Daopu_123'/22758, l='MpServer', x=-0.53, y=70.00, z=12.03], EntityOtherPlayerMP['wdzjashd'/22759, l='MpServer', x=-0.56, y=70.00, z=11.44], EntityOtherPlayerMP['EvidentChalk608'/22760, l='MpServer', x=-0.81, y=70.00, z=11.47], EntityOtherPlayerMP['yuanziyanG'/22761, l='MpServer', x=-0.91, y=70.00, z=11.09], EntityOtherPlayerMP['zhengruirui'/22762, l='MpServer', x=-0.59, y=70.00, z=15.19], EntityOtherPlayerMP['noveline_nice'/22763, l='MpServer', x=0.25, y=70.00, z=12.25], EntityOtherPlayerMP['XIRuiZH'/22764, l='MpServer', x=-0.50, y=70.00, z=11.81], EntityOtherPlayerMP['9669'/22765, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['liatupa'/22766, l='MpServer', x=0.28, y=70.00, z=10.94], EntityOtherPlayerMP['big_S'/22767, l='MpServer', x=-1.66, y=70.00, z=12.34], EntityOtherPlayerMP['9669'/22768, l='MpServer', x=-0.56, y=70.00, z=8.88], EntityOtherPlayerMP['Naicy'/22769, l='MpServer', x=-0.13, y=70.00, z=10.69], EntityOtherPlayerMP['ccyyhh123'/22770, l='MpServer', x=-0.84, y=70.00, z=12.69], EntityOtherPlayerMP['bey_cuy1003'/22771, l='MpServer', x=-0.50, y=70.00, z=13.00], EntityOtherPlayerMP['ZDGRGDDZG'/22772, l='MpServer', x=-0.59, y=70.00, z=12.03], EntityOtherPlayerMP['Lingduc'/22773, l='MpServer', x=-0.41, y=70.00, z=12.00], EntityOtherPlayerMP['xiaochang123456'/22774, l='MpServer', x=-0.66, y=70.00, z=11.38], EntityOtherPlayerMP['liatupa'/22775, l='MpServer', x=-0.81, y=70.00, z=12.00], EntityOtherPlayerMP['MCcjs'/22776, l='MpServer', x=-0.56, y=70.00, z=11.63], EntityOtherPlayerMP['while'/22777, l='MpServer', x=-0.28, y=70.00, z=9.25], EntityOtherPlayerMP['im_egirl_'/22778, l='MpServer', x=-0.78, y=70.00, z=11.06], EntityOtherPlayerMP['RqgernCheatFun'/22779, l='MpServer', x=-0.84, y=70.00, z=10.59], EntityOtherPlayerMP['zhengruirui'/22780, l='MpServer', x=-6.19, y=70.75, z=14.13], EntityOtherPlayerMP['xiaochang123456'/22781, l='MpServer', x=-0.53, y=70.00, z=11.66], EntityOtherPlayerMP['mdfhFw'/22782, l='MpServer', x=-0.56, y=70.00, z=11.13], EntityOtherPlayerMP['shangxiao'/22783, l='MpServer', x=1.19, y=70.00, z=12.38], EntityOtherPlayerMP['tomau_tomaf'/22784, l='MpServer', x=-0.69, y=70.00, z=11.16], EntityOtherPlayerMP['Oaoakso'/22785, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['吉吉bond'/22786, l='MpServer', x=-0.41, y=70.00, z=15.16], EntityOtherPlayerMP['VanllaOcap'/22787, l='MpServer', x=-0.56, y=70.00, z=11.60], EntityOtherPlayerMP['xiaozhihcm'/22788, l='MpServer', x=-0.13, y=70.00, z=10.50], EntityOtherPlayerMP['bstqwq'/22789, l='MpServer', x=-0.56, y=70.00, z=11.88], EntityOtherPlayerMP['Furitbioaur'/22790, l='MpServer', x=-0.50, y=70.00, z=10.63], EntityOtherPlayerMP['MELRDshuai'/22791, l='MpServer', x=-0.56, y=70.00, z=11.38], EntityOtherPlayerMP['nmshcibslj3'/22792, l='MpServer', x=-0.56, y=70.00, z=14.97], EntityOtherPlayerMP['tsgrrr'/22793, l='MpServer', x=-0.63, y=70.00, z=10.66], EntityOtherPlayerMP['lauriprkle'/22794, l='MpServer', x=-0.56, y=70.00, z=8.94], EntityOtherPlayerMP['swswzjzj'/22795, l='MpServer', x=-0.84, y=70.00, z=11.25], EntityOtherPlayerMP['Lcmc_Yc'/22796, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['Bili_MickeyMouse'/22797, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['Lcmc_Yc'/22798, l='MpServer', x=-0.56, y=70.00, z=11.44], EntityOtherPlayerMP['Oaoakso'/22799, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['bb'/22800, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['summer_cool'/22801, l='MpServer', x=-0.56, y=70.00, z=11.22], EntityOtherPlayerMP['Ocean_s_dd'/22802, l='MpServer', x=-0.13, y=70.00, z=10.19], EntityOtherPlayerMP['SSSNB'/22803, l='MpServer', x=-2.09, y=70.00, z=10.94], EntityOtherPlayerMP['miniword_wang'/22804, l='MpServer', x=-0.56, y=70.00, z=11.94], EntityOtherPlayerMP['henan1232x'/22805, l='MpServer', x=-0.75, y=70.00, z=11.81], EntityOtherPlayerMP['bmpy'/22806, l='MpServer', x=-0.59, y=70.00, z=12.78], EntityOtherPlayerMP['wdd233'/22807, l='MpServer', x=-1.22, y=70.00, z=12.69], EntityOtherPlayerMP['F6D7P0_Xns'/22808, l='MpServer', x=0.09, y=70.00, z=12.56], EntityOtherPlayerMP['Finsly'/22809, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['Wh12345'/22810, l='MpServer', x=1.09, y=70.00, z=10.81], EntityOtherPlayerMP['orange__chen'/22811, l='MpServer', x=0.63, y=70.00, z=10.97], EntityOtherPlayerMP['always315'/22812, l='MpServer', x=-0.19, y=70.00, z=9.66], EntityOtherPlayerMP['Kzpsword'/22813, l='MpServer', x=-0.16, y=70.00, z=12.59], EntityOtherPlayerMP['fromantenst'/22814, l='MpServer', x=-1.28, y=70.00, z=8.97], EntityOtherPlayerMP['我好难'/22815, l='MpServer', x=-0.94, y=70.00, z=11.91], EntityOtherPlayerMP['scwin2013'/22816, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['YaNJiNbO'/22817, l='MpServer', x=-0.59, y=70.00, z=11.41], EntityOtherPlayerMP['Starlight星光'/22818, l='MpServer', x=-0.47, y=70.00, z=10.81], EntityOtherPlayerMP['Oaoakso'/22819, l='MpServer', x=-0.56, y=70.00, z=15.22], EntityOtherPlayerMP['scwin2013'/22820, l='MpServer', x=-0.56, y=70.00, z=15.06], EntityOtherPlayerMP['MuRanKings'/22821, l='MpServer', x=-0.38, y=70.00, z=10.75], EntityOtherPlayerMP['Panda_Youjie'/22822, l='MpServer', x=-1.94, y=70.00, z=12.28], EntityOtherPlayerMP['1diao5mao'/22823, l='MpServer', x=-1.44, y=69.91, z=11.16], EntityOtherPlayerMP['腐都蛇将游泳'/22824, l='MpServer', x=-1.47, y=70.00, z=12.63], EntityOtherPlayerMP['henan1232x'/22825, l='MpServer', x=-1.97, y=70.00, z=10.59], EntityOtherPlayerMP['lianhongpu'/22826, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['XiaoZhi0729'/22827, l='MpServer', x=-0.19, y=70.00, z=11.13], EntityOtherPlayerMP['OriginalDC'/22828, l='MpServer', x=1.06, y=70.00, z=8.97], EntityOtherPlayerMP['SSSNB'/22829, l='MpServer', x=0.81, y=70.00, z=17.25], EntityOtherPlayerMP['lslald'/22830, l='MpServer', x=0.00, y=70.00, z=12.84], EntityOtherPlayerMP['大富科技可接受的世纪东方'/22831, l='MpServer', x=-0.56, y=70.00, z=15.25], EntityOtherPlayerMP['tjhouytrtr'/22832, l='MpServer', x=-0.56, y=70.00, z=15.25]]
+	Retry entities: 0 total; []
+	Server brand: Waterfall <- AirSpigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:426)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_342, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 482111272 bytes (459 MB) / 1788870656 bytes (1706 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                 | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz

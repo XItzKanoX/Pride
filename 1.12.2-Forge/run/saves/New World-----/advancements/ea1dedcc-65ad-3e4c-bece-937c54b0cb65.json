@@ -1,0 +1,41 @@
+{
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2022-12-18 16:48:37 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "enchanted_golden_apple": "2022-12-18 16:49:17 +0800"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2022-12-18 16:49:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_leggings": "2022-12-18 16:48:37 +0800",
+      "diamond_helmet": "2022-12-18 16:48:37 +0800",
+      "diamond_chestplate": "2022-12-18 16:48:37 +0800",
+      "diamond_boots": "2022-12-18 16:48:37 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2022-12-18 16:55:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-12-18 16:48:37 +0800"
+    },
+    "done": false
+  }
+}

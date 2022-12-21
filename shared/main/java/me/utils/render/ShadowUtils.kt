@@ -33,7 +33,7 @@ object ShadowUtils : MinecraftInstance() {
     private var lastWidth = 0
     private var lastHeight = 0
     private var lastStrength = 0F
-    //主播你放pride文件夹下会找不到 傻逼1.12
+//    主播你放pride文件夹下会找不到 傻逼1.12
     private val blurDirectory = ResourceLocation("shaders/shadow.json")
 
     @Throws(IOException::class)

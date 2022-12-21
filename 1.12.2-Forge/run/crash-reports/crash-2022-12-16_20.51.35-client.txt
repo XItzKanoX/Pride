@@ -1,0 +1,150 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 12/16/22 8:51 PM
+Description: Updating screen events
+
+java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/injection/backend/SoundHandlerImpl
+	at net.ccbluex.liquidbounce.injection.backend.MinecraftImpl.getSoundHandler(MinecraftImpl.kt:117)
+	at net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement.mouseClicked(ModuleElement.java:49)
+	at net.ccbluex.liquidbounce.ui.client.clickgui.Panel.mouseClicked(Panel.java:112)
+	at net.ccbluex.liquidbounce.ui.client.clickgui.ClickGui.mouseClicked(ClickGui.java:349)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.mouseClicked(GuiScreenWrapper.kt:17)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:533)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.superHandleMouseInput(GuiScreenWrapper.kt:36)
+	at net.ccbluex.liquidbounce.injection.backend.GuiScreenImpl.superHandleMouseInput(GuiScreenImpl.kt:42)
+	at net.ccbluex.liquidbounce.api.util.WrappedGuiScreen.handleMouseInput(WrappedGuiScreen.kt:33)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.handleMouseInput(GuiScreenWrapper.kt:20)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:501)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1758)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1097)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.injection.backend.SoundHandlerImpl
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 27 more
+Caused by: java.lang.NoClassDefFoundError: net/ccbluex/liquidbounce/api/minecraft/client/audio/ISoundHandler
+	at java.lang.ClassLoader.defineClass1(ClassLoader.java)
+	at java.lang.ClassLoader._jr$defineClass(ClassLoader.java:756)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:43016)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+	... 29 more
+Caused by: java.lang.ClassNotFoundException: net.ccbluex.liquidbounce.api.minecraft.client.audio.ISoundHandler
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 34 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.injection.backend.MinecraftImpl.getSoundHandler(MinecraftImpl.kt:117)
+	at net.ccbluex.liquidbounce.ui.client.clickgui.elements.ModuleElement.mouseClicked(ModuleElement.java:49)
+	at net.ccbluex.liquidbounce.ui.client.clickgui.Panel.mouseClicked(Panel.java:112)
+	at net.ccbluex.liquidbounce.ui.client.clickgui.ClickGui.mouseClicked(ClickGui.java:349)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.mouseClicked(GuiScreenWrapper.kt:17)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:533)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.superHandleMouseInput(GuiScreenWrapper.kt:36)
+	at net.ccbluex.liquidbounce.injection.backend.GuiScreenImpl.superHandleMouseInput(GuiScreenImpl.kt:42)
+	at net.ccbluex.liquidbounce.api.util.WrappedGuiScreen.handleMouseInput(WrappedGuiScreen.kt:33)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.handleMouseInput(GuiScreenWrapper.kt:20)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:501)
+
+-- Affected screen --
+Details:
+	Screen name: net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 16 total; [EntityPlayerSP['Tk丶余弦'/27446, l='MpServer', x=191.89, y=152.00, z=4.00], EntityOtherPlayerMP['him呀呵呵'/30127, l='MpServer', x=201.50, y=152.50, z=-4.34], EntityOtherPlayerMP['ForrenLove'/30128, l='MpServer', x=194.48, y=151.25, z=1.31], EntityOtherPlayerMP['谭公的栗子下象棋'/30129, l='MpServer', x=203.00, y=152.00, z=-11.50], EntityOtherPlayerMP['炫彩桃子'/30130, l='MpServer', x=200.70, y=150.10, z=4.21], EntityOtherPlayerMP['HYT_NMYISI'/30118, l='MpServer', x=206.93, y=152.19, z=-0.58], EntityOtherPlayerMP['恐慌晴'/30124, l='MpServer', x=206.04, y=152.75, z=-2.08], EntityOtherPlayerMP['hdsiwauhdi'/30133, l='MpServer', x=198.60, y=146.39, z=5.84], EntityOtherPlayerMP['012135464'/30134, l='MpServer', x=203.30, y=147.57, z=-1.03], EntityOtherPlayerMP['gbswwsgb'/30119, l='MpServer', x=205.75, y=150.19, z=5.63], EntityOtherPlayerMP['小炫冥'/30120, l='MpServer', x=202.90, y=152.00, z=-8.25], EntityOtherPlayerMP['会啊好的呢'/30121, l='MpServer', x=209.33, y=167.01, z=-1.29], EntityOtherPlayerMP['Marco1000'/30123, l='MpServer', x=199.98, y=162.89, z=-6.62], EntityOtherPlayerMP['小小橙子吖'/30122, l='MpServer', x=210.27, y=165.91, z=-2.49], EntityOtherPlayerMP['lulu03040'/30125, l='MpServer', x=203.00, y=152.00, z=-7.94], EntityOtherPlayerMP['sfdfsdsf'/30126, l='MpServer', x=208.69, y=152.00, z=5.50]]
+	Chunk stats: MultiplayerChunkCache: 120, 120
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (203,152,-12), Chunk: (at 11,9,4 in 12,-1; contains blocks 192,0,-16 to 207,255,-1), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 144 game time, 22096 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: adventure (ID 2). Hardcore: false. Cheats: false
+	Forced entities: 31 total; [EntityOtherPlayerMP['hdsiwauhdi'/30133, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['012135464'/30134, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['ForrenLove'/30128, l='MpServer', x=194.48, y=151.25, z=1.31], EntityOtherPlayerMP['谭公的栗子下象棋'/30129, l='MpServer', x=203.00, y=152.00, z=-11.50], EntityOtherPlayerMP['炫彩桃子'/30130, l='MpServer', x=200.70, y=150.10, z=4.21], EntityOtherPlayerMP['HYT_NMYISI'/30118, l='MpServer', x=206.93, y=152.19, z=-0.58], EntityOtherPlayerMP['恐慌晴'/30124, l='MpServer', x=206.04, y=152.75, z=-2.08], EntityOtherPlayerMP['hdsiwauhdi'/30133, l='MpServer', x=198.60, y=146.39, z=5.84], EntityOtherPlayerMP['012135464'/30134, l='MpServer', x=203.30, y=147.57, z=-1.03], EntityOtherPlayerMP['gbswwsgb'/30119, l='MpServer', x=205.75, y=150.19, z=5.63], EntityOtherPlayerMP['小炫冥'/30120, l='MpServer', x=202.90, y=152.00, z=-8.25], EntityOtherPlayerMP['会啊好的呢'/30121, l='MpServer', x=209.33, y=167.01, z=-1.29], EntityOtherPlayerMP['Marco1000'/30123, l='MpServer', x=199.98, y=162.89, z=-6.62], EntityOtherPlayerMP['小小橙子吖'/30122, l='MpServer', x=210.27, y=165.91, z=-2.49], EntityOtherPlayerMP['lulu03040'/30125, l='MpServer', x=203.00, y=152.00, z=-7.94], EntityOtherPlayerMP['sfdfsdsf'/30126, l='MpServer', x=208.69, y=152.00, z=5.50], EntityOtherPlayerMP['谭公的栗子下象棋'/30129, l='MpServer', x=203.00, y=152.00, z=-11.50], EntityOtherPlayerMP['炫彩桃子'/30130, l='MpServer', x=200.70, y=150.10, z=4.21], EntityPlayerSP['Tk丶余弦'/27446, l='MpServer', x=191.89, y=152.00, z=4.00], EntityOtherPlayerMP['HYT_NMYISI'/30118, l='MpServer', x=201.66, y=152.00, z=-11.06], EntityOtherPlayerMP['gbswwsgb'/30119, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['小炫冥'/30120, l='MpServer', x=203.00, y=152.00, z=-11.50], EntityOtherPlayerMP['会啊好的呢'/30121, l='MpServer', x=202.94, y=152.00, z=-10.72], EntityOtherPlayerMP['小小橙子吖'/30122, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['Marco1000'/30123, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['恐慌晴'/30124, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['lulu03040'/30125, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['sfdfsdsf'/30126, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['him呀呵呵'/30127, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['ForrenLove'/30128, l='MpServer', x=203.00, y=152.50, z=-11.50], EntityOtherPlayerMP['him呀呵呵'/30127, l='MpServer', x=201.50, y=152.50, z=-4.34]]
+	Retry entities: 0 total; []
+	Server brand: Waterfall <- PaperSpigot
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_352, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 1173248936 bytes (1118 MB) / 2138046464 bytes (2039 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID        | Version      | Source                                                 | Signature |
+	|:------ |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz

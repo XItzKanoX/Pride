@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2022-12-11 17:34:43 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2022-12-18 14:33:30 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2022-12-10 17:50:35 +0800",
+      "jungle": "2022-12-11 17:34:43 +0800"
+    },
+    "done": false
+  }
+}

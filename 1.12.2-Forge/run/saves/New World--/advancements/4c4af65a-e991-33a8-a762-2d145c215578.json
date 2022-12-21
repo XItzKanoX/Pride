@@ -1,0 +1,16 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-10-29 17:51:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2022-10-29 17:51:20 +0800",
+      "roofed_forest": "2022-10-29 17:50:39 +0800",
+      "river": "2022-10-29 17:51:22 +0800"
+    },
+    "done": false
+  }
+}

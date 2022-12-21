@@ -1,0 +1,123 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 8/3/22 6:57 PM
+Description: Rendering screen
+
+java.lang.NoSuchMethodError: me.utils.render.VisualUtils.getGradientOffset2(Ljava/awt/Color;Ljava/awt/Color;D)Ljava/awt/Color;
+	at net.ccbluex.liquidbounce.ui.client.hud.element.elements.GameInfo2.drawElement(GameInfo2.kt:74)
+	at net.ccbluex.liquidbounce.ui.client.hud.HUD.render(HUD.kt:70)
+	at net.ccbluex.liquidbounce.ui.client.hud.designer.GuiHudDesigner.drawScreen(GuiHudDesigner.kt:28)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.drawScreen(GuiScreenWrapper.kt:15)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1124)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1118)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.ccbluex.liquidbounce.ui.client.hud.element.elements.GameInfo2.drawElement(GameInfo2.kt:74)
+	at net.ccbluex.liquidbounce.ui.client.hud.HUD.render(HUD.kt:70)
+	at net.ccbluex.liquidbounce.ui.client.hud.designer.GuiHudDesigner.drawScreen(GuiHudDesigner.kt:28)
+	at net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper.drawScreen(GuiScreenWrapper.kt:15)
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:381)
+
+-- Screen render details --
+Details:
+	Screen name: net.ccbluex.liquidbounce.injection.backend.utils.GuiScreenWrapper
+	Mouse location: Scaled: (696, 504). Absolute: (1393, 49)
+	Screen size: Scaled: (960, 529). Absolute: (1920, 1057). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player118'/460, l='MpServer', x=-278.70, y=60.40, z=545.70]]
+	Chunk stats: MultiplayerChunkCache: 169, 169
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-144,64,256), Chunk: (at 0,4,0 in -9,16; contains blocks -144,0,256 to -129,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 409189 game time, 409189 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 31 total; [EntityHorse['马'/513, l='MpServer', x=-349.10, y=71.00, z=482.87], EntityHorse['马'/514, l='MpServer', x=-345.82, y=71.00, z=487.28], EntityChicken['鸡'/515, l='MpServer', x=-219.09, y=69.00, z=478.53], EntityBat['蝙蝠'/1031, l='MpServer', x=-244.13, y=17.86, z=504.74], EntityBat['蝙蝠'/1032, l='MpServer', x=-316.50, y=35.10, z=474.50], EntityZombie['僵尸'/1098, l='MpServer', x=-290.29, y=16.00, z=554.50], EntityBat['蝙蝠'/1035, l='MpServer', x=-207.94, y=19.52, z=506.64], EntityZombie['僵尸'/1099, l='MpServer', x=-286.50, y=16.00, z=558.50], EntityZombie['僵尸'/1100, l='MpServer', x=-283.50, y=16.00, z=559.50], EntitySpider['蜘蛛'/1101, l='MpServer', x=-280.96, y=17.10, z=557.70], EntitySkeleton['骷髅'/655, l='MpServer', x=-207.50, y=25.00, z=471.50], EntitySkeleton['骷髅'/656, l='MpServer', x=-208.50, y=25.00, z=471.50], EntityCreeper['爬行者'/981, l='MpServer', x=-260.50, y=12.00, z=551.50], EntityZombie['僵尸'/536, l='MpServer', x=-200.50, y=66.00, z=606.50], EntityHorse['马'/540, l='MpServer', x=-204.89, y=67.00, z=545.09], EntityHorse['马'/477, l='MpServer', x=-301.90, y=60.00, z=512.02], EntitySkeleton['骷髅'/541, l='MpServer', x=-207.88, y=67.00, z=550.60], EntityHorse['马'/544, l='MpServer', x=-201.00, y=71.00, z=529.07], EntityHorse['马'/481, l='MpServer', x=-298.01, y=67.00, z=508.09], EntityHorse['马'/482, l='MpServer', x=-298.25, y=66.00, z=508.51], EntityCreeper['爬行者'/489, l='MpServer', x=-299.50, y=46.00, z=479.50], EntityZombie['僵尸'/490, l='MpServer', x=-296.50, y=69.00, z=468.50], EntityZombie['僵尸'/619, l='MpServer', x=-355.50, y=40.00, z=623.50], EntityHorse['马'/557, l='MpServer', x=-203.00, y=65.00, z=616.06], EntityZombie['僵尸'/621, l='MpServer', x=-354.50, y=40.00, z=618.50], EntityPlayerSP['Player118'/460, l='MpServer', x=-278.70, y=60.40, z=545.70], EntityPig['猪'/495, l='MpServer', x=-223.50, y=65.00, z=497.75], EntityBat['蝙蝠'/627, l='MpServer', x=-355.50, y=40.10, z=609.50], EntityBat['蝙蝠'/628, l='MpServer', x=-356.50, y=40.10, z=608.50], EntityCreeper['爬行者'/1076, l='MpServer', x=-296.50, y=33.00, z=490.50], EntitySkeleton['骷髅'/958, l='MpServer', x=-245.50, y=26.00, z=503.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2740)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_311, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 587609576 bytes (560 MB) / 1689255936 bytes (1611 MB) up to 7618953216 bytes (7266 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2768 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID        | Version      | Source                                                 | Signature |
+	|:--------- |:--------- |:------------ |:------------------------------------------------------ |:--------- |
+	| UCHIJAAAA | minecraft | 1.12.2       | minecraft.jar                                          | None      |
+	| UCHIJAAAA | mcp       | 9.42         | minecraft.jar                                          | None      |
+	| UCHIJAAAA | FML       | 8.0.99.99    | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+	| UCHIJAAAA | forge     | 14.23.5.2768 | forgeBin-1.12.2-14.23.5.2768-PROJECT(1.12.2-Forge).jar | None      |
+
+	Loaded coremods (and transformers): 
+MixinLoader (unknown)
+  
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 388.00' Renderer: 'GeForce GTX 1050/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 388.00, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 20x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
