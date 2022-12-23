@@ -37,8 +37,17 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "swampland": "2022-12-21 12:54:13 +0800"
+      "forest": "2022-12-23 17:42:56 +0800",
+      "swampland": "2022-12-21 12:54:13 +0800",
+      "forest_hills": "2022-12-23 17:43:33 +0800",
+      "plains": "2022-12-23 17:43:07 +0800"
     },
     "done": false
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_red_flower": "2022-12-23 17:42:56 +0800"
+    },
+    "done": true
   }
 }

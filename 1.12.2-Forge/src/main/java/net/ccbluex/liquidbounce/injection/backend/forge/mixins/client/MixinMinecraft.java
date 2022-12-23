@@ -5,10 +5,8 @@
  */
 package net.ccbluex.liquidbounce.injection.forge.mixins.client;
 
-import me.utils.QQUtils;
 import me.utils.WindowUtils;
 import net.ccbluex.liquidbounce.LiquidBounce;
-import net.ccbluex.liquidbounce.api.util.WrappedGuiScreen;
 import net.ccbluex.liquidbounce.event.*;
 import net.ccbluex.liquidbounce.features.module.modules.combat.AutoClicker;
 import net.ccbluex.liquidbounce.features.module.modules.exploit.AbortBreaking;
@@ -20,9 +18,7 @@ import net.ccbluex.liquidbounce.injection.backend.WorldClientImplKt;
 import net.ccbluex.liquidbounce.injection.backend.WrapperImpl;
 import net.ccbluex.liquidbounce.injection.backend.utils.BackendExtentionsKt;
 import net.ccbluex.liquidbounce.ui.client.GuiMainMenu;
-
 import net.ccbluex.liquidbounce.utils.CPSCounter;
-import net.ccbluex.liquidbounce.utils.FileUtils;
 import net.ccbluex.liquidbounce.utils.render.IconUtils;
 import net.ccbluex.liquidbounce.utils.render.MiniMapRegister;
 import net.ccbluex.liquidbounce.utils.render.RenderUtils;
@@ -101,7 +97,7 @@ public abstract class MixinMinecraft {
             displayHeight = 622;
     }
     @Inject(method = "displayCrashReport", at = @At("HEAD"))
-    private void displayCrashReport(CrashReport crashReport, CallbackInfo ci) {
+        private void displayCrashReport(CrashReport crashReport, CallbackInfo ci) {
         if (!WindowUtils.isWindows()) return;
         try {
             File file = new File("./", "PrideCrashLogs.txt");

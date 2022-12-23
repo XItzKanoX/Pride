@@ -6,34 +6,36 @@
 
 package net.ccbluex.liquidbounce.features.module.modules.render
 
+import me.sound.SoundPlayer
+import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.api.minecraft.client.entity.IEntityLivingBase
-import net.ccbluex.liquidbounce.features.module.ModuleCategory
-import net.ccbluex.liquidbounce.value.IntegerValue
-import net.ccbluex.liquidbounce.value.BoolValue
-import net.minecraft.entity.EntityLivingBase
 import net.ccbluex.liquidbounce.event.AttackEvent
-import net.ccbluex.liquidbounce.event.MotionEvent
 import net.ccbluex.liquidbounce.event.EventTarget
+import net.ccbluex.liquidbounce.event.MotionEvent
 import net.ccbluex.liquidbounce.features.module.Module
+import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
-import net.minecraft.util.EnumParticleTypes
-import net.minecraft.init.Blocks
+import net.ccbluex.liquidbounce.value.BoolValue
+import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
 import net.minecraft.block.Block
-import net.minecraft.client.audio.PositionedSoundRecord
+import net.minecraft.entity.EntityLivingBase
 import net.minecraft.entity.effect.EntityLightningBolt
-import net.minecraft.entity.projectile.EntityEgg
+import net.minecraft.init.Blocks
 import net.minecraft.network.play.server.SPacketSpawnGlobalEntity
-import net.minecraft.util.ResourceLocation
+import net.minecraft.util.EnumParticleTypes
 
 @ModuleInfo(name = "AttackEffects", description = "Rise.", category = ModuleCategory.RENDER)
 class AttackEffects : Module() {
     val amount = IntegerValue("Amount", 5, 1, 20)
+
     private val sound = BoolValue("Sound", true)
     private val lightingSoundValue = BoolValue("LightingSound", true)
-
+    private var lastAttackedEntity = 0
     var target: IEntityLivingBase? = null
     var target2: EntityLivingBase? = null
+
+
     @EventTarget
     fun onAttack(event: AttackEvent) {
         if (event.targetEntity is IEntityLivingBase) target = event.targetEntity
@@ -48,7 +50,24 @@ class AttackEffects : Module() {
                             target!!.posZ
                     ) < 10
             ) {
+                if(mc.thePlayer!!.ticksExisted > 4){
+                    when(atksound.get().toLowerCase()) {
+                        "knock" ->{
+                            SoundPlayer().playSound(SoundPlayer.SoundType.Crack, LiquidBounce.moduleManager.toggleVolume);
+                        }
+                        "skeet" -> {
+                            SoundPlayer().playSound(SoundPlayer.SoundType.SKEET, LiquidBounce.moduleManager.toggleVolume);
+                        }
+
+                        "neko" -> {
+
+                            SoundPlayer().playSound(SoundPlayer.SoundType.NEKO, LiquidBounce.moduleManager.toggleVolume);
+                        }
+                    }
+                }
                 if (mc.thePlayer!!.ticksExisted > 3) {
+
+
                     when (mode.get().toLowerCase()) {
                         "blood" -> {
                             var i = 0
@@ -110,7 +129,15 @@ class AttackEffects : Module() {
 
 
 
+
     companion object {
+        val  atksound = ListValue("AttackSound", arrayOf(
+            "None",
+            "Skeet",
+            "Neko",
+            "Knock"
+
+        ), "None")
         val mode = ListValue(
             "Mode", arrayOf(
                 "Blood",

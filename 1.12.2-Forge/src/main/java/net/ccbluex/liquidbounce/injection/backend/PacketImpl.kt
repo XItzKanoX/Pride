@@ -22,6 +22,8 @@ open class PacketImpl<T : Packet<*>>(val wrapped: T) : IPacket {
 
     override fun asSPacketEntity(): ISPacketEntity = SPacketEntityImpl(wrapped as SPacketEntity)
 
+
+
     override fun asCPacketPlayer(): ICPacketPlayer = CPacketPlayerImpl(wrapped as CPacketPlayer)
 
     override fun asCPacketUseEntity(): ICPacketUseEntity = CPacketUseEntityImpl(wrapped as CPacketUseEntity)

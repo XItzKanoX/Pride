@@ -6,7 +6,6 @@
 package net.ccbluex.liquidbounce.features.module.modules.render
 
 import com.mojang.realmsclient.gui.ChatFormatting
-import me.utils.QQUtils
 import me.utils.render.VisualUtils
 import net.ccbluex.liquidbounce.LiquidBounce
 import net.ccbluex.liquidbounce.event.*
@@ -15,14 +14,12 @@ import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
 import net.ccbluex.liquidbounce.ui.font.Fonts
 import net.ccbluex.liquidbounce.utils.MinecraftInstance
-import net.ccbluex.liquidbounce.utils.blur.BlurBuffer
 import net.ccbluex.liquidbounce.utils.render.Colors
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
 import net.ccbluex.liquidbounce.value.BoolValue
 import net.ccbluex.liquidbounce.value.IntegerValue
 import net.ccbluex.liquidbounce.value.ListValue
 import net.ccbluex.liquidbounce.value.TextValue
-import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.Gui
 import java.awt.Color
 import java.text.SimpleDateFormat
@@ -34,7 +31,8 @@ public class HUD : Module() {
     private val toggleMessageValue = BoolValue("DisplayToggleMessage", true)
     private val toggleSoundValue = ListValue("ToggleSound", arrayOf("None", "Default", "Custom"), "Custom")
     companion object {
-
+        @JvmField
+        val Hotbarblur = BoolValue("BlurGuiButton", false)
      val shadowValue = ListValue(
         "ShadowMode", arrayOf(
              "Test",
@@ -48,7 +46,7 @@ public class HUD : Module() {
     val containerBackground = BoolValue("Container-Background", false)
     val animHotbarValue = BoolValue("AnimatedHotbar", true)
     val blackHotbarValue = BoolValue("BlackHotbar", true)
-    val Hotbarblur = BoolValue("BlurHotabr", true)
+
 
     val inventoryParticle = BoolValue("InventoryParticle", false)
     private val blurValue = BoolValue("Blur", false)

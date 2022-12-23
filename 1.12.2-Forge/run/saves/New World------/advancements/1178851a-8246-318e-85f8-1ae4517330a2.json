@@ -1,14 +1,39 @@
 {
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2022-12-22 11:03:34 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2022-12-22 11:03:55 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "zombie": "2022-12-22 11:03:55 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2022-12-21 22:14:02 +0800"
     },
     "done": true
   },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie": "2022-12-22 11:03:55 +0800"
+    },
+    "done": false
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "forest": "2022-12-21 14:13:19 +0800",
       "birch_forest": "2022-12-21 22:13:50 +0800",
+      "extreme_hills_with_trees": "2022-12-22 11:03:35 +0800",
       "forest_hills": "2022-12-21 22:11:49 +0800",
       "river": "2022-12-21 22:13:46 +0800"
     },

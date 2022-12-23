@@ -26,6 +26,7 @@ public class    SoundPlayer {
     }
     public enum SoundType{
 
+
         Enter("enter.wav"),
         Notification("notification.wav"),
         Startup("startup.wav"),
@@ -35,6 +36,9 @@ public class    SoundPlayer {
         EDITION("ingame.wav"),
         VICTORY("victory.wav"),
         BACKDOOL("back.wav"),
+
+        SKEET("skeet.wav"),
+        NEKO("neko.wav"),
         SPECIAL("spec.wav");
 
         final String name;

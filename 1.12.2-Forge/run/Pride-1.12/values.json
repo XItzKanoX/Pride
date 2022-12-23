@@ -13,8 +13,8 @@
     "AntiForgeFML": true,
     "AntiForgeProxy": true,
     "AntiForgePayloads": true,
-    "BungeeSpoof": false,
-    "AutoReconnectDelay": 5000
+    "BungeeSpoof": true,
+    "AutoReconnectDelay": 60000
   },
   "thealtening": {
     "API-Key": ""
@@ -118,15 +118,16 @@
     "Retry": false
   },
   "AttackEffects": {
-    "Amount": 5,
-    "Sound": true,
-    "LightingSound": true,
+    "Amount": 20,
+    "Sound": false,
+    "LightingSound": false,
+    "AttackSound": "Knock",
     "Mode": "Blood"
   },
   "AutoArmor": {
     "MinDelay": 100,
     "MaxDelay": 200,
-    "InvOpen": false,
+    "InvOpen": true,
     "SimulateInventory": true,
     "NoMove": false,
     "ItemDelay": 0,
@@ -149,7 +150,7 @@
     "Delay": 750
   },
   "AutoL": {
-    "L": true,
+    "L": false,
     "AutoLmsg": "@[Pride]"
   },
   "AutoLeave": {
@@ -223,13 +224,13 @@
     "Snow": true
   },
   "BoatJump": {
-    "Mode": "Launch",
-    "HBoost": 2.0,
-    "VBoost": 2.0,
-    "MatrixTimerStart": 0.3,
-    "MatrixTimerAir": 0.5,
+    "Mode": "Matrix",
+    "HBoost": 0.3,
+    "VBoost": 1.14,
+    "MatrixTimerStart": 0.38,
+    "MatrixTimerAir": 0.94,
     "LaunchRadius": 4.0,
-    "Delay": 200,
+    "Delay": 160,
     "AutoHit": true
   },
   "BowAimbot": {
@@ -335,7 +336,7 @@
     "Delay": 0
   },
   "Criticals": {
-    "Mode": "Packet",
+    "Mode": "HuaYuTing",
     "Delay": 0,
     "SendC06": false,
     "HurtTime": 10
@@ -343,12 +344,12 @@
   "CustomBhop": {
     "Mode": "Custom",
     "Friction": "Normal",
-    "Timer Speed": 1.0,
+    "Timer Speed": 1.02,
     "Auto": true,
-    "Height": 0.42,
-    "Ground Multiplier": 1.5,
-    "Speed": 0.31,
-    "Potion Multiplier": 0.02,
+    "Height": 1.2,
+    "Ground Multiplier": 0.0,
+    "Speed": 0.73,
+    "Potion Multiplier": 0.2,
     "Ticks": 1.0,
     "Stop Motion": true
   },
@@ -475,17 +476,17 @@
     "Container-Background": true,
     "AnimatedHotbar": false,
     "BlackHotbar": true,
-    "BlurHotabr": true,
     "InventoryParticle": false,
     "Blur": false,
     "BlurRadius": 30,
-    "FontChat": true,
+    "FontChat": false,
     "LogMode": "None",
     "ClientName": "Pride",
     "DevName": "JieMo",
     "NovolineRed": 255,
     "NovolineGreen": 255,
     "NovolineBlue": 255,
+    "BlurGuiButton": true,
     "ShadowMode": "LiquidBounce"
   },
   "HighJump": {
@@ -560,8 +561,8 @@
     "MaxCPS": 8,
     "MinCPS": 5,
     "HurtTime": 10,
-    "Cooldown": 1.0,
-    "Range": 3.7,
+    "Cooldown": 0.0,
+    "Range": 4.66,
     "ThroughWallsRange": 3.0,
     "RangeSprintReducement": 0.0,
     "Priority": "Distance",
@@ -569,13 +570,13 @@
     "Swing": true,
     "KeepSprint": true,
     "StopSprintOnAir": true,
-    "AutoBlock": "Off",
+    "AutoBlock": "Range",
     "BlockRange": 3.0,
-    "AutoBlockPacket": "Simple",
+    "AutoBlockPacket": "Fake",
     "VanillaMode": "TryUseItem",
-    "InteractAutoBlock": true,
-    "AutoBlock-AfterTck": false,
-    "AutoBlock-AfterAttack": false,
+    "InteractAutoBlock": false,
+    "AutoBlock-AfterTck": true,
+    "AutoBlock-AfterAttack": true,
     "AutoBlockFacing": false,
     "BlockRate": 100,
     "RayCast": true,
@@ -716,13 +717,13 @@
     "NukeDelay": 1
   },
   "OldHitting": {
-    "Mode": "MineCraft",
+    "Mode": "SigmaOld",
     "Only-Sword": true,
     "SpeedSwing": 4,
-    "itemPosX": 0.0,
-    "itemPosY": 0.0,
-    "itemPosZ": 0.0,
-    "Scale": 1.0,
+    "itemPosX": 0.32,
+    "itemPosY": 0.07,
+    "itemPosZ": -0.37,
+    "Scale": 0.76,
     "Container-Animation": "Zoom"
   },
   "Pendant": {
@@ -796,7 +797,7 @@
     "TeleportDelay": 0,
     "TeleportGround": true,
     "TeleportNoMotion": false,
-    "Mode": "Normal",
+    "Mode": "Expand",
     "PlaceableDelay": false,
     "MaxDelay": 0,
     "MinDelay": 0,
@@ -814,7 +815,7 @@
     "BlocksToEagle": 0,
     "EagleEdgeDistance": 0.2,
     "OmniDirectionalExpand": true,
-    "ExpandLength": 5,
+    "ExpandLength": 1,
     "SearchAccuracy": 8,
     "xzRange": 0.8,
     "yRange": 0.8,
@@ -1047,9 +1048,9 @@
     "Speed": 1.2
   },
   "WorldAnim": {
-    "Mode": "UP",
-    "ChunkAnimationDuration": 2000,
-    "ChunkPosition": 50
+    "Mode": "Slide",
+    "ChunkAnimationDuration": 500,
+    "ChunkPosition": 10
   },
   "Zoot": {
     "BadEffects": true,

@@ -12,10 +12,8 @@ import net.ccbluex.liquidbounce.features.module.ModuleCategory
 import net.ccbluex.liquidbounce.features.module.ModuleInfo
 import net.ccbluex.liquidbounce.utils.MovementUtils
 import net.ccbluex.liquidbounce.value.BoolValue
-import net.ccbluex.liquidbounce.value.ListValue
 import net.minecraft.client.gui.GuiChat
 import net.minecraft.client.gui.inventory.GuiContainer
-import net.minecraft.client.settings.GameSettings
 import org.lwjgl.input.Keyboard
 
 @ModuleInfo(name = "InvMove", description = "Allows you to walk while an inventory is opened.", category = ModuleCategory.MOVEMENT)
@@ -32,7 +30,7 @@ class InventoryMove : Module() {
         private set
 
     private fun updateKeyState() {
-        if (mc.currentScreen != null && mc.currentScreen !is GuiChat && (!noDetectableValue.get() || mc.currentScreen !is GuiContainer)) {
+        if (mc2.currentScreen != null && mc2.currentScreen !is GuiChat && (!noDetectableValue.get() || mc2.currentScreen !is GuiContainer)) {
             mc.gameSettings.keyBindForward.pressed = mc.gameSettings.isKeyDown(mc.gameSettings.keyBindForward)
             mc.gameSettings.keyBindBack.pressed = mc.gameSettings.isKeyDown(mc.gameSettings.keyBindBack)
             mc.gameSettings.keyBindRight.pressed = mc.gameSettings.isKeyDown(mc.gameSettings.keyBindRight)

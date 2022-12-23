@@ -10,7 +10,7 @@
     "Array": true
   },
   "AirJump": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -45,7 +45,7 @@
     "Array": true
   },
   "AntiFireBall": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -70,7 +70,7 @@
     "Array": true
   },
   "AttackEffects": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -165,7 +165,7 @@
     "Array": true
   },
   "BlockESP": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -180,7 +180,7 @@
     "Array": true
   },
   "BoatJump": {
-    "State": false,
+    "State": true,
     "KeyBind": 0,
     "Array": true
   },
@@ -195,7 +195,7 @@
     "Array": true
   },
   "Breadcrumbs": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -210,12 +210,12 @@
     "Array": true
   },
   "Cape": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
   "Chams": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -265,7 +265,7 @@
     "Array": true
   },
   "DMGParticle": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -295,7 +295,7 @@
     "Array": true
   },
   "EnchantEffect": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -410,12 +410,12 @@
     "Array": true
   },
   "InvCleaner": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
   "InvMove": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -530,7 +530,7 @@
     "Array": true
   },
   "NoFall": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },
@@ -755,7 +755,7 @@
     "Array": true
   },
   "TargetStrafe": {
-    "State": true,
+    "State": false,
     "KeyBind": 0,
     "Array": true
   },

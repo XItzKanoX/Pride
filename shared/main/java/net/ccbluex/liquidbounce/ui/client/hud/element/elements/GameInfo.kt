@@ -1,6 +1,5 @@
 package net.ccbluex.liquidbounce.ui.client.hud.element.elements
 //Coarse_KK 
-import com.sun.corba.se.impl.ior.GenericIdentifiable
 import me.utils.render.ColorUtils2
 import me.utils.render.VisualUtils
 import net.ccbluex.liquidbounce.LiquidBounce
@@ -17,7 +16,6 @@ import net.ccbluex.liquidbounce.utils.EntityUtils
 import net.ccbluex.liquidbounce.utils.MovementUtils
 import net.ccbluex.liquidbounce.utils.ServerUtils
 import net.ccbluex.liquidbounce.utils.blur.BlurBuffer
-import net.ccbluex.liquidbounce.utils.render.ColorUtils
 import net.ccbluex.liquidbounce.utils.render.Palette
 import net.ccbluex.liquidbounce.utils.render.RenderUtils
 import net.ccbluex.liquidbounce.value.*
@@ -364,6 +362,19 @@ class GameInfo(x: Double = 10.0, y: Double = 10.0, scale: Float = 1F) : Element(
             val color = Color.WHITE.rgb
             val fontHeight = Fonts.bold30.fontHeight
             val format = DecimalFormat("#.##")
+            if(blur.get()) {
+                GL11.glTranslated(-renderX, -renderY, 0.0)
+                GL11.glPushMatrix()
+                BlurBuffer.blurRoundArea(
+                    renderX.toFloat(),
+                    renderY.toFloat(),
+                    150F,
+                    3F + fontHeight + font.fontHeight * 3 + 30F,
+                    radiusValue.get().toInt()
+                )
+                GL11.glPopMatrix()
+                GL11.glTranslated(renderX, renderY, 0.0)
+            }
             VisualUtils.drawCircleRect(
                 0F,
                 0F,

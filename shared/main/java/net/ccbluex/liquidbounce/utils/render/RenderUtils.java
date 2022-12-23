@@ -27,7 +27,6 @@ import net.minecraft.client.renderer.*;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.shader.Framebuffer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.AxisAlignedBB;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL14;
 
@@ -597,8 +596,7 @@ public final class RenderUtils extends MinecraftInstance {
         GlStateManager.enableTexture2D();
         GlStateManager.disableBlend();
     }
-    public static void rectangleBordered(double x, double y, double x1, double y1, double width, int internalColor,
-                                         int borderColor) {
+    public static void rectangleBordered(double x, double y, double x1, double y1, double width, int internalColor, int borderColor) {
         RenderUtils.rectangle(x + width, y + width, x1 - width, y1 - width, internalColor);
         GlStateManager.color((float) 1.0f, (float) 1.0f, (float) 1.0f, (float) 1.0f);
         RenderUtils.rectangle(x + width, y, x1 - width, y + width, borderColor);

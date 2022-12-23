@@ -2,28 +2,16 @@ package me.ui;
 
 
 //import me.ui.Fonts.FontManager;
+
 import me.utils.render.VisualUtils;
-import net.ccbluex.liquidbounce.LiquidBounce;
 import net.ccbluex.liquidbounce.api.minecraft.client.gui.IGuiScreen;
-import net.ccbluex.liquidbounce.api.minecraft.potion.PotionType;
-import net.ccbluex.liquidbounce.api.minecraft.util.IResourceLocation;
-import net.ccbluex.liquidbounce.api.util.WrappedGuiScreen;
-import net.ccbluex.liquidbounce.features.module.modules.color.Gident;
 import net.ccbluex.liquidbounce.ui.font.Fonts;
-import net.ccbluex.liquidbounce.utils.AnimationUtils;
-import net.ccbluex.liquidbounce.utils.Colors;
-import net.ccbluex.liquidbounce.utils.blur.BlurBuffer;
 import net.ccbluex.liquidbounce.utils.render.RenderUtils;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiButton;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.init.MobEffects;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
 
-import static java.lang.Math.max;
-import static net.ccbluex.liquidbounce.utils.MinecraftInstance.classProvider;
 import static net.ccbluex.liquidbounce.utils.MinecraftInstance.mc;
 
 public class IGuiButton {
@@ -66,7 +54,10 @@ public class IGuiButton {
 
         }
 
+
+
         RenderUtils.drawRoundedRect((float) x, y, x + 120, y + 18, 6, new Color(255,255,255,35).getRGB());
+//        BlurBuffer.blurArea2(x, y, x + 120, y + 18);
         Fonts.bold40.drawStringWithShadow(name, (int) (x + 120 / 3.5f), (int) (y + (18 / 2f) - (Fonts.bold40.getFontHeight() / 2f)), stringColor);
 
     }

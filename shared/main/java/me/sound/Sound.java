@@ -1,8 +1,6 @@
 package me.sound;
 
 
-
-
 import net.ccbluex.liquidbounce.LiquidBounce;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.PlayerControllerMP;
@@ -10,8 +8,6 @@ import net.minecraft.client.renderer.EntityRenderer;
 import net.minecraft.client.settings.GameSettings;
 
 import java.awt.*;
-
-import static net.ccbluex.liquidbounce.LiquidBounce.*;
 
 
 public class Sound {
@@ -67,7 +63,9 @@ public class Sound {
     public  Sound(){
         new SoundPlayer().playSound(SoundPlayer.SoundType.SPECIAL, LiquidBounce.moduleManager.getToggleVolume());
     }
+
     public void Volll(){
+
         new SoundPlayer().playSound(SoundPlayer.SoundType.VICTORY, LiquidBounce.moduleManager.getToggleVolume());
     }
     public boolean fastRenderDisabled(GameSettings gameSettingsIn) {
