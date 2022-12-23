@@ -9,4 +9,4 @@
 # 项目排除路径
 /1.12.2-Forge/.gradle/
 /1.12.2-Forge/build/
-
+/1.12.2-Forge/run/
